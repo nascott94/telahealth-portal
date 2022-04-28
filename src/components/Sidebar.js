@@ -2,16 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import DashboardIcon from '@mui/icons-material/Dashboard';
-import StoreIcon from '@mui/icons-material/Store';
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
-import CreditCardIcon from '@mui/icons-material/CreditCard';
 import InsertChartIcon from '@mui/icons-material/InsertChart';
-import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
-import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined';
 import SettingsSystemDaydreamOutlinedIcon from '@mui/icons-material/SettingsSystemDaydreamOutlined';
-import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import MessageIcon from '@mui/icons-material/Message';
+import ArticleIcon from '@mui/icons-material/Article';
+import EventIcon from '@mui/icons-material/Event';
+import VaccinesIcon from '@mui/icons-material/Vaccines';
+import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
 
 const Container = styled.div`
   .sidebar {
@@ -28,7 +27,7 @@ const Container = styled.div`
     .logo {
       font-size: 20px;
       font-weight: bold;
-      color: #6439ff;
+      color: #4cacd6;
     }
   }
 
@@ -59,12 +58,12 @@ const Container = styled.div`
         padding: 5px;
         cursor: pointer;
         &:hover {
-          background-color: #ece8ff;
+          background-color: #d3d3d3;
         }
 
         .icon {
           font-size: 18px;
-          color: #7451f8;
+          color: #4cacd6;
         }
         span {
           font-size: 13px;
@@ -108,56 +107,54 @@ const Sidebar = () => {
       <div className="sidebar">
         <div className="top">
           <Link to="/" style={{ textDecoration: 'none' }}>
-            <span className="logo">USER</span>
+            <span className="logo">CovidCheckToday</span>
           </Link>
         </div>
         <hr />
         <div className="center">
           <ul>
-            <p className="title">MAIN</p>
+            <p className="title">Dashboard</p>
+
             <li>
-              <DashboardIcon className="icon" />
-              <span>Dashboard</span>
+              <MessageIcon className="icon" />
+              <span>Messages</span>
             </li>
-            <p className="title">LISTS</p>
-            <Link to="/users" style={{ textDecoration: 'none' }}>
+
+            <Link to="/" style={{ textDecoration: 'none' }}>
               <li>
-                <PersonOutlineIcon className="icon" />
-                <span>Users</span>
+                <EventIcon className="icon" />
+                <span>Appointments</span>
               </li>
             </Link>
-            <Link to="/products" style={{ textDecoration: 'none' }}>
+            <Link to="/" style={{ textDecoration: 'none' }}>
               <li>
-                <StoreIcon className="icon" />
-                <span>Products</span>
+                <ArticleIcon className="icon" />
+                <span>Records</span>
               </li>
             </Link>
-            <li>
-              <CreditCardIcon className="icon" />
-              <span>Delivery</span>
-            </li>
-            <p className="title">USEFUL</p>
+
             <li>
               <InsertChartIcon className="icon" />
-              <span>Stats</span>
+              <span>COVID Credentials</span>
             </li>
             <li>
-              <NotificationsNoneIcon className="icon" />
-              <span>Notifications</span>
+              <VaccinesIcon className="icon" />
+              <span>Vaccinations</span>
             </li>
-            <p className="title">SERVICE</p>
+
             <li>
               <SettingsSystemDaydreamOutlinedIcon className="icon" />
-              <span>System Health</span>
+              <span>Programs/Membership</span>
             </li>
             <li>
-              <PsychologyOutlinedIcon className="icon" />
-              <span>Logs</span>
+              <MedicalServicesIcon className="icon" />
+              <span>Products/Services</span>
             </li>
             <li>
-              <SettingsApplicationsIcon className="icon" />
-              <span>Settings</span>
+              <DashboardIcon className="icon" />
+              <span>Orders</span>
             </li>
+            <br />
             <p className="title">USER</p>
             <li>
               <AccountCircleOutlinedIcon className="icon" />
