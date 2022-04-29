@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import Logosrc from "../media/logo.png";
+import React from 'react';
+import styled from 'styled-components';
+import Logosrc from '../media/logo.png';
 
 const NewUserContainer = styled.div`
   height: 100vh;
@@ -49,7 +49,7 @@ const BottomNewUserBox = styled.div`
 `;
 
 const InputBox = styled.input.attrs({
-  type: "input",
+  type: 'input',
 })`
   height: 25px;
   width: 80%;
@@ -118,7 +118,7 @@ const NewUser = () => {
         <NewUserBox>
           <TopNewUserBox>
             <Logo src={Logosrc} />
-            <h4>Create a free account.</h4>
+            <h4>Create a free account</h4>
           </TopNewUserBox>
           <MiddlenewUserBox>
             <InputBox placeholder="Country"></InputBox>

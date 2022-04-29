@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import Logo from '../media/logo.png';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import InsertChartIcon from '@mui/icons-material/InsertChart';
 import SettingsSystemDaydreamOutlinedIcon from '@mui/icons-material/SettingsSystemDaydreamOutlined';
@@ -19,25 +20,20 @@ const Container = styled.div`
     min-height: 100vh;
     background-color: white;
     .top {
-      height: 50px;
+      height: 70px;
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-    .logo {
-      font-size: 20px;
-      font-weight: bold;
-      color: #4cacd6;
     }
   }
 
   hr {
     height: 0;
-    border: 0.5px soild rgb(230, 227, 227);
+    border: 0.5px solid rgb(231, 228, 228);
   }
 
   .center {
-    padding-left: 10px;
+    padding-left: 15px;
 
     ul {
       list-style: none;
@@ -45,7 +41,7 @@ const Container = styled.div`
       padding: 0;
 
       .title {
-        font-size: 10px;
+        font-size: 13px;
         font-weight: bold;
         color: #999;
         margin-top: 15px;
@@ -55,7 +51,7 @@ const Container = styled.div`
       li {
         display: flex;
         align-items: center;
-        padding: 5px;
+        padding: 9px;
         cursor: pointer;
         &:hover {
           background-color: #d3d3d3;
@@ -63,10 +59,10 @@ const Container = styled.div`
 
         .icon {
           font-size: 18px;
-          color: #4cacd6;
+          color: #6fd0fa;
         }
         span {
-          font-size: 13px;
+          font-size: 13.5px;
           font-weight: 600;
           color: #888;
           margin-left: 10px;
@@ -101,13 +97,21 @@ const Container = styled.div`
   }
 `;
 
+const LogoImg = styled.img`
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+`;
+
 const Sidebar = () => {
   return (
     <Container>
       <div className="sidebar">
         <div className="top">
           <Link to="/" style={{ textDecoration: 'none' }}>
-            <span className="logo">CovidCheckToday</span>
+            <LogoImg src={Logo} />
           </Link>
         </div>
         <hr />
