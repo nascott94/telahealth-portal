@@ -52,7 +52,7 @@ const Records = () => {
           <Navbar></Navbar>
           <RightMain>
             <RightMainTop></RightMainTop>
-            <RightMainBottom></RightMainBottom>>
+            <RightMainBottom></RightMainBottom>
           </RightMain>
         </RightContainer>
       </Container>

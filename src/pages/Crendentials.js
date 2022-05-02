@@ -30,6 +30,17 @@ const RightMain = styled.div`
   background-color: blue;
 `;
 
+const RightMainTop = styled.div`
+  height: 20%;
+  width: 100vw;
+  background-color: blue;
+`;
+const RightMainBottom = styled.div`
+  height: 80%;
+  width: 100vw;
+  background-color: black;
+`;
+
 const Crendentials = () => {
   return (
     <>
@@ -39,7 +50,10 @@ const Crendentials = () => {
         </LeftContainer>
         <RightContainer>
           <Navbar></Navbar>
-          <RightMain></RightMain>
+          <RightMain>
+            <RightMainTop></RightMainTop>
+            <RightMainBottom></RightMainBottom>
+          </RightMain>
         </RightContainer>
       </Container>
     </>
