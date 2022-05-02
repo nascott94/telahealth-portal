@@ -1,9 +1,9 @@
-import React from "react";
-import Sidebar from "../components/homepage/Sidebar";
-import Navbar from "../components/homepage/Navbar";
-import Widget from "../components/homepage/Widget";
-import Featured from "../components/homepage/Featured";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import Sidebar from '../components/homepage/Sidebar';
+import Navbar from '../components/homepage/Navbar';
+import Dashboard from '../components/homepage/Dashboard';
+import HealthPass from '../components/homepage/HealthPass';
 
 const Container = styled.div`
   height: 100vh;
@@ -28,14 +28,14 @@ const RestofPageContainer = styled.div`
   flex-direction: column;
 `;
 
-const WidgetContainer = styled.div`
-  height: 30%;
+const DashboardContainer = styled.div`
+  height: 50%;
   width: 100%;
   background-color: white;
 `;
 
-const FeaturedContainer = styled.div`
-  height: 60%;
+const HealthPassContainer = styled.div`
+  height: 50%;
   width: 100%;
   background-color: white;
 `;
@@ -57,12 +57,12 @@ const Home = () => {
           <NavbarContainer>
             <Navbar />
           </NavbarContainer>
-          <WidgetContainer>
-            <Widget />
-          </WidgetContainer>
-          <FeaturedContainer>
-            <Featured />
-          </FeaturedContainer>
+          <DashboardContainer>
+            <Dashboard />
+          </DashboardContainer>
+          <HealthPassContainer>
+            <HealthPass />
+          </HealthPassContainer>
         </RestofPageContainer>
       </Container>
       <FooterContainer></FooterContainer>
