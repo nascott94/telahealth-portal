@@ -1,9 +1,9 @@
-import React from 'react';
-import Sidebar from '../components/Sidebar';
-import Navbar from '../components/Navbar';
-import Widget from '../components/Widget';
-import Featured from '../components/Featured';
-import styled from 'styled-components';
+import React from "react";
+import Sidebar from "../components/homepage/Sidebar";
+import Navbar from "../components/homepage/Navbar";
+import Widget from "../components/homepage/Widget";
+import Featured from "../components/homepage/Featured";
+import styled from "styled-components";
 
 const Container = styled.div`
   height: 100vh;

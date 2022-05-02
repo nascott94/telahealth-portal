@@ -1,17 +1,17 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import Logo from '../media/logo.png';
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import InsertChartIcon from '@mui/icons-material/InsertChart';
-import SettingsSystemDaydreamOutlinedIcon from '@mui/icons-material/SettingsSystemDaydreamOutlined';
-import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
-import ExitToAppIcon from '@mui/icons-material/ExitToApp';
-import MessageIcon from '@mui/icons-material/Message';
-import ArticleIcon from '@mui/icons-material/Article';
-import EventIcon from '@mui/icons-material/Event';
-import VaccinesIcon from '@mui/icons-material/Vaccines';
-import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import Logo from "../../media/logo.png";
+import DashboardIcon from "@mui/icons-material/Dashboard";
+import InsertChartIcon from "@mui/icons-material/InsertChart";
+import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import ExitToAppIcon from "@mui/icons-material/ExitToApp";
+import MessageIcon from "@mui/icons-material/Message";
+import ArticleIcon from "@mui/icons-material/Article";
+import EventIcon from "@mui/icons-material/Event";
+import VaccinesIcon from "@mui/icons-material/Vaccines";
+import MedicalServicesIcon from "@mui/icons-material/MedicalServices";
 
 const Container = styled.div`
   .sidebar {
@@ -110,7 +110,7 @@ const Sidebar = () => {
     <Container>
       <div className="sidebar">
         <div className="top">
-          <Link to="/" style={{ textDecoration: 'none' }}>
+          <Link to="/" style={{ textDecoration: "none" }}>
             <LogoImg src={Logo} />
           </Link>
         </div>
@@ -124,13 +124,13 @@ const Sidebar = () => {
               <span>Messages</span>
             </li>
 
-            <Link to="/" style={{ textDecoration: 'none' }}>
+            <Link to="/" style={{ textDecoration: "none" }}>
               <li>
                 <EventIcon className="icon" />
                 <span>Appointments</span>
               </li>
             </Link>
-            <Link to="/" style={{ textDecoration: 'none' }}>
+            <Link to="/" style={{ textDecoration: "none" }}>
               <li>
                 <ArticleIcon className="icon" />
                 <span>Records</span>
