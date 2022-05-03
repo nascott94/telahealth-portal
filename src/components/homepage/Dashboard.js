@@ -35,7 +35,7 @@ const TopContainer = styled.div`
       justify-content: space-between;
       padding-right: 30px;
 
-      .button {
+      .appt-button {
         width: 100%;
         height: 80%;
         padding: 17px;
@@ -69,6 +69,44 @@ const BottomContainer = styled.div`
         color: rgb(160, 160, 160);
         margin-top: 5px;
       }
+
+      .appointments {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+
+        .view-button {
+          /* margin-left: auto; */
+          justify-content: space-between;
+        }
+
+        .appt-box {
+          -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+          box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+          border-radius: 10px;
+          width: 100%;
+          height: 75px;
+        }
+      }
+
+      .test-results {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+
+        .view-button {
+          /* margin-left: auto; */
+          justify-content: space-between;
+        }
+
+        .test-box {
+          -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+          box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+          border-radius: 10px;
+          width: 100%;
+          height: 75px;
+        }
+      }
     }
 
     .right {
@@ -97,7 +135,7 @@ const Dashboard = () => {
             <span className="sub-title">Welcome to the Patient Dashboard</span>
           </div>
           <div className="right">
-            <button className="button">Make Appointment</button>
+            <button className="appt-button">Make Appointment</button>
           </div>
         </div>
       </TopContainer>
@@ -106,7 +144,16 @@ const Dashboard = () => {
           <div className="left">
             <div className="title">Hello Olive</div>
             <div className="sub-title">Welcome to your dashboard</div>
-            <div>Today's Appointments</div>
+            <div className="appointments">
+              <div>Today's appointments and registations</div>
+              <button className="view-button">View All</button>
+              <div className="appt-box">None Today</div>
+            </div>
+            <div className="test-results">
+              <div>Today's appointments and registations</div>
+              <button className="view-button">View All</button>
+              <div className="test-box">None Today</div>
+            </div>
           </div>
           <div className="right">
             <select name="patient" className="patient">
