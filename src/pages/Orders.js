@@ -26,18 +26,18 @@ const RightContainer = styled.div`
 
 const RightMain = styled.div`
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: blue;
 `;
 
 const RightMainTop = styled.div`
   height: 20%;
-  width: 100vw;
+  width: 100%;
   background-color: blue;
 `;
 const RightMainBottom = styled.div`
   height: 80%;
-  width: 100vw;
+  width: 100%;
   background-color: black;
 `;
 

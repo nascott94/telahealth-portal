@@ -26,21 +26,58 @@ const RightContainer = styled.div`
 
 const RightMain = styled.div`
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: white;
   display: flex;
   flex-direction: column;
 `;
 
 const RightMainTop = styled.div`
-  height: 20%;
-  width: 100vw;
+  height: 15%;
+  width: 100%;
   background-color: blue;
+  display: flex;
 `;
+
+const RightMainTopLeft = styled.div`
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5px;
+`;
+
+const RightMainTopRight = styled.div`
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 18px;
+`;
+
 const RightMainBottom = styled.div`
-  height: 80%;
-  width: 100vw;
+  height: 85%;
+  width: 100%;
   background-color: black;
+`;
+
+const Button = styled.div`
+  width: 30%;
+  height: 10%;
+  padding: 17px;
+  background-color: orange;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 `;
 
 const Appointments = () => {
@@ -53,7 +90,18 @@ const Appointments = () => {
         <RightContainer>
           <Navbar></Navbar>
           <RightMain>
-            <RightMainTop></RightMainTop>
+            <RightMainTop>
+              <RightMainTopLeft>
+                <h1>Appointments</h1>
+                <h5>
+                  Welcome to your appointment dashboard. All appointments are
+                  listed below.
+                </h5>
+              </RightMainTopLeft>
+              <RightMainTopRight>
+                <Button>Appointment Calendar</Button>
+              </RightMainTopRight>
+            </RightMainTop>
             <RightMainBottom></RightMainBottom>
           </RightMain>
         </RightContainer>
