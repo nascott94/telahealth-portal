@@ -51,7 +51,9 @@ const TopContainer = styled.div`
 const BottomContainer = styled.div`
   .dashboard-bottom {
     display: flex;
+    justify-content: space-between;
     padding: 10px;
+    padding-top: 25px;
     width: 90%;
 
     .left {
@@ -73,6 +75,14 @@ const BottomContainer = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
+      .patient {
+        font-size: 15px;
+        padding: 10px 100px 10px 20px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+      }
     }
   }
 `;
@@ -94,13 +104,17 @@ const Dashboard = () => {
       <BottomContainer>
         <div className="dashboard-bottom">
           <div className="left">
-            <div className="title">Hello Natalie</div>
+            <div className="title">Hello Olive</div>
             <div className="sub-title">Welcome to your dashboard</div>
+            <div>Today's Appointments</div>
           </div>
           <div className="right">
-            <select name="patient">
-              <option value="" selected="selected">
-                Please select subject first
+            <select name="patient" className="patient">
+              <option value="1" selected="selected">
+                Olive Scott (self)
+              </option>
+              <option value="2" selected="selected">
+                Leo Scott
               </option>
             </select>
           </div>
