@@ -11,11 +11,6 @@ const Container = styled.div`
   display: flex;
 `;
 
-const NavbarContainer = styled.div`
-  height: 10%;
-  width: 100%;
-`;
-
 const SidebarConatiner = styled.div`
   height: 100vh;
   width: 20%;
@@ -28,14 +23,19 @@ const RestofPageContainer = styled.div`
   flex-direction: column;
 `;
 
+const NavbarContainer = styled.div`
+  height: 10%;
+  width: 100%;
+`;
+
 const DashboardContainer = styled.div`
-  height: 50%;
+  height: 60%;
   width: 100%;
   background-color: white;
 `;
 
 const HealthPassContainer = styled.div`
-  height: 50%;
+  height: 40%;
   width: 100%;
   background-color: white;
 `;
