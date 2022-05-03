@@ -47,6 +47,9 @@ const RightMainTopLeft = styled.div`
   flex-direction: column;
   justify-content: center;
   padding-left: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #999;
 `;
 
 const RightMainTopRight = styled.div`
@@ -92,7 +95,7 @@ const Appointments = () => {
           <RightMain>
             <RightMainTop>
               <RightMainTopLeft>
-                <h1>Appointments</h1>
+                <h3>Appointments</h3>
                 <h5>
                   Welcome to your appointment dashboard. All appointments are
                   listed below.
