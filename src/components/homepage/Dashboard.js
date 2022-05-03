@@ -51,19 +51,28 @@ const TopContainer = styled.div`
 const BottomContainer = styled.div`
   .dashboard-bottom {
     display: flex;
-    flex-direction: column;
     padding: 10px;
     width: 90%;
-    /* height: 75px; */
-    .title {
-      font-weight: bold;
-      font-size: 35px;
-      color: black;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      .title {
+        font-weight: bold;
+        font-size: 35px;
+        color: black;
+      }
+      .sub-title {
+        font-size: 20px;
+        color: rgb(160, 160, 160);
+        margin-top: 5px;
+      }
     }
-    .sub-title {
-      font-size: 20px;
-      color: rgb(160, 160, 160);
-      margin-top: 5px;
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
 `;
@@ -84,8 +93,17 @@ const Dashboard = () => {
       </TopContainer>
       <BottomContainer>
         <div className="dashboard-bottom">
-          <div className="title">Hello Natalie</div>
-          <div className="sub-title">Welcome to your dashboard</div>
+          <div className="left">
+            <div className="title">Hello Natalie</div>
+            <div className="sub-title">Welcome to your dashboard</div>
+          </div>
+          <div className="right">
+            <select name="patient">
+              <option value="" selected="selected">
+                Please select subject first
+              </option>
+            </select>
+          </div>
         </div>
       </BottomContainer>
     </>
