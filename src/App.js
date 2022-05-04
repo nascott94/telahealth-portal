@@ -1,16 +1,16 @@
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import NewUser from "./pages/NewUser";
-import Messages from "./pages/Messages";
-import Appointments from "./pages/Appointments";
-import Records from "./pages/Records";
-import Credentials from "./pages/Crendentials";
-import Vaccinations from "./pages/Vaccinations";
-import ProgramsMemberships from "./pages/ProgramsMembership";
-import ProductServices from "./pages/ProductServices";
-import Orders from "./pages/Orders";
+import Home from './pages/Home';
+import Login from './pages/Login';
+import NewUser from './pages/NewUser';
+import Messages from './pages/Messages';
+import Appointments from './pages/Appointments';
+import Records from './pages/Records';
+import Credentials from './pages/Crendentials';
+import Vaccinations from './pages/Vaccinations';
+import ProgramsMemberships from './pages/ProgramsMembership';
+import ProductServices from './pages/ProductServices';
+import Orders from './pages/Orders';
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
