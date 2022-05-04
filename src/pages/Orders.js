@@ -31,14 +31,54 @@ const RightMain = styled.div`
 `;
 
 const RightMainTop = styled.div`
-  height: 20%;
+  height: 15%;
   width: 100%;
   background-color: blue;
+  display: flex;
 `;
+
+const RightMainTopLeft = styled.div`
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #999;
+`;
+
+const RightMainTopRight = styled.div`
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 18px;
+`;
+
 const RightMainBottom = styled.div`
-  height: 80%;
+  height: 85%;
   width: 100%;
   background-color: black;
+`;
+
+const Button = styled.div`
+  width: 30%;
+  height: 10%;
+  padding: 17px;
+  background-color: orange;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 `;
 
 const Orders = () => {
@@ -51,7 +91,15 @@ const Orders = () => {
         <RightContainer>
           <Navbar></Navbar>
           <RightMain>
-            <RightMainTop></RightMainTop>
+            <RightMainTop>
+              <RightMainTopLeft>
+                <h3>Receipt</h3>
+                <h5>Receipt</h5>
+              </RightMainTopLeft>
+              <RightMainTopRight>
+                <Button>Select Orders</Button>
+              </RightMainTopRight>
+            </RightMainTop>
             <RightMainBottom></RightMainBottom>
           </RightMain>
         </RightContainer>

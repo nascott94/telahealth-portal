@@ -27,16 +27,42 @@ const RightContainer = styled.div`
 const RightMain = styled.div`
   height: 100vh;
   width: 100vw;
-  background-color: blue;
+  background-color: white;
 `;
 
 const RightMainTop = styled.div`
-  height: 20%;
+  height: 15%;
   width: 100vw;
   background-color: blue;
+  display: flex;
 `;
+
+const RightMainTopLeft = styled.div`
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #999;
+`;
+
+const RightMainTopRight = styled.div`
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 18px;
+`;
+
 const RightMainBottom = styled.div`
-  height: 80%;
+  height: 85%;
   width: 100vw;
   background-color: black;
 `;
@@ -51,7 +77,13 @@ const ProgramsMembership = () => {
         <RightContainer>
           <Navbar></Navbar>
           <RightMain>
-            <RightMainTop></RightMainTop>
+            <RightMainTop>
+              <RightMainTopLeft>
+                <h3>Programs and Memberships</h3>
+                <h5>Manage AZOVA Programs/Memberships</h5>
+              </RightMainTopLeft>
+              <RightMainTopRight></RightMainTopRight>
+            </RightMainTop>
             <RightMainBottom></RightMainBottom>
           </RightMain>
         </RightContainer>

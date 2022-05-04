@@ -34,11 +34,51 @@ const RightMainTop = styled.div`
   height: 15%;
   width: 100%;
   background-color: blue;
+  display: flex;
 `;
+
+const RightMainTopLeft = styled.div`
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #999;
+`;
+
+const RightMainTopRight = styled.div`
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 18px;
+`;
+
 const RightMainBottom = styled.div`
   height: 85%;
   width: 100%;
   background-color: black;
+`;
+
+const Button = styled.div`
+  width: 30%;
+  height: 10%;
+  padding: 17px;
+  background-color: orange;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 `;
 
 const Vaccinations = () => {
@@ -51,7 +91,14 @@ const Vaccinations = () => {
         <RightContainer>
           <Navbar></Navbar>
           <RightMain>
-            <RightMainTop></RightMainTop>
+            <RightMainTop>
+              <RightMainTopLeft>
+                <h3>Create Your Online Vaccination Record</h3>
+              </RightMainTopLeft>
+              <RightMainTopRight>
+                <Button>Vacination Button</Button>
+              </RightMainTopRight>
+            </RightMainTop>
             <RightMainBottom></RightMainBottom>
           </RightMain>
         </RightContainer>
