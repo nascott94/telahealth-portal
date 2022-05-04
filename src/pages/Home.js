@@ -13,12 +13,12 @@ const Container = styled.div`
 
 const SidebarConatiner = styled.div`
   height: 100vh;
-  width: 20%;
+  width: 15%;
 `;
 
 const RestofPageContainer = styled.div`
   height: 100%;
-  width: 80%;
+  width: 85%;
   display: flex;
   flex-direction: column;
 `;

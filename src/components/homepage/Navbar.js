@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { Link } from 'react-router-dom';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
@@ -15,6 +16,7 @@ const Container = styled.div`
     align-items: center;
     font-size: 14px;
     color: #555;
+    background-color: #c8edfd;
 
     .wrapper {
       width: 100%;
@@ -68,7 +70,7 @@ const Container = styled.div`
           position: relative;
 
           .name {
-            padding-right: 7px;
+            padding-right: 2px;
           }
 
           .icon {
@@ -96,6 +98,45 @@ const Container = styled.div`
             top: -5px;
             right: -5px;
           }
+        }
+        .dropbtn {
+          color: #c8edfd;
+          padding: 16px;
+          border: none;
+        }
+
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          font-size: 13px;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+        }
+
+        .dropdown-content li {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+
+        .dropdown-content a:hover {
+          background-color: white;
+        }
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+          background-color: #c8edfd;
         }
       }
     }
@@ -135,16 +176,24 @@ const Navbar = () => {
             <div className="item">
               <div className="name">Olive Scott</div>
               <div className="dropdown">
-                <button className="dropbtn">
+                <div className="dropbtn">
                   <img
                     src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                     alt="pic"
                     className="avatar"
                   />
-                  <li>Link 1</li>
-                  <li>Link 2</li>
-                  <li>Link 3</li>
-                </button>
+                  <div className="dropdown-content">
+                    <Link to="/profile" style={{ textDecoration: 'none' }}>
+                      <li>Profile</li>
+                    </Link>
+                    <Link to="/settings" style={{ textDecoration: 'none' }}>
+                      <li>Settings</li>
+                    </Link>
+                    <Link to="/logout" style={{ textDecoration: 'none' }}>
+                      <li>Logout</li>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
