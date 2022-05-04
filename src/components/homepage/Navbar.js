@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
 import VideoCallRoundedIcon from '@mui/icons-material/VideoCallRounded';
+import FolderOpenIcon from '@mui/icons-material/FolderOpen';
+import AddBoxOutlinedIcon from '@mui/icons-material/AddBoxOutlined';
 
 const Container = styled.div`
   .navbar {
@@ -37,6 +38,23 @@ const Container = styled.div`
             font-size: 12px;
           }
         }
+
+        .compose-btn {
+          width: 100%;
+          height: 40px;
+          padding-left: 10px;
+          padding-right: 10px;
+          font-size: 12px;
+          background-color: orange;
+          border-radius: 10px;
+          border: none;
+          cursor: pointer;
+        }
+
+        .compose-icon {
+          font-size: 15px;
+          padding-right: 5px;
+        }
       }
 
       .items {
@@ -48,6 +66,10 @@ const Container = styled.div`
           align-items: center;
           margin-right: 20px;
           position: relative;
+
+          .name {
+            padding-right: 7px;
+          }
 
           .icon {
             font-size: 20px;
@@ -88,11 +110,15 @@ const Navbar = () => {
           <div className="search">
             <input type="text" placeholder="Search" />
             <SearchOutlinedIcon />
+            <button className="compose-btn">
+              <AddBoxOutlinedIcon className="compose-icon" />
+              Compose
+            </button>
           </div>
           <div className="items">
             <div className="item">
-              <LanguageOutlinedIcon className="icon" />
-              English
+              <FolderOpenIcon className="icon" />
+              PDFs
             </div>
             <div className="item">
               <VideoCallRoundedIcon className="icon" />
@@ -107,12 +133,19 @@ const Navbar = () => {
               <div className="counter">2</div>
             </div>
             <div className="item">
-              Olive Scott
-              <img
-                src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                alt="pic"
-                className="avatar"
-              />
+              <div className="name">Olive Scott</div>
+              <div className="dropdown">
+                <button className="dropbtn">
+                  <img
+                    src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt="pic"
+                    className="avatar"
+                  />
+                  <li>Link 1</li>
+                  <li>Link 2</li>
+                  <li>Link 3</li>
+                </button>
+              </div>
             </div>
           </div>
         </div>
