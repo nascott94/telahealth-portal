@@ -21,6 +21,7 @@ const Container = styled.div`
     background-color: white;
     .top {
       height: 70px;
+      background-color: #c8edfd;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -43,7 +44,7 @@ const Container = styled.div`
       .title {
         font-size: 13px;
         font-weight: bold;
-        color: #999;
+        color: #888;
         margin-top: 15px;
         margin-bottom: 5px;
       }
@@ -52,6 +53,7 @@ const Container = styled.div`
         display: flex;
         align-items: center;
         padding: 9px;
+        color: white;
         cursor: pointer;
         &:hover {
           background-color: #d3d3d3;
@@ -59,7 +61,7 @@ const Container = styled.div`
 
         .icon {
           font-size: 18px;
-          color: #6fd0fa;
+          color: #72d2fb;
         }
         span {
           font-size: 13.5px;
@@ -67,31 +69,6 @@ const Container = styled.div`
           color: #888;
           margin-left: 10px;
         }
-      }
-    }
-  }
-
-  .bottom {
-    display: flex;
-    align-items: center;
-    margin: 10px;
-
-    .colorOption {
-      width: 20px;
-      height: 20px;
-      border-radius: 5px;
-      border: 1px solid #7451f8;
-      cursor: pointer;
-      margin: 5px;
-
-      &:nth-child(1) {
-        background-color: whitesmoke;
-      }
-      &:nth-child(2) {
-        background-color: #333;
-      }
-      &:nth-child(3) {
-        background-color: darkblue;
       }
     }
   }
@@ -167,7 +144,7 @@ const Sidebar = () => {
               </li>
             </Link>
             <br />
-            <p className="title">USER</p>
+            <p className="title">User</p>
             <Link to="/profile" style={{ textDecoration: 'none' }}>
               <li>
                 <AccountCircleOutlinedIcon className="icon" />
@@ -182,7 +159,6 @@ const Sidebar = () => {
             </Link>
           </ul>
         </div>
-        <div className="bottom"></div>
       </div>
     </Container>
   );
