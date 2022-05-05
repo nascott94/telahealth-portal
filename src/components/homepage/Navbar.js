@@ -6,12 +6,13 @@ import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNone
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
 import VideoCallRoundedIcon from '@mui/icons-material/VideoCallRounded';
 import FolderOpenIcon from '@mui/icons-material/FolderOpen';
-import AddBoxOutlinedIcon from '@mui/icons-material/AddBoxOutlined';
+// import AddBoxOutlinedIcon from '@mui/icons-material/AddBoxOutlined';
 
 const Container = styled.div`
   .navbar {
     height: 70px;
-    border: 0.5px solid rgb(231, 228, 228);
+    width: 100%;
+    border-bottom: 0.5px solid rgb(231, 228, 228);
     display: flex;
     align-items: center;
     font-size: 14px;
@@ -41,23 +42,23 @@ const Container = styled.div`
             font-size: 12px;
           }
         }
+      }
+      .compose-btn {
+        width: 100%;
+        height: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 30px;
+        font-size: 12px;
+        background-color: orange;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+      }
 
-        .compose-btn {
-          width: 100%;
-          height: 40px;
-          padding-left: 10px;
-          padding-right: 10px;
-          font-size: 12px;
-          background-color: orange;
-          border-radius: 10px;
-          border: none;
-          cursor: pointer;
-        }
-
-        .compose-icon {
-          font-size: 15px;
-          padding-right: 5px;
-        }
+      .compose-icon {
+        font-size: 15px;
+        padding-right: 5px;
       }
 
       .items {
@@ -101,7 +102,7 @@ const Container = styled.div`
           }
         }
         .dropbtn {
-          color: #c8edfd;
+          color: transparent;
           padding: 16px;
           border: none;
         }
@@ -137,7 +138,7 @@ const Container = styled.div`
         }
 
         .dropdown:hover .dropbtn {
-          background-color: #c8edfd;
+          background-color: transparent;
         }
       }
     }
@@ -153,8 +154,8 @@ const Navbar = () => {
             <input type="text" placeholder="Search" />
             <SearchOutlinedIcon />
             <button className="compose-btn">
-              <AddBoxOutlinedIcon className="compose-icon" />
-              Compose
+              {/* <AddBoxOutlinedIcon className="compose-icon" /> */}+ Compose
+              New Message
             </button>
           </div>
           <div className="items">
