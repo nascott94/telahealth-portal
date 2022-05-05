@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import Navbar from "../components/homepage/Navbar";
-import Sidebar from "../components/homepage/Sidebar";
+import React from 'react';
+import styled from 'styled-components';
+import Navbar from '../components/homepage/Navbar';
+import Sidebar from '../components/homepage/Sidebar';
 
 const Container = styled.div`
   height: 100vh;
@@ -42,7 +42,7 @@ const RightMainTop = styled.div`
 const RightMainTopLeft = styled.div`
   height: 100%;
   width: 50%;
-  background-color: white;
+  background-color: #f6f8f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,22 +99,22 @@ const RightMainContentBoxTab = styled.div`
 const RightMainContentBoxOptionsContainter = styled.div`
   height: 15%;
   width: 100%;
-  background-color: grey;
+  background-color: #394052;
   display: flex;
 `;
 
 const RightMainContentBoxOptionsContainterLeft = styled.div`
   height: 15%;
   width: 70%;
-  background-color: grey;
+  background-color: #394052;
   display: flex;
   justify-content: space-between;
 `;
 
 const RightMainContentBoxOptionBox = styled.div`
-  height: 675%;
+  height: 650%;
   width: 18%;
-  background-color: white;
+  background-color: #394052;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,14 +123,14 @@ const RightMainContentBoxOptionBox = styled.div`
 const RightMainContentBoxOptionsContainterRight = styled.div`
   height: 15%;
   width: 30%;
-  background-color: grey;
+  background-color: #394052;
   display: flex;
   justify-content: flex-end;
   padding-right: 100px;
 `;
 
 const RightMainContentBoxAppointmentsBox = styled.div`
-  height: 370px;
+  height: 368px;
   width: 60%;
   background-color: white;
   border-radius: 10px;

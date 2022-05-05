@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-// import Logo from '../../media/logo.png';
+import Logo from '../../media/logo.png';
 import BlueLogo from '../../media/logo-blue.png';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import InsertChartIcon from '@mui/icons-material/InsertChart';
@@ -19,10 +19,10 @@ const Container = styled.div`
     flex: 1;
     border-right: 0.5px soild rgb(230, 227, 227);
     min-height: 100vh;
-    background-color: #c8edfd;
+    background-color: #ebf8ff;
     .top {
       height: 70px;
-      background-color: #c8edfd;
+      background-color: #ebf8ff;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -89,7 +89,7 @@ const Sidebar = () => {
       <div className="sidebar">
         <div className="top">
           <Link to="/" style={{ textDecoration: 'none' }}>
-            <LogoImg src={BlueLogo} />
+            <LogoImg src={Logo} />
           </Link>
         </div>
         <hr />
