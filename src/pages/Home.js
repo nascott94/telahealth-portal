@@ -31,12 +31,15 @@ const NavbarContainer = styled.div`
 const DashboardContainer = styled.div`
   height: 60%;
   width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
   background-color: white;
 `;
 
 const HealthPassContainer = styled.div`
   height: 40%;
   width: 100%;
+  padding-left: 20px;
   background-color: white;
 `;
 
