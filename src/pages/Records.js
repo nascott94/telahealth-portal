@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import Navbar from '../components/homepage/Navbar';
-import Sidebar from '../components/homepage/Sidebar';
+import React from "react";
+import styled from "styled-components";
+import Navbar from "../components/homepage/Navbar";
+import Sidebar from "../components/homepage/Sidebar";
 
 const Container = styled.div`
   height: 100vh;
@@ -26,13 +26,13 @@ const RightContainer = styled.div`
 
 const RightMain = styled.div`
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: blue;
 `;
 
 const RightMainTop = styled.div`
   height: 15%;
-  width: 100vw;
+  width: 100%;
   background-color: white;
   display: flex;
 `;
@@ -63,8 +63,77 @@ const RightMainTopRight = styled.div`
 
 const RightMainBottom = styled.div`
   height: 85%;
-  width: 100vw;
+  width: 100%;
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const RightMainBottomMainTabs = styled.div`
+  width: 85%;
+  height: 7%;
+  background: grey;
+`;
+
+const RightMainBottomContainer = styled.div`
+  height: 65%;
+  width: 85%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+
+const RightMainBottomSubContainer = styled.div`
+  height: 75%;
+  width: 85%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const RightMainBottomSubTabs = styled.div`
+  width: 100%;
+  height: 10%;
+  background: grey;
+`;
+
+const RightMainBottomSubContainerTwo = styled.div`
+  height: 75%;
+  width: 85%;
+  background-color: pink;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+`;
+
+const SubContainerTwoSection1 = styled.div`
+  height: 20%;
+  width: 100%;
+`;
+
+const SubContainerTwoSection2 = styled.div`
+  height: 20%;
+  width: 100%;
+`;
+
+const SubContainerTwoSection3 = styled.div`
+  height: 20%;
+  width: 100%;
+`;
+
+const SubContainerTwoSection4 = styled.div`
+  height: 20%;
+  width: 100%;
+`;
+
+const SubContainerTwoSection5 = styled.div`
+  height: 20%;
+  width: 100%;
 `;
 
 const Records = () => {
@@ -84,7 +153,15 @@ const Records = () => {
               </RightMainTopLeft>
               <RightMainTopRight></RightMainTopRight>
             </RightMainTop>
-            <RightMainBottom></RightMainBottom>
+            <RightMainBottom>
+              <RightMainBottomMainTabs>Main Tabs</RightMainBottomMainTabs>
+              <RightMainBottomContainer>
+                <RightMainBottomSubContainer>
+                  <RightMainBottomSubTabs></RightMainBottomSubTabs>
+                  <RightMainBottomSubContainerTwo></RightMainBottomSubContainerTwo>
+                </RightMainBottomSubContainer>
+              </RightMainBottomContainer>
+            </RightMainBottom>
           </RightMain>
         </RightContainer>
       </Container>
