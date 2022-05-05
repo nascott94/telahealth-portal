@@ -19,7 +19,7 @@ const Container = styled.div`
     flex: 1;
     border-right: 0.5px soild rgb(230, 227, 227);
     min-height: 100vh;
-    background-color: white;
+    background-color: #c8edfd;
     .top {
       height: 70px;
       background-color: #c8edfd;
@@ -67,7 +67,7 @@ const Container = styled.div`
         span {
           font-size: 13.5px;
           font-weight: 600;
-          color: #888;
+          color: black;
           margin-left: 10px;
         }
       }
