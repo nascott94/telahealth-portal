@@ -29,7 +29,7 @@ const NavbarContainer = styled.div`
 `;
 
 const DashboardContainer = styled.div`
-  height: 60%;
+  height: 50%;
   width: 100%;
   padding-top: 20px;
   padding-left: 20px;
@@ -37,16 +37,17 @@ const DashboardContainer = styled.div`
 `;
 
 const HealthPassContainer = styled.div`
-  height: 40%;
+  height: 50%;
   width: 100%;
+  padding-top: 40px;
   padding-left: 20px;
   background-color: white;
 `;
 
 const FooterContainer = styled.div`
-  height: 50px;
+  height: 20px;
   width: 100%;
-  background-color: red;
+  background-color: blue;
 `;
 
 const Home = () => {
@@ -60,12 +61,8 @@ const Home = () => {
           <NavbarContainer>
             <Navbar />
           </NavbarContainer>
-          <DashboardContainer>
-            <Dashboard />
-          </DashboardContainer>
-          <HealthPassContainer>
-            <HealthPass />
-          </HealthPassContainer>
+          <Dashboard />
+          <HealthPass />
         </RestofPageContainer>
       </Container>
       <FooterContainer></FooterContainer>
