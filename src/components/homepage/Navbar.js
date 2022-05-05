@@ -11,7 +11,7 @@ import AddBoxOutlinedIcon from '@mui/icons-material/AddBoxOutlined';
 const Container = styled.div`
   .navbar {
     height: 70px;
-    border-bottom: 0.5px solid rgb(231, 228, 228);
+    border: 0.5px solid rgb(231, 228, 228);
     display: flex;
     align-items: center;
     font-size: 14px;
@@ -29,6 +29,7 @@ const Container = styled.div`
         display: flex;
         align-items: center;
         border: 0.5px soild lightgrey;
+        border-radius: 10px;
         padding: 3px;
 
         input {
