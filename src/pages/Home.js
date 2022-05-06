@@ -6,7 +6,7 @@ import Dashboard from '../components/homepage/Dashboard';
 import HealthPass from '../components/homepage/HealthPass';
 
 const Container = styled.div`
-  height: 100vh;
+  height: 1000px;
   width: 100%;
   display: flex;
 `;

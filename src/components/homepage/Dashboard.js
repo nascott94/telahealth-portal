@@ -32,7 +32,7 @@ const TopContainer = styled.div`
     .right {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;e
+      justify-content: space-between;
       padding-right: 30px;
 
       .appt-button {
