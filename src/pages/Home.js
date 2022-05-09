@@ -4,6 +4,7 @@ import Sidebar from '../components/homepage/Sidebar';
 import Navbar from '../components/homepage/Navbar';
 import Dashboard from '../components/homepage/Dashboard';
 import HealthPass from '../components/homepage/HealthPass';
+import Footer from '../components/homepage/Footer';
 
 const Container = styled.div`
   height: 1000px;
@@ -29,7 +30,7 @@ const NavbarContainer = styled.div`
 `;
 
 const DashboardContainer = styled.div`
-  height: 50%;
+  height: 60%;
   width: 100%;
   padding-top: 20px;
   padding-left: 20px;
@@ -37,7 +38,7 @@ const DashboardContainer = styled.div`
 `;
 
 const HealthPassContainer = styled.div`
-  height: 50%;
+  height: 40%;
   width: 100%;
   padding-top: 40px;
   padding-left: 20px;
@@ -47,7 +48,6 @@ const HealthPassContainer = styled.div`
 const FooterContainer = styled.div`
   height: 20px;
   width: 100%;
-  background-color: blue;
 `;
 
 const Home = () => {
@@ -61,11 +61,17 @@ const Home = () => {
           <NavbarContainer>
             <Navbar />
           </NavbarContainer>
-          <Dashboard />
-          <HealthPass />
+          <DashboardContainer>
+            <Dashboard />
+          </DashboardContainer>
+          <HealthPassContainer>
+            <HealthPass />
+          </HealthPassContainer>
         </RestofPageContainer>
       </Container>
-      <FooterContainer></FooterContainer>
+      <FooterContainer>
+        <Footer />
+      </FooterContainer>
     </>
   );
 };
