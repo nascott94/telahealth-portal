@@ -18,7 +18,7 @@ const Container = styled.div`
   .sidebar {
     flex: 1;
     border-right: 0.5px soild rgb(230, 227, 227);
-    min-height: 100vh;
+    height: 1000px;
     background-color: #ebf8ff;
     .top {
       height: 70px;

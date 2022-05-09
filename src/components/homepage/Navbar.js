@@ -105,6 +105,7 @@ const Container = styled.div`
           color: transparent;
           padding: 16px;
           border: none;
+          cursor: pointer;
         }
 
         .dropdown {

@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import QrCode from '../../media/frame.png';
+import CloseIcon from '@mui/icons-material/Close';
 
 const Container = styled.div`
-  height: 100%;
+  height: 98%;
   width: 40%;
   display: flex;
   justify-content: center;
@@ -14,7 +15,6 @@ const Container = styled.div`
 const HealthPassBox = styled.div`
   height: 100%;
   width: 100%;
-  padding-left: 20px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,8 @@ const HealthPassTop = styled.div`
   display: flex;
   height: 25%;
   width: 100%;
-  /* background-color: pink; */
+  padding-left: 15px;
+  padding-top: 10px;
 `;
 
 const HealthPassTopLeft = styled.div`
@@ -50,11 +51,13 @@ const HealthPassTopRight = styled.div`
 
   .name {
     font-size: 20px;
+    padding-left: 6px;
   }
 
   .credentials {
     font-size: 12px;
     padding-top: 2px;
+    padding-left: 6px;
   }
 
   button {
@@ -67,7 +70,7 @@ const HealthPassTopRight = styled.div`
 
 const HealthPassMiddle = styled.div`
   display: flex;
-  height: 50%;
+  height: 55%;
   width: 100%;
   background-color: white;
 `;
@@ -76,9 +79,9 @@ const HealthPassMiddleLeft = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 50%;
+  width: 60%;
   padding-top: 20px;
-  background-color: white;
+  padding-left: 15px;
 
   .title {
     color: grey;
@@ -90,6 +93,11 @@ const HealthPassMiddleLeft = styled.div`
   .info {
     padding-top: 5px;
     font-size: 15px;
+
+    .icon {
+      color: maroon;
+      // QUESTION FOR DAN
+    }
   }
 `;
 const HealthPassMiddleRight = styled.div`
@@ -97,22 +105,23 @@ const HealthPassMiddleRight = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 50%;
-  background-color: red;
+  width: 40%;
 `;
 
 const QRImg = styled.img`
-  width: 150px;
-  height: 40px;
+  width: 230px;
+  height: 230px;
   display: flex;
   align-items: center;
   padding-right: 20px;
+  padding-bottom: 20px;
 `;
 
 const HealthPassBottom = styled.div`
   display: flex;
-  height: 25%;
+  height: 20%;
   width: 100%;
+  border-top: 1px solid rgb(231, 228, 228);
 `;
 const HealthPassBottomLeft = styled.div`
   display: flex;
@@ -121,11 +130,19 @@ const HealthPassBottomLeft = styled.div`
   height: 100%;
   width: 50%;
   background-color: white;
+  border-right: 1px solid rgb(231, 228, 228);
 
   button {
     border: none;
+    width: 100%;
+    height: 100%;
     background-color: transparent;
     font-size: 15px;
+    cursor: pointer;
+    :hover {
+      background-color: #fafafa;
+      transition: 0.1s;
+    }
   }
 `;
 const HealthPassBottomRight = styled.div`
@@ -137,8 +154,15 @@ const HealthPassBottomRight = styled.div`
 
   button {
     border: none;
-    font-size: 15px;
+    width: 100%;
+    height: 100%;
     background-color: transparent;
+    font-size: 15px;
+    cursor: pointer;
+    :hover {
+      background-color: #fafafa;
+      transition: 0.1s;
+    }
   }
 `;
 
@@ -162,7 +186,14 @@ const HealthPass = () => {
         <HealthPassMiddle>
           <HealthPassMiddleLeft>
             <div className="title">COVID-19 Vaccinations</div>
-            <div className="info">Not Created(0) Confirmed Verified</div>
+            <div className="info">
+              Not Created(0)
+              <CloseIcon className="icon" />
+              Confirmed
+              <CloseIcon className="icon" />
+              Verified
+              <CloseIcon className="icon" />
+            </div>
             <div className="title">Days Since Negative COVID Test</div>
           </HealthPassMiddleLeft>
           <HealthPassMiddleRight>
