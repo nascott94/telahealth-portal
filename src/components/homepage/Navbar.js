@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { Link } from 'react-router-dom';
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
-import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
-import VideoCallRoundedIcon from '@mui/icons-material/VideoCallRounded';
-import FolderOpenIcon from '@mui/icons-material/FolderOpen';
+import React from "react";
+import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
+import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
+import VideoCallRoundedIcon from "@mui/icons-material/VideoCallRounded";
+import FolderOpenIcon from "@mui/icons-material/FolderOpen";
 // import AddBoxOutlinedIcon from '@mui/icons-material/AddBoxOutlined';
 
 const Container = styled.div`
@@ -186,13 +186,13 @@ const Navbar = () => {
                     className="avatar"
                   />
                   <div className="dropdown-content">
-                    <Link to="/profile" style={{ textDecoration: 'none' }}>
+                    <Link to="/profile" style={{ textDecoration: "none" }}>
                       <li>Profile</li>
                     </Link>
-                    <Link to="/settings" style={{ textDecoration: 'none' }}>
+                    <Link to="/settings" style={{ textDecoration: "none" }}>
                       <li>Settings</li>
                     </Link>
-                    <Link to="/logout" style={{ textDecoration: 'none' }}>
+                    <Link to="/logout" style={{ textDecoration: "none" }}>
                       <li>Logout</li>
                     </Link>
                   </div>

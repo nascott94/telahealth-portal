@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import Navbar from '../components/homepage/Navbar';
-import Sidebar from '../components/homepage/Sidebar';
+import React from "react";
+import styled from "styled-components";
+import Navbar from "../components/homepage/Navbar";
+import Sidebar from "../components/homepage/Sidebar";
 
 const Container = styled.div`
   height: 100vh;
@@ -65,6 +65,21 @@ const RightMainBottom = styled.div`
   height: 85%;
   width: 100%;
   background-color: black;
+`;
+
+const MainTop = styled.div`
+  height: 500px;
+  width: 100%;
+`;
+
+const MainMiddle = styled.div`
+  height: 500px;
+  width: 100%;
+`;
+
+const MainBottom = styled.div`
+  height: 500px;
+  width: 100%;
 `;
 
 const Button = styled.div`

@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import Navbar from '../components/homepage/Navbar';
-import Sidebar from '../components/homepage/Sidebar';
+import React from "react";
+import styled from "styled-components";
+import Navbar from "../components/homepage/Navbar";
+import Sidebar from "../components/homepage/Sidebar";
 
 const Container = styled.div`
   height: 100vh;
@@ -130,7 +130,7 @@ const RightMainContentBoxOptionsContainterRight = styled.div`
 `;
 
 const RightMainContentBoxAppointmentsBox = styled.div`
-  height: 368px;
+  height: 62%;
   width: 60%;
   background-color: white;
   border-radius: 10px;
