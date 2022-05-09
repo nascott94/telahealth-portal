@@ -192,7 +192,7 @@ const HealthPass = () => {
               Confirmed
               <CloseIcon className="icon" />
               Verified
-              <CloseIcon className="icon" />
+              <CloseIcon className="icons" />
             </div>
             <div className="title">Days Since Negative COVID Test</div>
           </HealthPassMiddleLeft>
