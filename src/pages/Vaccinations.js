@@ -72,13 +72,14 @@ const RightMainBottom = styled.div`
 `;
 
 const MainTop = styled.div`
-  height: 500px;
+  height: 400px;
   width: 100%;
   background-color: #eaedf1;
   display: flex;
   margin-top: 80px;
   justify-content: center;
   overflow: hidden;
+  margin-bottom: -100px;
 `;
 
 const MainTopContainer = styled.div`
@@ -186,28 +187,28 @@ const MainTopFooter = styled.div`
 `;
 
 const MainMiddle = styled.div`
-  height: 1000px;
+  height: 700px;
   width: 100%;
-  background-color: pink;
+  background-color: #eaedf1;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
 const MainMiddleTop = styled.div`
-  height: 10%;
+  height: 6%;
   width: 100%;
-  background-color: white;
+  background-color: #eaedf1;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
 const MainMiddleVacinesContainer = styled.div`
-  height: 70%;
+  height: 90%;
   width: 60%;
-  background-color: black;
-  margin-top: 80px;
+  background-color: #eaedf1;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   padding-left: 5px;
@@ -220,12 +221,14 @@ const MainMiddleVacinesBoxes = styled.div`
   background-color: white;
   border-radius: 5px;
   margin-top: 5px;
+  display: flex;
+  align-items: center;
 `;
 
 const MainBottom = styled.div`
-  height: 500px;
+  height: 400px;
   width: 100%;
-  background-color: white;
+  background-color: #eaedf1;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -233,9 +236,9 @@ const MainBottom = styled.div`
 `;
 
 const MainBottomTop = styled.div`
-  height: 15%;
+  height: 18%;
   width: 100%;
-  background-color: white;
+  background-color: #eaedf1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -245,8 +248,8 @@ const MainBottomTop = styled.div`
 const MainBottomTravelVacineContainer = styled.div`
   height: 50%;
   width: 60%;
-  background-color: black;
-  margin-top: 80px;
+  background-color: #eaedf1;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   padding-left: 5px;
@@ -349,23 +352,70 @@ const Vaccinations = () => {
                   <h3>Vaccines</h3>
                 </MainMiddleTop>
                 <MainMiddleVacinesContainer>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
+                  <MainMiddleVacinesBoxes>
+                    <h5>+</h5>
+                    <h5>Covid-19</h5>
+                  </MainMiddleVacinesBoxes>
+                  <MainMiddleVacinesBoxes>
+                    <h5>+</h5>
+                    <h5>Influenza</h5>
+                  </MainMiddleVacinesBoxes>
+                  <MainMiddleVacinesBoxes>
+                    <h5>+</h5>
+                    <h5>Diphtheria, Tetanus, Acellular Pertussis</h5>
+                  </MainMiddleVacinesBoxes>
+                  <MainMiddleVacinesBoxes>
+                    <h5>+</h5>
+                    <h5>Haemophilus Influenza Type b</h5>
+                  </MainMiddleVacinesBoxes>
+                  <MainMiddleVacinesBoxes>
+                    <h5>+</h5>
+                    <h5>Polio</h5>
+                  </MainMiddleVacinesBoxes>
+                  <MainMiddleVacinesBoxes>
+                    <h5>+</h5>
+                    <h5>Measles, Mumps and Rubella</h5>
+                  </MainMiddleVacinesBoxes>
+                  <MainMiddleVacinesBoxes>
+                    <h5>+</h5>
+                    <h5>Hepatitis A</h5>
+                  </MainMiddleVacinesBoxes>
+                  <MainMiddleVacinesBoxes>
+                    <h5>+</h5>
+                    <h5>Hepatitis B</h5>
+                  </MainMiddleVacinesBoxes>
+                  <MainMiddleVacinesBoxes>
+                    <h5>+</h5>
+                    <h5>Varicella</h5>
+                  </MainMiddleVacinesBoxes>
+                  <MainMiddleVacinesBoxes>
+                    <h5>+</h5>
+                    <h5>Rotavirus</h5>
+                  </MainMiddleVacinesBoxes>
+                  <MainMiddleVacinesBoxes>
+                    <h5>+</h5>
+                    <h5>Human Papillomavirus</h5>
+                  </MainMiddleVacinesBoxes>
+                  <MainMiddleVacinesBoxes>
+                    <h5>+</h5>
+                    <h5>Tetanus, Diphatheria, Pertussis</h5>
+                  </MainMiddleVacinesBoxes>
+                  <MainMiddleVacinesBoxes>
+                    <h5>+</h5>
+                    <h5>Pneumococcal</h5>
+                  </MainMiddleVacinesBoxes>
+                  <MainMiddleVacinesBoxes>
+                    <h5>+</h5>
+                    <h5>Meningococcal Groub B</h5>
+                  </MainMiddleVacinesBoxes>
+                  <MainMiddleVacinesBoxes>
+                    <h5>+</h5>
+                    <h5>Meningococcal Conjugate A, C, W, Y and CY</h5>
+                  </MainMiddleVacinesBoxes>
+                  <MainMiddleVacinesBoxes>
+                    <h5>+</h5>
+                    <h5>Zoster</h5>
+                  </MainMiddleVacinesBoxes>
                 </MainMiddleVacinesContainer>
               </MainMiddle>
               <MainBottom>
@@ -374,11 +424,26 @@ const Vaccinations = () => {
                   <h3>Vaccines</h3>
                 </MainBottomTop>
                 <MainBottomTravelVacineContainer>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
-                  <MainMiddleVacinesBoxes></MainMiddleVacinesBoxes>
+                  <MainMiddleVacinesBoxes>
+                    <h5>+</h5>
+                    <h5>Japaneses Encephalitis</h5>
+                  </MainMiddleVacinesBoxes>
+                  <MainMiddleVacinesBoxes>
+                    <h5>+</h5>
+                    <h5>Rabies</h5>
+                  </MainMiddleVacinesBoxes>
+                  <MainMiddleVacinesBoxes>
+                    <h5>+</h5>
+                    <h5>Typhoid Fever</h5>
+                  </MainMiddleVacinesBoxes>
+                  <MainMiddleVacinesBoxes>
+                    <h5>+</h5>
+                    <h5>Yellow Fever</h5>
+                  </MainMiddleVacinesBoxes>
+                  <MainMiddleVacinesBoxes>
+                    <h5>+</h5>
+                    <h5>Cholera</h5>
+                  </MainMiddleVacinesBoxes>
                 </MainBottomTravelVacineContainer>
               </MainBottom>
             </RightMainBottom>
