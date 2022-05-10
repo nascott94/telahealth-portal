@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 // import Logo from '../../media/logo.png';
-// import BlueLogo from '../../media/logo-blue.png';
+import BlueLogo from '../../media/logo-blue.png';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import InsertChartIcon from '@mui/icons-material/InsertChart';
 import SettingsSystemDaydreamOutlinedIcon from '@mui/icons-material/SettingsSystemDaydreamOutlined';
@@ -89,7 +89,7 @@ const Sidebar = () => {
       <div className="sidebar">
         <div className="top">
           <Link to="/" style={{ textDecoration: 'none' }}>
-            {/* <LogoImg src={BlueLogo} /> */}
+            <LogoImg src={BlueLogo} />
           </Link>
         </div>
         <hr />
