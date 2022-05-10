@@ -4,20 +4,20 @@ import Navbar from "../components/homepage/Navbar";
 import Sidebar from "../components/homepage/Sidebar";
 
 const Container = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   display: flex;
   flex-direction: row;
 `;
 
 const LeftContainer = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 15%;
   background-color: blue;
 `;
 
 const RightContainer = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 85%;
   background-color: white;
   display: flex;
@@ -25,26 +25,30 @@ const RightContainer = styled.div`
 `;
 
 const RightMain = styled.div`
-  height: 100vh;
-  width: 100%;
-  background-color: blue;
-`;
-
-const RightMainTop = styled.div`
-  height: 15%;
+  height: 100%;
   width: 100%;
   background-color: blue;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const RightMainTop = styled.div`
+  height: 140px;
+  width: 100%;
+  background-color: #f6f8f8;
+  display: flex;
+  overflow: hidden;
 `;
 
 const RightMainTopLeft = styled.div`
   height: 100%;
   width: 50%;
-  background-color: white;
+  background-color: #f6f8f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 5px;
+  padding-left: 19px;
   font-size: 18px;
   font-weight: bold;
   color: #999;
@@ -53,7 +57,7 @@ const RightMainTopLeft = styled.div`
 const RightMainTopRight = styled.div`
   height: 100%;
   width: 50%;
-  background-color: white;
+  background-color: #f6f8f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,21 +68,34 @@ const RightMainTopRight = styled.div`
 const RightMainBottom = styled.div`
   height: 85%;
   width: 100%;
-  background-color: black;
+  background-color: #eaedf1;
 `;
 
 const MainTop = styled.div`
-  height: 400px;
+  height: 500px;
   width: 100%;
-  background-color: white;
+  background-color: #eaedf1;
+  display: flex;
+  margin-top: 80px;
+  justify-content: center;
+  overflow: hidden;
+`;
+
+const MainTopContainer = styled.div`
+  width: 95%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 `;
 
 const MainTopTop = styled.div`
-  height: 20%;
+  height: 13%;
   width: 100%;
-  background-color: black;
+  background-color: white;
   display: flex;
   align-items: center;
+  border-radius: 5px;
 `;
 
 const MainTopTopBoxes = styled.div`
@@ -89,12 +106,14 @@ const MainTopTopBoxes = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid black;
+  border-radius: 5px;
 `;
 
 const MainTopMiddle = styled.div`
-  height: 20%;
+  height: 10%;
   width: 100%;
-  background-color: grey;
+  background-color: white;
   display: flex;
   align-items: center;
 `;
@@ -102,7 +121,7 @@ const MainTopMiddle = styled.div`
 const MainTopBottom = styled.div`
   height: 40%;
   width: 100%;
-  background-color: green;
+  background-color: White;
   display: flex;
 `;
 
@@ -117,7 +136,7 @@ const MainTopBottomLeft = styled.div`
 
 const MainTopBottomMiddle = styled.div`
   height: 100%;
-  width: 10%;
+  width: 15%;
 `;
 
 const MainTopBottom1 = styled.div`
@@ -136,21 +155,34 @@ const MainTopBottom2 = styled.div`
 const MainTopBottom3 = styled.div`
   height: 33.3%;
   width: 100%;
+  display: flex;
+`;
+
+const MainTopBottom3Left = styled.div`
+  height: 100%;
+  width: 50%;
+`;
+
+const MainTopBottom3Right = styled.div`
+  height: 100%;
+  width: 50%;
 `;
 
 const MainTopBottomRight = styled.div`
   height: 100%;
-  width: 80%;
+  width: 75%;
   background-color: white;
+  display: flex;
 `;
 
 const MainTopFooter = styled.div`
-  height: 10%;
+  height: 8%;
   width: 100%;
-  background-color: purple;
+  background-color: #f6f8f8;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 5px;
 `;
 
 const MainMiddle = styled.div`
@@ -255,54 +287,62 @@ const Vaccinations = () => {
             </RightMainTop>
             <RightMainBottom>
               <MainTop>
-                <MainTopTop>
-                  <MainTopTopBoxes>
-                    <h5>Update Info</h5>
-                  </MainTopTopBoxes>
-                  <MainTopTopBoxes>
-                    <h5>Add New Patient</h5>
-                  </MainTopTopBoxes>
-                  <MainTopTopBoxes>
-                    <h5>Forecasting</h5>
-                  </MainTopTopBoxes>
-                  <MainTopTopBoxes>
-                    <h5>Share</h5>
-                  </MainTopTopBoxes>
-                  <MainTopTopBoxes>
-                    <h5>Manage Records</h5>
-                  </MainTopTopBoxes>
-                </MainTopTop>
-                <MainTopMiddle>
-                  <MainTopTopBoxes>
-                    <h5>Patient Name:</h5>
-                  </MainTopTopBoxes>
-                  <MainTopTopBoxes></MainTopTopBoxes>
-                </MainTopMiddle>
-                <MainTopBottom>
-                  <MainTopBottomLeft>
-                    <h5>Image</h5>
-                  </MainTopBottomLeft>
-                  <MainTopBottomMiddle>
-                    <MainTopBottom1>
-                      <h5>Test</h5>
-                      <h5>Test</h5>
-                    </MainTopBottom1>
-                    <MainTopBottom2>
-                      <h5>Test</h5>
-                      <h5>Test</h5>
-                    </MainTopBottom2>
-                    <MainTopBottom3>
-                      <h5>Test</h5>
-                      <h5>Test</h5>
-                    </MainTopBottom3>
-                  </MainTopBottomMiddle>
-                  <MainTopBottomRight></MainTopBottomRight>
-                </MainTopBottom>
-                <MainTopFooter>
-                  <h1>one</h1>
-                  <h1>Two</h1>
-                  <h1>Three</h1>
-                </MainTopFooter>
+                <MainTopContainer>
+                  <MainTopTop>
+                    <MainTopTopBoxes>
+                      <h5>Update Info</h5>
+                    </MainTopTopBoxes>
+                    <MainTopTopBoxes>
+                      <h5>Add New Patient</h5>
+                    </MainTopTopBoxes>
+                    <MainTopTopBoxes>
+                      <h5>Forecasting</h5>
+                    </MainTopTopBoxes>
+                    <MainTopTopBoxes>
+                      <h5>Share</h5>
+                    </MainTopTopBoxes>
+                    <MainTopTopBoxes>
+                      <h5>Manage Records</h5>
+                    </MainTopTopBoxes>
+                  </MainTopTop>
+                  <MainTopMiddle>
+                    <MainTopTopBoxes>
+                      <h5>Patient Name:</h5>
+                    </MainTopTopBoxes>
+                    <MainTopTopBoxes></MainTopTopBoxes>
+                  </MainTopMiddle>
+                  <MainTopBottom>
+                    <MainTopBottomLeft>
+                      <h5>Image</h5>
+                    </MainTopBottomLeft>
+                    <MainTopBottomMiddle>
+                      <MainTopBottom1>
+                        <h5>Name</h5>
+                        <h5>Nat Scott</h5>
+                      </MainTopBottom1>
+                      <MainTopBottom2>
+                        <h5>Email</h5>
+                        <h5>NatScott@Gmail.com</h5>
+                      </MainTopBottom2>
+                      <MainTopBottom3>
+                        <MainTopBottom3Left>
+                          <h5>Date of Birth</h5>
+                          <h5>20 Jan 1990</h5>
+                        </MainTopBottom3Left>
+                        <MainTopBottom3Right>
+                          <h5>Sex</h5>
+                          <h5>Female</h5>
+                        </MainTopBottom3Right>
+                      </MainTopBottom3>
+                    </MainTopBottomMiddle>
+                    <MainTopBottomRight></MainTopBottomRight>
+                  </MainTopBottom>
+                  <MainTopFooter>
+                    <h3>one</h3>
+                    <h3>Two</h3>
+                    <h3>Three</h3>
+                  </MainTopFooter>
+                </MainTopContainer>
               </MainTop>
               <MainMiddle>
                 <MainMiddleTop>
