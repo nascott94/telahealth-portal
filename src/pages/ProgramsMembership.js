@@ -33,14 +33,15 @@ const RightMain = styled.div`
 const RightMainTop = styled.div`
   height: 15%;
   width: 100%;
-  background-color: blue;
+  background-color: #eaedf1;
   display: flex;
+  overflow: hidden;
 `;
 
 const RightMainTopLeft = styled.div`
   height: 100%;
   width: 50%;
-  background-color: white;
+  background-color: #f6f8f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,12 +49,13 @@ const RightMainTopLeft = styled.div`
   font-size: 18px;
   font-weight: bold;
   color: #999;
+  padding-left: 43px;
 `;
 
 const RightMainTopRight = styled.div`
   height: 100%;
   width: 50%;
-  background-color: white;
+  background-color: #f6f8f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,7 +66,7 @@ const RightMainTopRight = styled.div`
 const RightMainBottom = styled.div`
   height: 85%;
   width: 100%;
-  background-color: black;
+  background-color: #eaedf1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,8 +75,8 @@ const RightMainBottom = styled.div`
 
 const RightMainBottomTabBar = styled.div`
   width: 95%;
-  height: 10%;
-  background-color: green;
+  height: 7%;
+  background-color: #eaedf1;
   display: flex;
 `;
 
@@ -82,12 +84,15 @@ const RightMainBottomTabBox = styled.div`
   height: 100%;
   width: 15%;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const RightMainBottomBox1 = styled.div`
   width: 95%;
   height: 50%;
-  background-color: pink;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,9 +101,10 @@ const RightMainBottomBox1 = styled.div`
 const RightMainBottomBox2 = styled.div`
   width: 95%;
   height: 80%;
-  border: 5px solid red;
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 `;
 
 const Box2Section1 = styled.div`
@@ -107,18 +113,20 @@ const Box2Section1 = styled.div`
   background-color: white;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  padding-left: 500px;
+  border-bottom: 1px solid black;
 `;
 
 const Box2Section1SearchBar = styled.div`
-  height: 50%;
+  height: 40%;
   width: 20%;
-  background-color: black;
+  background-color: white;
   border: 1px solid black;
 `;
 
 const Box2Section1SearchBarOptionsBox = styled.div`
-  height: 50%;
+  height: 40%;
   width: 5%;
   background-color: orange;
   border: 1px solid black;
@@ -132,6 +140,9 @@ const Box2Section2 = styled.div`
   height: 15%;
   display: flex;
   align-items: center;
+  padding-left: 18px;
+  border-bottom: 1px solid black;
+  background-color: #eaedf1;
 `;
 
 const Box2Section3 = styled.div`
@@ -147,8 +158,9 @@ const Box2Section3Left = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 40px;
+  padding-left: 19px;
   padding-right: 150px;
+  border-bottom: 1px solid black;
 `;
 
 const Box2Section3Right = styled.div`
@@ -159,17 +171,22 @@ const Box2Section3Right = styled.div`
   align-items: center;
   padding-left: 150px;
   padding-right: 40px;
+  border-bottom: 1px solid black;
 `;
 
 const Box2Section4 = styled.div`
   width: 100%;
   height: 15%;
+  border-bottom: 1px solid black;
 `;
 
 const Box2Section5 = styled.div`
   width: 100%;
   height: 25%;
   background-color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 19px;
 `;
 
 const ProgramsMembership = () => {
@@ -191,7 +208,9 @@ const ProgramsMembership = () => {
             </RightMainTop>
             <RightMainBottom>
               <RightMainBottomTabBar>
-                <RightMainBottomTabBox></RightMainBottomTabBox>
+                <RightMainBottomTabBox>
+                  <h5>Programs and Memberships</h5>
+                </RightMainBottomTabBox>
               </RightMainBottomTabBar>
               <RightMainBottomBox1>
                 <RightMainBottomBox2>
@@ -225,7 +244,9 @@ const ProgramsMembership = () => {
                     </Box2Section3Right>
                   </Box2Section3>
                   <Box2Section4></Box2Section4>
-                  <Box2Section5></Box2Section5>
+                  <Box2Section5>
+                    <h5>showing 1- 0 of 0 items</h5>
+                  </Box2Section5>
                 </RightMainBottomBox2>
               </RightMainBottomBox1>
             </RightMainBottom>
