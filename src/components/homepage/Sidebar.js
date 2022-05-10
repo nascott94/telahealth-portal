@@ -57,7 +57,8 @@ const Container = styled.div`
         color: white;
         cursor: pointer;
         &:hover {
-          background-color: #d3d3d3;
+          background-color: #fafafa;
+          border-radius: 5px;
         }
 
         .icon {
