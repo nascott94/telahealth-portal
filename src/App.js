@@ -9,7 +9,7 @@ import Vaccinations from './pages/Vaccinations';
 import ProgramsMemberships from './pages/ProgramsMembership';
 import ProductServices from './pages/ProductServices';
 import Orders from './pages/Orders';
-
+import PDF from './pages/PDF';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -32,6 +32,7 @@ function App() {
             />
             <Route path="productservices" element={<ProductServices />} />
             <Route path="orders" element={<Orders />} />
+            <Route path="pdf" element={<PDF />} />
           </Route>
         </Routes>
       </BrowserRouter>

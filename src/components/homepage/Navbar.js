@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "@emotion/styled";
-import { Link } from "react-router-dom";
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
-import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
-import VideoCallRoundedIcon from "@mui/icons-material/VideoCallRounded";
-import FolderOpenIcon from "@mui/icons-material/FolderOpen";
+import React from 'react';
+import styled from '@emotion/styled';
+import { Link } from 'react-router-dom';
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
+import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
+import VideoCallRoundedIcon from '@mui/icons-material/VideoCallRounded';
+import FolderOpenIcon from '@mui/icons-material/FolderOpen';
 // import AddBoxOutlinedIcon from '@mui/icons-material/AddBoxOutlined';
 
 const Container = styled.div`
@@ -64,19 +64,23 @@ const Container = styled.div`
       .items {
         display: flex;
         align-items: center;
+        color: #555555;
 
         .item {
           display: flex;
           align-items: center;
           margin-right: 20px;
           position: relative;
+          color: #555555;
 
           .name {
             padding-right: 2px;
+            color: #555555;
           }
 
           .icon {
             font-size: 20px;
+            color: #555555;
           }
 
           .avatar {
@@ -154,27 +158,51 @@ const Navbar = () => {
           <div className="search">
             <input type="text" placeholder="Search" />
             <SearchOutlinedIcon />
-            <button className="compose-btn">
-              {/* <AddBoxOutlinedIcon className="compose-icon" /> */}+ Compose
-              New Message
-            </button>
+            <Link to="/messages" style={{ textDecoration: 'none' }}>
+              <button className="compose-btn">
+                {/* <AddBoxOutlinedIcon className="compose-icon" /> */}+ Compose
+                New Message
+              </button>
+            </Link>
           </div>
           <div className="items">
             <div className="item">
-              <FolderOpenIcon className="icon" />
-              PDFs
+              <Link to="/pdf" style={{ textDecoration: 'none' }}>
+                <FolderOpenIcon
+                  className="icon"
+                  style={{
+                    width: 25,
+                    height: 25,
+                    marginTop: 5,
+                  }}
+                />
+              </Link>
             </div>
             <div className="item">
-              <VideoCallRoundedIcon className="icon" />
+              <Link to="/">
+                <VideoCallRoundedIcon
+                  className="icon"
+                  style={{
+                    height: 25,
+                    width: 25,
+                    paddingRight: 2,
+                    paddingTop: 5,
+                  }}
+                />
+              </Link>
               Video Call
             </div>
             <div className="item">
-              <NotificationsNoneOutlinedIcon className="icon" />
-              <div className="counter">1</div>
+              <Link to="/messages" style={{ textDecoration: 'none' }}>
+                <NotificationsNoneOutlinedIcon className="icon" />
+                <div className="counter">1</div>
+              </Link>
             </div>
             <div className="item">
-              <ChatBubbleOutlineOutlinedIcon className="icon" />
-              <div className="counter">2</div>
+              <Link to="/messages" style={{ textDecoration: 'none' }}>
+                <ChatBubbleOutlineOutlinedIcon className="icon" />
+                <div className="counter">2</div>
+              </Link>
             </div>
             <div className="item">
               <div className="name">Olive Scott</div>
@@ -186,13 +214,13 @@ const Navbar = () => {
                     className="avatar"
                   />
                   <div className="dropdown-content">
-                    <Link to="/profile" style={{ textDecoration: "none" }}>
+                    <Link to="/profile" style={{ textDecoration: 'none' }}>
                       <li>Profile</li>
                     </Link>
-                    <Link to="/settings" style={{ textDecoration: "none" }}>
+                    <Link to="/settings" style={{ textDecoration: 'none' }}>
                       <li>Settings</li>
                     </Link>
-                    <Link to="/logout" style={{ textDecoration: "none" }}>
+                    <Link to="/logout" style={{ textDecoration: 'none' }}>
                       <li>Logout</li>
                     </Link>
                   </div>
