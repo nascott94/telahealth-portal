@@ -95,20 +95,6 @@ const RightMainBottomBottomBar = styled.div`
   padding-left: 65px;
 `;
 
-const Button = styled.div`
-  width: 30%;
-  height: 10%;
-  padding: 17px;
-  background-color: orange;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-`;
-
 const PDF = () => {
   return (
     <>
