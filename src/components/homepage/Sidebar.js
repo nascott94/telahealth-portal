@@ -22,8 +22,8 @@ const Container = styled.div`
     height: 1000px;
     background-color: #2658e2;
     .top {
-      height: 70px;
-      background-color: #e3e8ff;
+      height: 69px;
+      background-color: white;
       display: flex;
       align-items: center;
       justify-content: center;
