@@ -42,12 +42,12 @@ const RightMainTop = styled.div`
 const RightMainTopLeft = styled.div`
   height: 100%;
   width: 50%;
+  padding-top: 20px;
   background-color: #f6f8f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 5px;
-  padding-left: 33px;
+  padding-left: 20px;
 
   .title {
     color: black;

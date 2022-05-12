@@ -1,19 +1,20 @@
-import React from "react";
-import styled from "styled-components";
-import Navbar from "../components/homepage/Navbar";
-import Sidebar from "../components/homepage/Sidebar";
+import React from 'react';
+import styled from 'styled-components';
+import Navbar from '../components/homepage/Navbar';
+import Sidebar from '../components/homepage/Sidebar';
 
-const Container = styled.div` 
-  height: 100vh;
-  width: 100vw;
+const Container = styled.div`
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
+  background-color: #2658e2; ;
 `;
 
 const LeftContainer = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 15%;
-  background-color: blue;
+  background-color: #2658e2;
 `;
 
 const RightContainer = styled.div`
@@ -25,7 +26,7 @@ const RightContainer = styled.div`
 `;
 
 const RightMain = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: #eaedf1;
 `;
@@ -41,15 +42,22 @@ const RightMainTop = styled.div`
 const RightMainTopLeft = styled.div`
   height: 100%;
   width: 50%;
+  padding-top: 20px;
   background-color: #f6f8f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 5px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #999;
-  padding-left: 33px;
+  padding-left: 20px;
+
+  .title {
+    color: black;
+    font-size: 25px;
+  }
+
+  .subtitle {
+    color: #999;
+    font-size: 15px;
+  }
 `;
 
 const RightMainTopRight = styled.div`
@@ -61,10 +69,31 @@ const RightMainTopRight = styled.div`
   justify-content: center;
   align-items: flex-end;
   padding-right: 18px;
+  padding-top: 18px;
+
+  .title {
+    margin-right: auto;
+    margin-left: 115px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #999;
+  }
+
+  .service {
+    margin-right: auto;
+    margin-left: 110px;
+    margin-bottom: 20px;
+    width: 60%;
+    font-size: 14px;
+    padding: 10px 100px 10px 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
 `;
 
 const RightMainBottom = styled.div`
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-color: #eaedf1;
   display: flex;
@@ -76,23 +105,28 @@ const RightMainBottom = styled.div`
 const RightMainBottomTopBar = styled.div`
   width: 100%;
   height: 5%;
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  padding-right: 135px;
+  border-top: 1.5px solid #999;
+  border-bottom: 1px solid #999;
+  padding-right: 150px;
+
+  .category {
+    font-size: 14px;
+  }
 `;
 
 const RightMainBottomBottomBar = styled.div`
   width: 100%;
   height: 12%;
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #999;
   padding-left: 65px;
+  color: #999;
 `;
 
 const ProductServices = () => {
@@ -107,21 +141,30 @@ const ProductServices = () => {
           <RightMain>
             <RightMainTop>
               <RightMainTopLeft>
-                <h3>Products</h3>
-                <h5>All products are tabulated below.</h5>
+                <div className="title">Receipt</div>
+                <div className="subtitle">Receipt</div>
               </RightMainTopLeft>
               <RightMainTopRight>
-                <h5>Select Entity:</h5>
+                <label className="title">Select Entity:</label>
+                <select name="patient" className="service">
+                  <option value="1" selected="selected">
+                    Appointment
+                  </option>
+                  <option value="2">Membership</option>
+                  <option value="3">Product</option>
+                  <option value="4">Services</option>
+                  <option value="5">Vaccines</option>
+                </select>
               </RightMainTopRight>
             </RightMainTop>
             <RightMainBottom>
               <RightMainBottomTopBar>
-                <h5>Purchase date</h5>
-                <h5>Product name</h5>
-                <h5>Provider</h5>
-                <h5>Product price</h5>
-                <h5>Status</h5>
-                <h5>View Receipt</h5>
+                <div className="category">Order Date</div>
+                <div className="category">Category</div>
+                <div className="category">Business</div>
+                <div className="category">Total</div>
+                <div className="category">View Reciept</div>
+                <div className="category">Status</div>
               </RightMainBottomTopBar>
               <RightMainBottomBottomBar>
                 <h5>showing 1- 0 of 0 items</h5>
