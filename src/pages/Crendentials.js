@@ -13,6 +13,7 @@ const Container = styled.div`
 const LeftContainer = styled.div`
   height: 100vh;
   width: 15%;
+  background-color: #2658e2;
 `;
 
 const RightContainer = styled.div`

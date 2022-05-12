@@ -7,14 +7,16 @@ import HealthPass from '../components/homepage/HealthPass';
 import Footer from '../components/homepage/Footer';
 
 const Container = styled.div`
-  height: 1000px;
+  height: 100%;
   width: 100%;
   display: flex;
+  background-color: #2658e2;
 `;
 
 const SidebarConatiner = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 15%;
+  background-color: #2658e2;
 `;
 
 const RestofPageContainer = styled.div`
