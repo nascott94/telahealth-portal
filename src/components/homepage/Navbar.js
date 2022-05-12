@@ -50,7 +50,7 @@ const Container = styled.div`
         padding-right: 10px;
         margin-left: 30px;
         font-size: 12px;
-        background-color: orange;
+        background-color: #f7bc01;
         border-radius: 10px;
         border: none;
         cursor: pointer;

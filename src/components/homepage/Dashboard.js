@@ -39,7 +39,7 @@ const TopContainer = styled.div`
         width: 100%;
         height: 80%;
         padding: 17px;
-        background-color: orange;
+        background-color: #f7bc01;
         border-radius: 10px;
         border: none;
         cursor: pointer;

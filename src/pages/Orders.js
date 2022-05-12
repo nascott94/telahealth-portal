@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import Navbar from "../components/homepage/Navbar";
-import Sidebar from "../components/homepage/Sidebar";
+import React from 'react';
+import styled from 'styled-components';
+import Navbar from '../components/homepage/Navbar';
+import Sidebar from '../components/homepage/Sidebar';
 
 const Container = styled.div`
   height: 100vh;
@@ -61,6 +61,24 @@ const RightMainTopRight = styled.div`
   justify-content: center;
   align-items: flex-end;
   padding-right: 18px;
+
+  .title {
+    margin-right: auto;
+    margin-left: 115px;
+    margin-bottom: 5px;
+  }
+
+  .patient {
+    margin-right: auto;
+    margin-left: 110px;
+    margin-bottom: 20px;
+    width: 60%;
+    font-size: 15px;
+    padding: 10px 100px 10px 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
 `;
 
 const RightMainBottom = styled.div`
@@ -95,20 +113,6 @@ const RightMainBottomBottomBar = styled.div`
   padding-left: 65px;
 `;
 
-const Button = styled.div`
-  width: 30%;
-  height: 10%;
-  padding: 17px;
-  background-color: orange;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-`;
-
 const Orders = () => {
   return (
     <>
@@ -125,7 +129,16 @@ const Orders = () => {
                 <h5>Receipt</h5>
               </RightMainTopLeft>
               <RightMainTopRight>
-                <Button>Select Orders</Button>
+                <label className="title">Select Entity:</label>
+                <select name="patient" className="patient">
+                  <option value="1" selected="selected">
+                    Appointment
+                  </option>
+                  <option value="2">Membership</option>
+                  <option value="3">Product</option>
+                  <option value="4">Services</option>
+                  <option value="5">Vaccines</option>
+                </select>
               </RightMainTopRight>
             </RightMainTop>
             <RightMainBottom>
