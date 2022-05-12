@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import Navbar from "../components/homepage/Navbar";
-import Sidebar from "../components/homepage/Sidebar";
+import React from 'react';
+import styled from 'styled-components';
+import Navbar from '../components/homepage/Navbar';
+import Sidebar from '../components/homepage/Sidebar';
 
 const Container = styled.div`
   height: 100vh;
@@ -13,7 +13,7 @@ const Container = styled.div`
 const LeftContainer = styled.div`
   height: 100vh;
   width: 15%;
-  background-color: blue;
+  background-color: #2658e2;
 `;
 
 const RightContainer = styled.div`

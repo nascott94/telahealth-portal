@@ -4,16 +4,16 @@ import Navbar from '../components/homepage/Navbar';
 import Sidebar from '../components/homepage/Sidebar';
 
 const Container = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
+  background-color: #2658e2; ;
 `;
 
 const LeftContainer = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 15%;
-  background-color: blue;
 `;
 
 const RightContainer = styled.div`
@@ -25,7 +25,7 @@ const RightContainer = styled.div`
 `;
 
 const RightMain = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: #eaedf1;
 `;
@@ -92,7 +92,7 @@ const RightMainTopRight = styled.div`
 `;
 
 const RightMainBottom = styled.div`
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-color: #eaedf1;
   display: flex;
