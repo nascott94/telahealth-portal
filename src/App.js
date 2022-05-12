@@ -1,16 +1,17 @@
-import Home from './pages/Home';
-import Login from './pages/Login';
-import NewUser from './pages/NewUser';
-import Messages from './pages/Messages';
-import Appointments from './pages/Appointments';
-import Records from './pages/Records';
-import Credentials from './pages/Crendentials';
-import Vaccinations from './pages/Vaccinations';
-import ProgramsMemberships from './pages/ProgramsMembership';
-import ProductServices from './pages/ProductServices';
-import Orders from './pages/Orders';
-import PDF from './pages/PDF';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import NewUser from "./pages/NewUser";
+import Messages from "./pages/Messages";
+import Appointments from "./pages/Appointments";
+import Records from "./pages/Records";
+import Credentials from "./pages/Crendentials";
+import Vaccinations from "./pages/Vaccinations";
+import ProgramsMemberships from "./pages/ProgramsMembership";
+import ProductServices from "./pages/ProductServices";
+import Orders from "./pages/Orders";
+import PDF from "./pages/PDF";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ProfileSettings from "./pages/ProfileSettings";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="records" element={<Records />} />
             <Route path="credentials" element={<Credentials />} />
             <Route path="vaccinations" element={<Vaccinations />} />
+            <Route path="profile" element={<ProfileSettings />} />
             <Route
               path="programsmemberships"
               element={<ProgramsMemberships />}

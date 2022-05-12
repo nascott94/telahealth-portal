@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Navbar from "../components/homepage/Navbar";
 import Sidebar from "../components/homepage/Sidebar";
 
-const Container = styled.div`
+const Container = styled.div` 
   height: 100vh;
   width: 100vw;
   display: flex;
