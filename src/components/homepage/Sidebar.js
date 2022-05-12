@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 // import Logo from '../../media/logo.png';
-import BlueLogo from '../../media/logo-blue.png';
+// import BlueLogo from '../../media/logo-blue.png';
+import ZappiLogo from '../../media/zappi-logo.png';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import InsertChartIcon from '@mui/icons-material/InsertChart';
 import SettingsSystemDaydreamOutlinedIcon from '@mui/icons-material/SettingsSystemDaydreamOutlined';
@@ -19,10 +20,10 @@ const Container = styled.div`
     flex: 1;
     border-right: 0.5px soild rgb(230, 227, 227);
     height: 1000px;
-    background-color: #ebf8ff;
+    background-color: #2658e2;
     .top {
       height: 70px;
-      background-color: #ebf8ff;
+      background-color: #e3e8ff;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -45,7 +46,7 @@ const Container = styled.div`
       .title {
         font-size: 13px;
         font-weight: bold;
-        color: #888;
+        color: #d3d5dd;
         margin-top: 15px;
         margin-bottom: 5px;
       }
@@ -54,21 +55,21 @@ const Container = styled.div`
         display: flex;
         align-items: center;
         padding: 9px;
-        color: white;
+        color: #eceef3;
         cursor: pointer;
         &:hover {
-          background-color: #fafafa;
+          background-color: #7b91e6;
           border-radius: 5px;
         }
 
         .icon {
           font-size: 18px;
-          color: #72d2fb;
+          color: #d3d5dd;
         }
         span {
           font-size: 13.5px;
           font-weight: 600;
-          color: black;
+          color: #eceef3;
           margin-left: 10px;
         }
       }
@@ -77,8 +78,8 @@ const Container = styled.div`
 `;
 
 const LogoImg = styled.img`
-  width: 150px;
-  height: 40px;
+  width: 165px;
+  height: 170px;
   display: flex;
   align-items: center;
   padding-right: 20px;
@@ -90,7 +91,7 @@ const Sidebar = () => {
       <div className="sidebar">
         <div className="top">
           <Link to="/" style={{ textDecoration: 'none' }}>
-            <LogoImg src={BlueLogo} />
+            <LogoImg src={ZappiLogo} />
           </Link>
         </div>
         <hr />

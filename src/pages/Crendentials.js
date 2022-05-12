@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Navbar from '../components/homepage/Navbar';
 import Sidebar from '../components/homepage/Sidebar';
-import CloseIcon from '@mui/icons-material/Close';
 
 const Container = styled.div`
   height: 100vh;
