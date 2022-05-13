@@ -9,12 +9,14 @@ import MyMedicalInformation from "../components/profilepage/MyMedicalInformation
 import Insurance from "../components/profilepage/Insurance";
 import AddressContactInfo from "../components/profilepage/AddressContactInfo";
 import PaymentDetails from "../components/profilepage/PaymentDetails";
+import { SizeMe } from "react-sizeme";
 
 const Container = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 `;
 
 const LeftContainer = styled.div`
@@ -64,6 +66,7 @@ const BottomContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 `;
 
 const RightMainBottomComponentContainer = styled.div`
@@ -72,6 +75,7 @@ const RightMainBottomComponentContainer = styled.div`
   background-color: green;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 `;
 
 const ComponentTabContainer = styled.div`
