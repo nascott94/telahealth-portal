@@ -176,8 +176,8 @@ function ProfileSettings() {
                   <Tab onClick={fifthButton}>address and Contact Info</Tab>
                   <Tab onClick={sixthButton}>Payment Details</Tab>
                 </ComponentTabContainer>
-                {toggle && <NotificationSettings />}
-                {toggle2 && <AccountSettings />}
+                {toggle && <AccountSettings />}
+                {toggle2 && <NotificationSettings />}
                 {toggle3 && <MyMedicalInformation />}
                 {toggle4 && <Insurance />}
                 {toggle5 && <AddressContactInfo />}
