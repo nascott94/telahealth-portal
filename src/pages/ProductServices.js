@@ -8,7 +8,7 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
-  background-color: #2658e2; ;
+  background-color: #2658e2;
 `;
 
 const LeftContainer = styled.div`
@@ -141,30 +141,32 @@ const ProductServices = () => {
           <RightMain>
             <RightMainTop>
               <RightMainTopLeft>
-                <div className="title">Receipt</div>
-                <div className="subtitle">Receipt</div>
+                <div className="title">Products</div>
+                <div className="subtitle">
+                  All products are tabulated below.
+                </div>
               </RightMainTopLeft>
               <RightMainTopRight>
                 <label className="title">Select Entity:</label>
                 <select name="patient" className="service">
                   <option value="1" selected="selected">
-                    Appointment
+                    Products
                   </option>
-                  <option value="2">Membership</option>
-                  <option value="3">Product</option>
-                  <option value="4">Services</option>
+                  <option value="2">Services</option>
+                  <option value="3">DME</option>
+                  <option value="4">Prescription Medication</option>
                   <option value="5">Vaccines</option>
                 </select>
               </RightMainTopRight>
             </RightMainTop>
             <RightMainBottom>
               <RightMainBottomTopBar>
-                <div className="category">Order Date</div>
-                <div className="category">Category</div>
-                <div className="category">Business</div>
-                <div className="category">Total</div>
-                <div className="category">View Reciept</div>
+                <div className="category">Purchase Date </div>
+                <div className="category">Product Name </div>
+                <div className="category">Provider</div>
+                <div className="category">Product Price</div>
                 <div className="category">Status</div>
+                <div className="category">View Receipt</div>
               </RightMainBottomTopBar>
               <RightMainBottomBottomBar>
                 <h5>showing 1- 0 of 0 items</h5>
