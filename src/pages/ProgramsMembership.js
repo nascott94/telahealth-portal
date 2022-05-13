@@ -1,25 +1,26 @@
-import React from "react";
-import styled from "styled-components";
-import Navbar from "../components/homepage/Navbar";
-import Sidebar from "../components/homepage/Sidebar";
+import React from 'react';
+import styled from 'styled-components';
+import Navbar from '../components/homepage/Navbar';
+import Sidebar from '../components/homepage/Sidebar';
 
 const Container = styled.div`
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
+  background-color: #2658e2;
 `;
 
 const LeftContainer = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 15%;
-  background-color: blue;
+  background-color: #2658e2;
 `;
 
 const RightContainer = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 85%;
-  background-color: white;
+  background-color: #eaedf1;
   display: flex;
   flex-direction: column;
 `;
@@ -27,13 +28,13 @@ const RightContainer = styled.div`
 const RightMain = styled.div`
   height: 100vh;
   width: 100%;
-  background-color: white;
+  background-color: #eaedf1;
 `;
 
 const RightMainTop = styled.div`
   height: 15%;
   width: 100%;
-  background-color: #eaedf1;
+  background-color: #f6f8f8;
   display: flex;
   overflow: hidden;
 `;
@@ -41,15 +42,23 @@ const RightMainTop = styled.div`
 const RightMainTopLeft = styled.div`
   height: 100%;
   width: 50%;
+  padding-top: 20px;
   background-color: #f6f8f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 5px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #999;
-  padding-left: 43px;
+  padding-left: 20px;
+  border-bottom: 1px solid #999;
+
+  .title {
+    color: black;
+    font-size: 25px;
+  }
+
+  .subtitle {
+    color: #999;
+    font-size: 15px;
+  }
 `;
 
 const RightMainTopRight = styled.div`
@@ -201,8 +210,10 @@ const ProgramsMembership = () => {
           <RightMain>
             <RightMainTop>
               <RightMainTopLeft>
-                <h3>Programs and Memberships</h3>
-                <h5>Manage AZOVA Programs/Memberships</h5>
+                <div className="title">Programs and Memberships</div>
+                <div className="subtitle">
+                  Manage AZOVA Programs/Memberships
+                </div>
               </RightMainTopLeft>
               <RightMainTopRight></RightMainTopRight>
             </RightMainTop>
@@ -226,7 +237,7 @@ const ProgramsMembership = () => {
                   <Box2Section2>
                     <h5>
                       Program/Membership: To access your appointments, click
-                      "View Program/Membership" below.{" "}
+                      "View Program/Membership" below.{' '}
                     </h5>
                   </Box2Section2>
                   <Box2Section3>
