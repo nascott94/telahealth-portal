@@ -37,18 +37,18 @@ const RightMainTop = styled.div`
   background-color: #f6f8f8;
   display: flex;
   overflow: hidden;
+  border-bottom: 1px solid #999;
 `;
 
 const RightMainTopLeft = styled.div`
   height: 100%;
   width: 50%;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   background-color: #f6f8f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 20px;
-  border-bottom: 1px solid #999;
 
   .title {
     color: black;
@@ -59,17 +59,6 @@ const RightMainTopLeft = styled.div`
     color: #999;
     font-size: 15px;
   }
-`;
-
-const RightMainTopRight = styled.div`
-  height: 100%;
-  width: 50%;
-  background-color: #f6f8f8;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  padding-right: 18px;
 `;
 
 const RightMainBottom = styled.div`
@@ -130,18 +119,34 @@ const Box2Section1 = styled.div`
 const Box2Section1SearchBar = styled.div`
   height: 40%;
   width: 20%;
-  background-color: white;
-  border: 1px solid black;
+  .search {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  .go-btn {
+    height: 50%;
+    width: 10%;
+    font-size: 12px;
+    background-color: #f7bc01;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  .clear-btn {
+    /* height: 100%;
+    width: 100%; */
+    font-size: 12px;
+    background-color: #f7bc01;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
 `;
 
 const Box2Section1SearchBarOptionsBox = styled.div`
   height: 40%;
   width: 5%;
-  background-color: orange;
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;
 
 const Box2Section2 = styled.div`
@@ -215,7 +220,6 @@ const ProgramsMembership = () => {
                   Manage AZOVA Programs/Memberships
                 </div>
               </RightMainTopLeft>
-              <RightMainTopRight></RightMainTopRight>
             </RightMainTop>
             <RightMainBottom>
               <RightMainBottomTabBar>
@@ -226,18 +230,22 @@ const ProgramsMembership = () => {
               <RightMainBottomBox1>
                 <RightMainBottomBox2>
                   <Box2Section1>
-                    <Box2Section1SearchBar></Box2Section1SearchBar>
-                    <Box2Section1SearchBarOptionsBox>
-                      GO
-                    </Box2Section1SearchBarOptionsBox>
-                    <Box2Section1SearchBarOptionsBox>
-                      CLEAR
-                    </Box2Section1SearchBarOptionsBox>
+                    <Box2Section1SearchBar>
+                      <input
+                        type="text"
+                        placeholder="Search User"
+                        className="search"
+                      />
+                      <button className="go-btn">Go</button>
+                      <button className="clear-btn">Clear</button>
+                    </Box2Section1SearchBar>
+                    {/* <Box2Section1SearchBarOptionsBox></Box2Section1SearchBarOptionsBox>
+                    <Box2Section1SearchBarOptionsBox></Box2Section1SearchBarOptionsBox> */}
                   </Box2Section1>
                   <Box2Section2>
                     <h5>
                       Program/Membership: To access your appointments, click
-                      "View Program/Membership" below.{' '}
+                      "View Program/Membership" below.
                     </h5>
                   </Box2Section2>
                   <Box2Section3>
