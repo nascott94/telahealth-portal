@@ -54,6 +54,9 @@ const Container = styled.div`
         border-radius: 10px;
         border: none;
         cursor: pointer;
+        :hover {
+          background-color: #eaedf1;
+        }
       }
 
       .compose-icon {

@@ -5,9 +5,10 @@ import Sidebar from '../components/homepage/Sidebar';
 
 const Container = styled.div`
   height: 100%;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
+  background-color: #2658e2;
 `;
 
 const LeftContainer = styled.div`
@@ -34,11 +35,12 @@ const RightMain = styled.div`
 `;
 
 const RightMainTop = styled.div`
-  height: 140px;
+  height: 100px;
   width: 100%;
   background-color: #f6f8f8;
   display: flex;
   overflow: hidden;
+  border-bottom: 1px solid #ccc; ;
 `;
 
 const RightMainTopLeft = styled.div`
@@ -48,10 +50,9 @@ const RightMainTopLeft = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 19px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #999;
+  padding-left: 20px;
+  color: black;
+  font-size: 25px;
 `;
 
 const RightMainTopRight = styled.div`
@@ -62,7 +63,24 @@ const RightMainTopRight = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  padding-right: 18px;
+  padding-right: 50px;
+
+  button {
+    width: 25%;
+    height: 50%;
+    padding: 17px;
+    background-color: #f7bc01;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+    :hover {
+      background-color: #eaedf1;
+    }
+  }
 `;
 
 const RightMainBottom = styled.div`
@@ -93,30 +111,57 @@ const MainTopContainer = styled.div`
 const MainTopTop = styled.div`
   height: 13%;
   width: 100%;
+  padding-left: 20px;
   background-color: white;
   display: flex;
   align-items: center;
   border-radius: 5px;
+
+  button {
+    height: 60%;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+    color: #eaedf1;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    :hover {
+      transition: 0.2;
+    }
+  }
+
+  .blue-btn {
+    background-color: #2658e2;
+  }
+
+  .orange-btn {
+    background-color: #f7bc01;
+  }
 `;
 
-const MainTopTopBoxes = styled.div`
-  height: 35px;
-  width: 120px;
-  background-color: white;
-  margin-left: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid black;
-  border-radius: 5px;
-`;
+// const MainTopTopBoxes = styled.div`
+//   height: 100%;
+//   width: 9%;
+//   background-color: white;
+//   margin-left: 10px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// `;
 
 const MainTopMiddle = styled.div`
   height: 10%;
   width: 100%;
+  padding-left: 20px;
   background-color: white;
   display: flex;
   align-items: center;
+
+  .patient {
+    margin-left: 20px;
+    width: 10%;
+  }
 `;
 
 const MainTopBottom = styled.div`
@@ -138,6 +183,7 @@ const MainTopBottomLeft = styled.div`
 const MainTopBottomMiddle = styled.div`
   height: 100%;
   width: 15%;
+  border-radius: 5px;
 `;
 
 const MainTopBottom1 = styled.div`
@@ -146,17 +192,51 @@ const MainTopBottom1 = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  .title {
+    font-size: 14px;
+    padding-left: 6px;
+    color: #f7bc01;
+  }
+
+  .info {
+    font-size: 14px;
+    padding-top: 2px;
+    padding-left: 6px;
+  }
 `;
 
 const MainTopBottom2 = styled.div`
   height: 33.3%;
   width: 100%;
+  .title {
+    font-size: 14px;
+    padding-left: 6px;
+    color: #f7bc01;
+  }
+
+  .info {
+    font-size: 14px;
+    padding-top: 2px;
+    padding-left: 6px;
+  }
 `;
 
 const MainTopBottom3 = styled.div`
   height: 33.3%;
   width: 100%;
   display: flex;
+  .title {
+    font-size: 14px;
+    padding-left: 6px;
+    color: #f7bc01;
+  }
+
+  .info {
+    font-size: 14px;
+    padding-top: 2px;
+    padding-left: 6px;
+  }
 `;
 
 const MainTopBottom3Left = styled.div`
@@ -256,20 +336,6 @@ const MainBottomTravelVacineContainer = styled.div`
   padding-right: 5px;
 `;
 
-const Button = styled.div`
-  width: 30%;
-  height: 10%;
-  padding: 17px;
-  background-color: orange;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-`;
-
 const Vaccinations = () => {
   return (
     <>
@@ -282,68 +348,62 @@ const Vaccinations = () => {
           <RightMain>
             <RightMainTop>
               <RightMainTopLeft>
-                <h3>Create Your Online Vaccination Record</h3>
+                <div>Create Your Online Vaccination Record</div>
               </RightMainTopLeft>
               <RightMainTopRight>
-                <Button>Vacination Button</Button>
+                <button>Vacination Button</button>
               </RightMainTopRight>
             </RightMainTop>
             <RightMainBottom>
               <MainTop>
                 <MainTopContainer>
+                  <div>Profile</div>
                   <MainTopTop>
-                    <MainTopTopBoxes>
-                      <h5>Update Info</h5>
-                    </MainTopTopBoxes>
-                    <MainTopTopBoxes>
-                      <h5>Add New Patient</h5>
-                    </MainTopTopBoxes>
-                    <MainTopTopBoxes>
-                      <h5>Forecasting</h5>
-                    </MainTopTopBoxes>
-                    <MainTopTopBoxes>
-                      <h5>Share</h5>
-                    </MainTopTopBoxes>
-                    <MainTopTopBoxes>
-                      <h5>Manage Records</h5>
-                    </MainTopTopBoxes>
+                    <button className="blue-btn">Update Info</button>
+                    <button className="orange-btn">Add New Patient</button>
+                    <button className="orange-btn">Forecasting</button>
+                    <button className="orange-btn">Share</button>
+                    <button className="blue-btn">Manage Records</button>
                   </MainTopTop>
                   <MainTopMiddle>
-                    <MainTopTopBoxes>
-                      <h5>Patient Name:</h5>
-                    </MainTopTopBoxes>
-                    <MainTopTopBoxes></MainTopTopBoxes>
+                    <div>Patient Name:</div>
+                    <select name="patient" className="patient">
+                      <option value="1" selected="selected">
+                        Olive Scott (self)
+                      </option>
+                      <option value="2">Leo Scott</option>
+                    </select>
                   </MainTopMiddle>
                   <MainTopBottom>
                     <MainTopBottomLeft>
-                      <h5>Image</h5>
+                      <div>Image</div>
                     </MainTopBottomLeft>
                     <MainTopBottomMiddle>
                       <MainTopBottom1>
-                        <h5>Name</h5>
-                        <h5>Nat Scott</h5>
+                        <div className="title">Name</div>
+                        <div className="info">Olive Scott</div>
                       </MainTopBottom1>
                       <MainTopBottom2>
-                        <h5>Email</h5>
-                        <h5>NatScott@Gmail.com</h5>
+                        <div className="title">Email</div>
+                        <div className="info">olivescott@gmail.com</div>
                       </MainTopBottom2>
                       <MainTopBottom3>
                         <MainTopBottom3Left>
-                          <h5>Date of Birth</h5>
-                          <h5>20 Jan 1990</h5>
+                          <div className="title">Date of Birth</div>
+                          <div className="info">20 Jan 1990</div>
                         </MainTopBottom3Left>
                         <MainTopBottom3Right>
-                          <h5>Sex</h5>
-                          <h5>Female</h5>
+                          <div className="title">Sex</div>
+                          <div className="info">Female</div>
                         </MainTopBottom3Right>
                       </MainTopBottom3>
                     </MainTopBottomMiddle>
                     <MainTopBottomRight></MainTopBottomRight>
                   </MainTopBottom>
                   <MainTopFooter>
-                    <h3>one</h3>
-                    <h3>Two</h3>
-                    <h3>Three</h3>
+                    <div style={{ paddingLeft: 20 }}>Vaccines</div>
+                    <div>VFC Eligible</div>
+                    <div style={{ paddingRight: 20 }}>Expand All</div>
                   </MainTopFooter>
                 </MainTopContainer>
               </MainTop>
@@ -353,68 +413,68 @@ const Vaccinations = () => {
                 </MainMiddleTop>
                 <MainMiddleVacinesContainer>
                   <MainMiddleVacinesBoxes>
-                    <h5>+</h5>
-                    <h5>Covid-19</h5>
+                    <div>+</div>
+                    <div>Covid-19</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <h5>+</h5>
-                    <h5>Influenza</h5>
+                    <div>+</div>
+                    <div>Influenza</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <h5>+</h5>
-                    <h5>Diphtheria, Tetanus, Acellular Pertussis</h5>
+                    <div>+</div>
+                    <div>Diphtheria, Tetanus, Acellular Pertussis</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <h5>+</h5>
-                    <h5>Haemophilus Influenza Type b</h5>
+                    <div>+</div>
+                    <div>Haemophilus Influenza Type b</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <h5>+</h5>
-                    <h5>Polio</h5>
+                    <div>+</div>
+                    <div>Polio</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <h5>+</h5>
-                    <h5>Measles, Mumps and Rubella</h5>
+                    <div>+</div>
+                    <div>Measles, Mumps and Rubella</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <h5>+</h5>
-                    <h5>Hepatitis A</h5>
+                    <div>+</div>
+                    <div>Hepatitis A</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <h5>+</h5>
-                    <h5>Hepatitis B</h5>
+                    <div>+</div>
+                    <div>Hepatitis B</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <h5>+</h5>
-                    <h5>Varicella</h5>
+                    <div>+</div>
+                    <div>Varicella</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <h5>+</h5>
-                    <h5>Rotavirus</h5>
+                    <div>+</div>
+                    <div>Rotavirus</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <h5>+</h5>
-                    <h5>Human Papillomavirus</h5>
+                    <div>+</div>
+                    <div>Human Papillomavirus</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <h5>+</h5>
-                    <h5>Tetanus, Diphatheria, Pertussis</h5>
+                    <div>+</div>
+                    <div>Tetanus, Diphatheria, Pertussis</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <h5>+</h5>
-                    <h5>Pneumococcal</h5>
+                    <div>+</div>
+                    <div>Pneumococcal</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <h5>+</h5>
-                    <h5>Meningococcal Groub B</h5>
+                    <div>+</div>
+                    <div>Meningococcal Groub B</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <h5>+</h5>
-                    <h5>Meningococcal Conjugate A, C, W, Y and CY</h5>
+                    <div>+</div>
+                    <div>Meningococcal Conjugate A, C, W, Y and CY</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <h5>+</h5>
-                    <h5>Zoster</h5>
+                    <div>+</div>
+                    <div>Zoster</div>
                   </MainMiddleVacinesBoxes>
                 </MainMiddleVacinesContainer>
               </MainMiddle>
@@ -425,24 +485,24 @@ const Vaccinations = () => {
                 </MainBottomTop>
                 <MainBottomTravelVacineContainer>
                   <MainMiddleVacinesBoxes>
-                    <h5>+</h5>
-                    <h5>Japaneses Encephalitis</h5>
+                    <div>+</div>
+                    <div>Japaneses Encephalitis</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <h5>+</h5>
-                    <h5>Rabies</h5>
+                    <div>+</div>
+                    <div>Rabies</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <h5>+</h5>
-                    <h5>Typhoid Fever</h5>
+                    <div>+</div>
+                    <div>Typhoid Fever</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <h5>+</h5>
-                    <h5>Yellow Fever</h5>
+                    <div>+</div>
+                    <div>Yellow Fever</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <h5>+</h5>
-                    <h5>Cholera</h5>
+                    <div>+</div>
+                    <div>Cholera</div>
                   </MainMiddleVacinesBoxes>
                 </MainBottomTravelVacineContainer>
               </MainBottom>

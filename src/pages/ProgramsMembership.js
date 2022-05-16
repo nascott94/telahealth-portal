@@ -37,7 +37,7 @@ const RightMainTop = styled.div`
   background-color: #f6f8f8;
   display: flex;
   overflow: hidden;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #ccc;
 `;
 
 const RightMainTopLeft = styled.div`
@@ -85,6 +85,8 @@ const RightMainBottomTabBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #999;
+  font-size: 15px;
 `;
 
 const RightMainBottomBox1 = styled.div`
@@ -99,7 +101,7 @@ const RightMainBottomBox1 = styled.div`
 const RightMainBottomBox2 = styled.div`
   width: 95%;
   height: 80%;
-  border: 1px solid black;
+  border: 1px solid #ccc;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -113,41 +115,51 @@ const Box2Section1 = styled.div`
   align-items: center;
   justify-content: center;
   padding-left: 500px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
 `;
 
 const Box2Section1SearchBar = styled.div`
-  height: 40%;
-  width: 20%;
+  height: 50%;
+  width: 50%;
   .search {
+    height: 60%;
+    width: 50%;
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 6px;
   }
   .go-btn {
-    height: 50%;
-    width: 10%;
+    height: 60%;
+    width: 7%;
+    margin-left: 5px;
     font-size: 12px;
     background-color: #f7bc01;
     border-radius: 6px;
     border: none;
     cursor: pointer;
+    :hover {
+      background-color: #eaedf1;
+    }
   }
   .clear-btn {
-    /* height: 100%;
-    width: 100%; */
+    height: 60%;
+    width: 7%;
+    margin-left: 5px;
     font-size: 12px;
-    background-color: #f7bc01;
+    background-color: #eaedf1;
     border-radius: 6px;
     border: none;
     cursor: pointer;
+    :hover {
+      background-color: #f7bc01;
+    }
   }
 `;
 
-const Box2Section1SearchBarOptionsBox = styled.div`
-  height: 40%;
-  width: 5%;
-`;
+// const Box2Section1SearchBarOptionsBox = styled.div`
+//   height: 40%;
+//   width: 5%;
+// `;
 
 const Box2Section2 = styled.div`
   width: 100%;
@@ -155,8 +167,10 @@ const Box2Section2 = styled.div`
   display: flex;
   align-items: center;
   padding-left: 18px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
   background-color: #eaedf1;
+  font-size: 14px;
+  font-weight: bold;
 `;
 
 const Box2Section3 = styled.div`
@@ -174,7 +188,9 @@ const Box2Section3Left = styled.div`
   align-items: center;
   padding-left: 19px;
   padding-right: 150px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
+  color: black;
+  font-size: 14px;
 `;
 
 const Box2Section3Right = styled.div`
@@ -185,13 +201,15 @@ const Box2Section3Right = styled.div`
   align-items: center;
   padding-left: 150px;
   padding-right: 40px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
+  color: black;
+  font-size: 15px;
 `;
 
 const Box2Section4 = styled.div`
   width: 100%;
-  height: 15%;
-  border-bottom: 1px solid black;
+  height: 10%;
+  border-bottom: 1px solid #ccc;
 `;
 
 const Box2Section5 = styled.div`
@@ -201,6 +219,8 @@ const Box2Section5 = styled.div`
   display: flex;
   align-items: center;
   padding-left: 19px;
+  color: #999;
+  font-size: 13px;
 `;
 
 const ProgramsMembership = () => {
@@ -224,7 +244,7 @@ const ProgramsMembership = () => {
             <RightMainBottom>
               <RightMainBottomTabBar>
                 <RightMainBottomTabBox>
-                  <h5>Programs and Memberships</h5>
+                  Programs and Memberships
                 </RightMainBottomTabBox>
               </RightMainBottomTabBar>
               <RightMainBottomBox1>
@@ -243,28 +263,26 @@ const ProgramsMembership = () => {
                     <Box2Section1SearchBarOptionsBox></Box2Section1SearchBarOptionsBox> */}
                   </Box2Section1>
                   <Box2Section2>
-                    <h5>
-                      Program/Membership: To access your appointments, click
-                      "View Program/Membership" below.
-                    </h5>
+                    Program/Membership: To access your appointments, click "View
+                    Program/Membership" below.
                   </Box2Section2>
                   <Box2Section3>
                     <Box2Section3Left>
-                      <h5>Test</h5>
-                      <h5>Test</h5>
-                      <h5>Test</h5>
-                      <h5>Test</h5>
+                      <div>Start Date</div>
+                      <div>Clinic</div>
+                      <div>Patient</div>
+                      <div>Programs and Memberships</div>
                     </Box2Section3Left>
                     <Box2Section3Right>
-                      <h5>Test</h5>
-                      <h5>Test</h5>
-                      <h5>Test</h5>
-                      <h5>Test</h5>
+                      <div>Amount</div>
+                      <div>Status</div>
+                      <div>Membership Access</div>
+                      <div>Action</div>
                     </Box2Section3Right>
                   </Box2Section3>
                   <Box2Section4></Box2Section4>
                   <Box2Section5>
-                    <h5>showing 1- 0 of 0 items</h5>
+                    <div>showing 1- 0 of 0 items</div>
                   </Box2Section5>
                 </RightMainBottomBox2>
               </RightMainBottomBox1>
