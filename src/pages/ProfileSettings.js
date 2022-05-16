@@ -71,8 +71,8 @@ const BottomContainer = styled.div`
 
 const RightMainBottomComponentContainer = styled.div`
   height: 90%;
-  width: 90%;
-  background-color: green;
+  width: 70%;
+
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -81,7 +81,7 @@ const RightMainBottomComponentContainer = styled.div`
 const ComponentTabContainer = styled.div`
   width: 100%;
   height: 7%;
-  background-color: grey;
+  background-color: #eaedf1;
   display: flex;
 `;
 
@@ -173,12 +173,24 @@ function ProfileSettings() {
             <BottomContainer>
               <RightMainBottomComponentContainer>
                 <ComponentTabContainer>
-                  <Tab onClick={firstButton}>Account Settings</Tab>
-                  <Tab onClick={secondButton}>Notification Settings</Tab>
-                  <Tab onClick={thirdButton}>My medical Information</Tab>
-                  <Tab onClick={fourthButton}>Insurance</Tab>
-                  <Tab onClick={fifthButton}>address and Contact Info</Tab>
-                  <Tab onClick={sixthButton}>Payment Details</Tab>
+                  <Tab onClick={firstButton}>
+                    <h5>Account Settings</h5>
+                  </Tab>
+                  <Tab onClick={secondButton}>
+                    <h5>Notification Settings</h5>
+                  </Tab>
+                  <Tab onClick={thirdButton}>
+                    <h5>My medical Information</h5>
+                  </Tab>
+                  <Tab onClick={fourthButton}>
+                    <h5>Insurance</h5>
+                  </Tab>
+                  <Tab onClick={fifthButton}>
+                    <h5>address and Contact Info</h5>
+                  </Tab>
+                  <Tab onClick={sixthButton}>
+                    <h5>Payment Details</h5>
+                  </Tab>
                 </ComponentTabContainer>
                 {toggle && <AccountSettings />}
                 {toggle2 && <NotificationSettings />}

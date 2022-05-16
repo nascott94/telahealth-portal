@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 
 const Container = styled.div`
   height: 500px;
-  width: 100%;
+  width: 98%;
   background-color: orange;
   overflow: hidden;
   display: flex;
