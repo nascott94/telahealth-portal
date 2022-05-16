@@ -111,20 +111,98 @@ const LogInContainer = styled.div`
 `;
 
 const CountryContainer = styled.div`
-  height: 20%;
+  height: 200px;
   width: 100%;
   display: flex;
   border-bottom: 1px solid black;
 `;
 
 const CountryLeft = styled.div`
-  height: 100%;
+  height: 100px;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 const CountryRight = styled.div`
-  height: 100%;
+  height: 100px;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+const DropDownBox = styled.div`
+  width: 90%;
+  height: 30%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+`;
+
+const PassportContainer = styled.div`
+  height: 200px;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid black;
+`;
+
+const PassportLeft = styled.div`
+  height: 100px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+const PassportRight = styled.div`
+  height: 100px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+const RequireMFAContainer = styled.div`
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+const MFAContainer = styled.div`
+  height: 100px;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid black;
+`;
+
+const MFAContainerLeft = styled.div`
+  height: 100px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+const MFAPasswordButton = styled.div`
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const MFAContainerRight = styled.div`
+  height: 100px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 const AccountSettings = () => {
@@ -171,19 +249,50 @@ const AccountSettings = () => {
         </NationalityContainer>
         <EmailContainer>
           <EmailLeft>
-            <h4>Last Name:</h4>
-            <h5>Nat Scott</h5>
+            <h4>Email:</h4>
+            <h5>NatScott@gmail.com</h5>
           </EmailLeft>
           <EmailRight>
-            <h4>Last Name:</h4>
-            <h5>Nat Scott</h5>
+            <h4>Phone Number:</h4>
+            <h5>784-323-5342</h5>
           </EmailRight>
         </EmailContainer>
         <LogInContainer>
           <h4>ZAPPY HEALTH Username</h4>
           <h5>Natfirech</h5>
         </LogInContainer>
-        <CountryContainer></CountryContainer>
+        <CountryContainer>
+          <CountryLeft>
+            <h4>Country</h4>
+            <DropDownBox>Please Select</DropDownBox>
+          </CountryLeft>
+          <CountryRight>
+            <h4>Time Zone</h4>
+            <DropDownBox>Please Select</DropDownBox>
+          </CountryRight>
+        </CountryContainer>
+        <PassportContainer>
+          <PassportLeft>
+            <h4>Passport Or Citizen ID Number</h4>
+            <DropDownBox></DropDownBox>
+          </PassportLeft>
+          <PassportRight>
+            <h4>Language</h4>
+            <DropDownBox>Please Select</DropDownBox>
+          </PassportRight>
+        </PassportContainer>
+        <RequireMFAContainer>
+          <h4>Require MFA for Login</h4>
+        </RequireMFAContainer>
+        <MFAContainer>
+          <MFAContainerLeft>
+            <h4>MFA Alternate Code:</h4>
+            <MFAPasswordButton>Hello</MFAPasswordButton>
+          </MFAContainerLeft>
+          <MFAContainerRight>
+            <h5>Set-Up Multi Factor Authentification</h5>
+          </MFAContainerRight>
+        </MFAContainer>
       </Container>
     </>
   );
