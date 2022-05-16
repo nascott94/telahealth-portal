@@ -43,6 +43,9 @@ const TopContainer = styled.div`
         border-radius: 10px;
         border: none;
         cursor: pointer;
+        :hover {
+          background-color: #eaedf1;
+        }
       }
     }
   }
@@ -160,9 +163,7 @@ const Dashboard = () => {
               <option value="1" selected="selected">
                 Olive Scott (self)
               </option>
-              <option value="2" selected="selected">
-                Leo Scott
-              </option>
+              <option value="2">Leo Scott</option>
             </select>
           </div>
         </div>

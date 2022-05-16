@@ -8,7 +8,7 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
-  background-color: #2658e2; ;
+  background-color: #2658e2;
 `;
 
 const LeftContainer = styled.div`

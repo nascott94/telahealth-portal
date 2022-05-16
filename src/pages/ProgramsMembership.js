@@ -37,18 +37,18 @@ const RightMainTop = styled.div`
   background-color: #f6f8f8;
   display: flex;
   overflow: hidden;
+  border-bottom: 1px solid #ccc;
 `;
 
 const RightMainTopLeft = styled.div`
   height: 100%;
   width: 50%;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   background-color: #f6f8f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 20px;
-  border-bottom: 1px solid #999;
 
   .title {
     color: black;
@@ -59,17 +59,6 @@ const RightMainTopLeft = styled.div`
     color: #999;
     font-size: 15px;
   }
-`;
-
-const RightMainTopRight = styled.div`
-  height: 100%;
-  width: 50%;
-  background-color: #f6f8f8;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  padding-right: 18px;
 `;
 
 const RightMainBottom = styled.div`
@@ -96,6 +85,8 @@ const RightMainBottomTabBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #999;
+  font-size: 15px;
 `;
 
 const RightMainBottomBox1 = styled.div`
@@ -110,7 +101,7 @@ const RightMainBottomBox1 = styled.div`
 const RightMainBottomBox2 = styled.div`
   width: 95%;
   height: 80%;
-  border: 1px solid black;
+  border: 1px solid #ccc;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -124,25 +115,51 @@ const Box2Section1 = styled.div`
   align-items: center;
   justify-content: center;
   padding-left: 500px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
 `;
 
 const Box2Section1SearchBar = styled.div`
-  height: 40%;
-  width: 20%;
-  background-color: white;
-  border: 1px solid black;
+  height: 50%;
+  width: 50%;
+  .search {
+    height: 60%;
+    width: 50%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  .go-btn {
+    height: 60%;
+    width: 7%;
+    margin-left: 5px;
+    font-size: 12px;
+    background-color: #f7bc01;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    :hover {
+      background-color: #eaedf1;
+    }
+  }
+  .clear-btn {
+    height: 60%;
+    width: 7%;
+    margin-left: 5px;
+    font-size: 12px;
+    background-color: #eaedf1;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    :hover {
+      background-color: #f7bc01;
+    }
+  }
 `;
 
-const Box2Section1SearchBarOptionsBox = styled.div`
-  height: 40%;
-  width: 5%;
-  background-color: orange;
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+// const Box2Section1SearchBarOptionsBox = styled.div`
+//   height: 40%;
+//   width: 5%;
+// `;
 
 const Box2Section2 = styled.div`
   width: 100%;
@@ -150,8 +167,10 @@ const Box2Section2 = styled.div`
   display: flex;
   align-items: center;
   padding-left: 18px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
   background-color: #eaedf1;
+  font-size: 14px;
+  font-weight: bold;
 `;
 
 const Box2Section3 = styled.div`
@@ -169,7 +188,9 @@ const Box2Section3Left = styled.div`
   align-items: center;
   padding-left: 19px;
   padding-right: 150px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
+  color: black;
+  font-size: 14px;
 `;
 
 const Box2Section3Right = styled.div`
@@ -180,13 +201,15 @@ const Box2Section3Right = styled.div`
   align-items: center;
   padding-left: 150px;
   padding-right: 40px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
+  color: black;
+  font-size: 15px;
 `;
 
 const Box2Section4 = styled.div`
   width: 100%;
-  height: 15%;
-  border-bottom: 1px solid black;
+  height: 10%;
+  border-bottom: 1px solid #ccc;
 `;
 
 const Box2Section5 = styled.div`
@@ -196,6 +219,8 @@ const Box2Section5 = styled.div`
   display: flex;
   align-items: center;
   padding-left: 19px;
+  color: #999;
+  font-size: 13px;
 `;
 
 const ProgramsMembership = () => {
@@ -215,48 +240,49 @@ const ProgramsMembership = () => {
                   Manage AZOVA Programs/Memberships
                 </div>
               </RightMainTopLeft>
-              <RightMainTopRight></RightMainTopRight>
             </RightMainTop>
             <RightMainBottom>
               <RightMainBottomTabBar>
                 <RightMainBottomTabBox>
-                  <h5>Programs and Memberships</h5>
+                  Programs and Memberships
                 </RightMainBottomTabBox>
               </RightMainBottomTabBar>
               <RightMainBottomBox1>
                 <RightMainBottomBox2>
                   <Box2Section1>
-                    <Box2Section1SearchBar></Box2Section1SearchBar>
-                    <Box2Section1SearchBarOptionsBox>
-                      GO
-                    </Box2Section1SearchBarOptionsBox>
-                    <Box2Section1SearchBarOptionsBox>
-                      CLEAR
-                    </Box2Section1SearchBarOptionsBox>
+                    <Box2Section1SearchBar>
+                      <input
+                        type="text"
+                        placeholder="Search User"
+                        className="search"
+                      />
+                      <button className="go-btn">Go</button>
+                      <button className="clear-btn">Clear</button>
+                    </Box2Section1SearchBar>
+                    {/* <Box2Section1SearchBarOptionsBox></Box2Section1SearchBarOptionsBox>
+                    <Box2Section1SearchBarOptionsBox></Box2Section1SearchBarOptionsBox> */}
                   </Box2Section1>
                   <Box2Section2>
-                    <h5>
-                      Program/Membership: To access your appointments, click
-                      "View Program/Membership" below.{' '}
-                    </h5>
+                    Program/Membership: To access your appointments, click "View
+                    Program/Membership" below.
                   </Box2Section2>
                   <Box2Section3>
                     <Box2Section3Left>
-                      <h5>Test</h5>
-                      <h5>Test</h5>
-                      <h5>Test</h5>
-                      <h5>Test</h5>
+                      <div>Start Date</div>
+                      <div>Clinic</div>
+                      <div>Patient</div>
+                      <div>Programs and Memberships</div>
                     </Box2Section3Left>
                     <Box2Section3Right>
-                      <h5>Test</h5>
-                      <h5>Test</h5>
-                      <h5>Test</h5>
-                      <h5>Test</h5>
+                      <div>Amount</div>
+                      <div>Status</div>
+                      <div>Membership Access</div>
+                      <div>Action</div>
                     </Box2Section3Right>
                   </Box2Section3>
                   <Box2Section4></Box2Section4>
                   <Box2Section5>
-                    <h5>showing 1- 0 of 0 items</h5>
+                    <div>showing 1- 0 of 0 items</div>
                   </Box2Section5>
                 </RightMainBottomBox2>
               </RightMainBottomBox1>
