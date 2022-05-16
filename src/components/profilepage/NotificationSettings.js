@@ -76,7 +76,7 @@ const NotificationSettings = () => {
       <Container>
         <ContainerTop>
           <HeaderContainer>
-            <h1>Account Settings</h1>
+            <h1>Notification Settings</h1>
           </HeaderContainer>
         </ContainerTop>
         <ContainerMiddle>
