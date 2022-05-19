@@ -94,7 +94,7 @@ const MainTop = styled.div`
   width: 100%;
   background-color: #eaedf1;
   display: flex;
-  margin-top: 80px;
+  margin-top: 25px;
   justify-content: center;
   overflow: hidden;
   margin-bottom: -100px;
@@ -276,8 +276,9 @@ const MainMiddle = styled.div`
 `;
 
 const MainMiddleTop = styled.div`
-  height: 6%;
+  height: 5%;
   width: 100%;
+  padding-top: 20px;
   background-color: #eaedf1;
   display: flex;
   justify-content: center;
@@ -301,6 +302,7 @@ const MainMiddleVacinesBoxes = styled.div`
   background-color: white;
   border-radius: 5px;
   margin-top: 5px;
+  padding: 10px;
   display: flex;
   align-items: center;
 `;
@@ -357,7 +359,7 @@ const Vaccinations = () => {
             <RightMainBottom>
               <MainTop>
                 <MainTopContainer>
-                  <div>Profile</div>
+                  <h3>Profile</h3>
                   <MainTopTop>
                     <button className="blue-btn">Update Info</button>
                     <button className="orange-btn">Add New Patient</button>
@@ -480,8 +482,8 @@ const Vaccinations = () => {
               </MainMiddle>
               <MainBottom>
                 <MainBottomTop>
-                  <h1>Travel Vaccine</h1>
-                  <h3>Vaccines</h3>
+                  <h3>Travel Vaccine</h3>
+                  <h4>Vaccines</h4>
                 </MainBottomTop>
                 <MainBottomTravelVacineContainer>
                   <MainMiddleVacinesBoxes>
