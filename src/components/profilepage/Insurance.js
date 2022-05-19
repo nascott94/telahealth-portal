@@ -14,7 +14,7 @@ const NavBarContainer = styled.div`
   height: 60px;
   width: 98%;
   display: flex;
-  margin-top: 10px;
+  margin-top: 11px;
 `;
 
 const NavBarBoxes = styled.div`
