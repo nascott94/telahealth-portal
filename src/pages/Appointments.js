@@ -42,14 +42,22 @@ const RightMainTop = styled.div`
 const RightMainTopLeft = styled.div`
   height: 100%;
   width: 50%;
+  padding-top: 20px;
   background-color: #f6f8f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 5px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #999;
+  padding-left: 20px;
+
+  .title {
+    color: black;
+    font-size: 25px;
+  }
+
+  .subtitle {
+    color: #999;
+    font-size: 15px;
+  }
 `;
 
 const RightMainTopRight = styled.div`
@@ -168,11 +176,11 @@ const Appointments = () => {
           <RightMain>
             <RightMainTop>
               <RightMainTopLeft>
-                <h3>Appointments</h3>
-                <h5>
+                <div className="title">Appointments</div>
+                <div className="subtitle">
                   Welcome to your appointment dashboard. All appointments are
                   listed below.
-                </h5>
+                </div>
               </RightMainTopLeft>
               <RightMainTopRight>
                 <Button>Appointment Calendar</Button>

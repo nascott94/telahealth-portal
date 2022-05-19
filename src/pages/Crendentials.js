@@ -32,21 +32,31 @@ const RightMain = styled.div`
 const RightMainTop = styled.div`
   height: 15%;
   width: 100%;
-  background-color: white;
+  background-color: #f6f8f8;
   display: flex;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
 `;
 
 const RightMainTopLeft = styled.div`
   height: 100%;
-  width: 100%;
-  background-color: white;
+  width: 50%;
+  padding-top: 20px;
+  background-color: #f6f8f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 5px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #999;
+  padding-left: 20px;
+
+  .title {
+    color: black;
+    font-size: 25px;
+  }
+
+  .subtitle {
+    color: #999;
+    font-size: 15px;
+  }
 `;
 
 const RightMainTopRight = styled.div`
@@ -123,7 +133,7 @@ const CredentialsTop = styled.div`
 `;
 
 const CredentialsTopLeft = styled.div`
-  height: 100%;
+  height: 50%;
   width: 15%;
   display: flex;
   align-items: center;
@@ -150,6 +160,22 @@ const CredentialsTopRight = styled.div`
     font-size: 14px;
     padding-top: 2px;
     padding-left: 6px;
+  }
+
+  .title-sex {
+    font-size: 14px;
+    padding-left: 6px;
+    color: #ffa500;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .info-sex {
+    font-size: 14px;
+    padding-top: 2px;
+    padding-left: 6px;
+    display: flex;
+    flex-direction: row-reverse;
   }
 `;
 
@@ -238,11 +264,11 @@ const Crendentials = () => {
           <RightMain>
             <RightMainTop>
               <RightMainTopLeft>
-                <h3>COVID Credentials</h3>
-                <h5>
+                <div className="title">COVID Credentials</div>
+                <div className="subtitle">
                   Manage and share your COVID-19 testing and immunity
                   documentation.
-                </h5>
+                </div>
               </RightMainTopLeft>
               <RightMainTopRight>
                 <RightMainBottomMainTabs></RightMainBottomMainTabs>
@@ -284,7 +310,7 @@ const Crendentials = () => {
                       <div className="title">Email</div>
                       <div className="info">olivescott94@outlook.com</div>
                       <div className="title">Date of Birth</div>
-                      <div className="info">14 April 2020</div>
+                      <div className="info">14 April 2020 </div>
                       <div className="title">Sex</div>
                       <div className="info">Female</div>
                     </CredentialsTopRight>
