@@ -79,6 +79,20 @@ const PatientInsuranceRight = styled.div`
   align-items: center;
 `;
 
+const InsuranceTypeContainer = styled.div`
+  height: 100px;
+  width: 98%;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+`;
+
+const Footer = styled.div`
+  height: 120px;
+  width: 98%;
+  background-color: grey;
+`;
+
 const Insurance = () => {
   return (
     <>
@@ -106,6 +120,8 @@ const Insurance = () => {
           </PatientInsuranceLeft>
           <PatientInsuranceRight></PatientInsuranceRight>
         </PatientInsuranceContainer>
+        <InsuranceTypeContainer></InsuranceTypeContainer>
+        <Footer></Footer>
       </Container>
     </>
   );
