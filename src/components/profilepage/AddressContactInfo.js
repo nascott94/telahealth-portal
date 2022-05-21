@@ -69,6 +69,13 @@ const CountryContainerRight = styled.div`
   flex-direction: column;
 `;
 
+const InputBoxGrey = styled.div`
+  height: 30px;
+  width: 90%;
+  background-color: grey;
+  border-bottom: 1px solid black;
+`;
+
 const AddressContactInfo = () => {
   return (
     <>
@@ -87,10 +94,13 @@ const AddressContactInfo = () => {
         <CountryContainer>
           <CountryContainerLeft>
             <h4>Country of residence</h4>
+            <InputBoxGrey></InputBoxGrey>
             <h4>County</h4>
+            <InputBoxGrey></InputBoxGrey>
           </CountryContainerLeft>
           <CountryContainerRight>
             <h4>State</h4>
+            <InputBoxGrey></InputBoxGrey>
           </CountryContainerRight>
         </CountryContainer>
       </Container>
