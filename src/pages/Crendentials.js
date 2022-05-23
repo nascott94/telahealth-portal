@@ -30,7 +30,7 @@ const RightMain = styled.div`
 `;
 
 const RightMainTop = styled.div`
-  height: 15%;
+  height: 14%;
   width: 100%;
   background-color: #f6f8f8;
   display: flex;
@@ -39,7 +39,7 @@ const RightMainTop = styled.div`
 `;
 
 const RightMainTopLeft = styled.div`
-  height: 100%;
+  height: 80%;
   width: 50%;
   padding-top: 20px;
   background-color: #f6f8f8;
@@ -184,6 +184,7 @@ const CredentialsMiddle = styled.div`
   height: 40%;
   width: 100%;
   background-color: white;
+  border-top: 1px solid #ccc;
 `;
 
 const CredentialsMiddleLeft = styled.div`
@@ -231,6 +232,27 @@ const CredentialsBottomLeft = styled.div`
   height: 100%;
   width: 50%;
   background-color: white;
+
+  .title {
+    color: grey;
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 15px;
+  }
+
+  .info {
+    padding-top: 5px;
+    font-size: 15px;
+  }
+
+  .temp {
+    color: red;
+  }
+
+  .update-btn {
+    border: none;
+    width: 50%;
+  }
 `;
 const CredentialsBottomRight = styled.div`
   display: flex;
@@ -279,9 +301,7 @@ const Crendentials = () => {
                 <option value="1" selected="selected">
                   Olive Scott (self)
                 </option>
-                <option value="2" selected="selected">
-                  Leo Scott
-                </option>
+                <option value="2">Leo Scott</option>
               </select>
               <RightMainBottomMainTabs>
                 <RightMainBottomSubTabBoxes>
@@ -333,25 +353,22 @@ const Crendentials = () => {
                     <CredentialsMiddleRight></CredentialsMiddleRight>
                   </CredentialsMiddle>
                   <CredentialsBottom>
-                    <div className="title">Add/View Vitals</div>
                     <CredentialsBottomLeft>
+                      <div className="title">Add/View Vitals</div>
                       <select name="patient" className="patient">
                         <option value="1" selected="selected">
                           Fahrenheit
                         </option>
-                        <option value="2" selected="selected">
-                          Celsius
-                        </option>
+                        <option value="2">Celsius</option>
                       </select>
-                      <button>Update</button>
-                    </CredentialsBottomLeft>
-                    <CredentialsBottomRight>
                       <input
                         type="text"
-                        id="name"
+                        className="temp"
                         placeholder="Temperature"
                       ></input>
-                    </CredentialsBottomRight>
+                      <button className="update-btn">Update</button>
+                    </CredentialsBottomLeft>
+                    <CredentialsBottomRight></CredentialsBottomRight>
                   </CredentialsBottom>
                 </CredentialsBox>
               </RightMainBottomContainer>
