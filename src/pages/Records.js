@@ -36,6 +36,7 @@ const RightMainTop = styled.div`
   background-color: #f6f8f8;
   display: flex;
   overflow: hidden;
+  border-bottom: 1px solid #ccc;
 `;
 
 const RightMainTopLeft = styled.div`

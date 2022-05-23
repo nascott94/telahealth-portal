@@ -78,6 +78,7 @@ const RightMainBottom = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: 1.5px solid #ccc;
 `;
 
 const RightMainContentBox = styled.div`
@@ -154,14 +155,18 @@ const Button = styled.div`
   width: 30%;
   height: 10%;
   padding: 17px;
-  background-color: orange;
+  background-color: #f7bc01;
   border-radius: 5px;
   border: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
+  font-size: 15px;
+  :hover {
+    background-color: #eaedf1;
+  }
 `;
 
 const Appointments = () => {
