@@ -30,16 +30,19 @@ const RightMain = styled.div`
 `;
 
 const RightMainTop = styled.div`
-  height: 15%;
+  height: 14%;
   width: 100%;
-  background-color: white;
+  background-color: #f6f8f8;
   display: flex;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
 `;
 
 const RightMainTopLeft = styled.div`
-  height: 100%;
-  width: 100%;
-  background-color: white;
+  height: 80%;
+  width: 50%;
+  padding-top: 20px;
+  background-color: #f6f8f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,6 +50,7 @@ const RightMainTopLeft = styled.div`
   font-size: 18px;
   font-weight: bold;
   color: #999;
+
 
   .title {
     color: black;
@@ -128,7 +132,7 @@ const CredentialsTop = styled.div`
 `;
 
 const CredentialsTopLeft = styled.div`
-  height: 100%;
+  height: 50%;
   width: 15%;
   display: flex;
   align-items: center;
@@ -156,6 +160,22 @@ const CredentialsTopRight = styled.div`
     padding-top: 2px;
     padding-left: 6px;
   }
+
+  .title-sex {
+    font-size: 14px;
+    padding-left: 6px;
+    color: #ffa500;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .info-sex {
+    font-size: 14px;
+    padding-top: 2px;
+    padding-left: 6px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
 `;
 
 const CredentialsMiddle = styled.div`
@@ -163,6 +183,7 @@ const CredentialsMiddle = styled.div`
   height: 40%;
   width: 100%;
   background-color: white;
+  border-top: 1px solid #ccc;
 `;
 
 const CredentialsMiddleLeft = styled.div`
@@ -210,6 +231,27 @@ const CredentialsBottomLeft = styled.div`
   height: 100%;
   width: 50%;
   background-color: white;
+
+  .title {
+    color: grey;
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 15px;
+  }
+
+  .info {
+    padding-top: 5px;
+    font-size: 15px;
+  }
+
+  .temp {
+    color: red;
+  }
+
+  .update-btn {
+    border: none;
+    width: 50%;
+  }
 `;
 const CredentialsBottomRight = styled.div`
   display: flex;
@@ -245,9 +287,7 @@ const Crendentials = () => {
               <RightMainTopLeft>
                 <h3 className="title">COVID Credentials</h3>
                 <h5>
-                  Manage and share your COVID-19 testing and immunity
-                  documentation.
-                </h5>
+
               </RightMainTopLeft>
               <RightMainTopRight>
                 <RightMainBottomMainTabs></RightMainBottomMainTabs>
@@ -258,9 +298,7 @@ const Crendentials = () => {
                 <option value="1" selected="selected">
                   Olive Scott (self)
                 </option>
-                <option value="2" selected="selected">
-                  Leo Scott
-                </option>
+                <option value="2">Leo Scott</option>
               </select>
               <RightMainBottomMainTabs>
                 <RightMainBottomSubTabBoxes>
@@ -289,7 +327,7 @@ const Crendentials = () => {
                       <div className="title">Email</div>
                       <div className="info">olivescott94@outlook.com</div>
                       <div className="title">Date of Birth</div>
-                      <div className="info">14 April 2020</div>
+                      <div className="info">14 April 2020 </div>
                       <div className="title">Sex</div>
                       <div className="info">Female</div>
                     </CredentialsTopRight>
@@ -312,25 +350,22 @@ const Crendentials = () => {
                     <CredentialsMiddleRight></CredentialsMiddleRight>
                   </CredentialsMiddle>
                   <CredentialsBottom>
-                    <div className="title">Add/View Vitals</div>
                     <CredentialsBottomLeft>
+                      <div className="title">Add/View Vitals</div>
                       <select name="patient" className="patient">
                         <option value="1" selected="selected">
                           Fahrenheit
                         </option>
-                        <option value="2" selected="selected">
-                          Celsius
-                        </option>
+                        <option value="2">Celsius</option>
                       </select>
-                      <button>Update</button>
-                    </CredentialsBottomLeft>
-                    <CredentialsBottomRight>
                       <input
                         type="text"
-                        id="name"
+                        className="temp"
                         placeholder="Temperature"
                       ></input>
-                    </CredentialsBottomRight>
+                      <button className="update-btn">Update</button>
+                    </CredentialsBottomLeft>
+                    <CredentialsBottomRight></CredentialsBottomRight>
                   </CredentialsBottom>
                 </CredentialsBox>
               </RightMainBottomContainer>

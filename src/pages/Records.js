@@ -33,21 +33,31 @@ const RightMain = styled.div`
 const RightMainTop = styled.div`
   height: 15%;
   width: 100%;
-  background-color: white;
+  background-color: #f6f8f8;
   display: flex;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
 `;
 
 const RightMainTopLeft = styled.div`
   height: 100%;
   width: 50%;
-  background-color: white;
+  padding-top: 20px;
+  background-color: #f6f8f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 5px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #999;
+  padding-left: 20px;
+
+  .title {
+    color: black;
+    font-size: 25px;
+  }
+
+  .subtitle {
+    color: #999;
+    font-size: 15px;
+  }
 `;
 
 const RightMainTopRight = styled.div`
@@ -222,8 +232,10 @@ const Records = () => {
           <RightMain>
             <RightMainTop>
               <RightMainTopLeft>
-                <h3>Clinical Notes</h3>
-                <h5>All added documents will be listed here</h5>
+                <div className="title">Clinical Notes</div>
+                <div className="subtitle">
+                  All added documents will be listed here
+                </div>
               </RightMainTopLeft>
               <RightMainTopRight></RightMainTopRight>
             </RightMainTop>
