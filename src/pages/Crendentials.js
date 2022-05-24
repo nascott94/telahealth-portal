@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import Navbar from '../components/homepage/Navbar';
-import Sidebar from '../components/homepage/Sidebar';
+import React from "react";
+import styled from "styled-components";
+import Navbar from "../components/homepage/Navbar";
+import Sidebar from "../components/homepage/Sidebar";
 
 const Container = styled.div`
   height: 100vh;
@@ -46,16 +46,15 @@ const RightMainTopLeft = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 20px;
+  padding-left: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #999;
+
 
   .title {
     color: black;
     font-size: 25px;
-  }
-
-  .subtitle {
-    color: #999;
-    font-size: 15px;
   }
 `;
 
@@ -286,11 +285,9 @@ const Crendentials = () => {
           <RightMain>
             <RightMainTop>
               <RightMainTopLeft>
-                <div className="title">COVID Credentials</div>
-                <div className="subtitle">
-                  Manage and share your COVID-19 testing and immunity
-                  documentation.
-                </div>
+                <h3 className="title">COVID Credentials</h3>
+                <h5>
+
               </RightMainTopLeft>
               <RightMainTopRight>
                 <RightMainBottomMainTabs></RightMainBottomMainTabs>

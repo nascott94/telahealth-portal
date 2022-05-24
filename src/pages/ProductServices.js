@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import Navbar from '../components/homepage/Navbar';
-import Sidebar from '../components/homepage/Sidebar';
+import React from "react";
+import styled from "styled-components";
+import Navbar from "../components/homepage/Navbar";
+import Sidebar from "../components/homepage/Sidebar";
 
 const Container = styled.div`
   height: 100%;
@@ -41,14 +41,14 @@ const RightMainTop = styled.div`
 `;
 
 const RightMainTopLeft = styled.div`
-  height: 100%;
+  height: 98%;
   width: 50%;
   padding-top: 20px;
   background-color: #f6f8f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 20px;
+  padding-left: 1.4%;
 
   .title {
     color: black;
@@ -62,7 +62,7 @@ const RightMainTopLeft = styled.div`
 `;
 
 const RightMainTopRight = styled.div`
-  height: 100%;
+  height: 98%;
   width: 50%;
   background-color: #f6f8f8;
   display: flex;
@@ -104,7 +104,7 @@ const RightMainBottom = styled.div`
 `;
 
 const RightMainBottomTopBar = styled.div`
-  width: 100%;
+  width: 98%;
   height: 5%;
   background-color: #ffffff;
   display: flex;
@@ -112,7 +112,7 @@ const RightMainBottomTopBar = styled.div`
   align-items: center;
   border-top: 1.5px solid #999;
   border-bottom: 1px solid #999;
-  padding-right: 150px;
+  padding-right: 11.3%;
 
   .category {
     font-size: 14px;
@@ -126,7 +126,7 @@ const RightMainBottomBottomBar = styled.div`
   display: flex;
   align-items: center;
   border-bottom: 1px solid #999;
-  padding-left: 65px;
+  padding-left: 2.6%;
   color: #999;
 `;
 
