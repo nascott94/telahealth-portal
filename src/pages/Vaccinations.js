@@ -1,7 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import Navbar from '../components/homepage/Navbar';
-import Sidebar from '../components/homepage/Sidebar';
+import React from "react";
+import styled from "styled-components";
+import Navbar from "../components/homepage/Navbar";
+import Sidebar from "../components/homepage/Sidebar";
+import AddRoundedIcon from "@mui/icons-material/AddRounded";
 
 const Container = styled.div`
   height: 100%;
@@ -178,6 +179,12 @@ const MainTopBottomLeft = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+  }
 `;
 
 const MainTopBottomMiddle = styled.div`
@@ -254,6 +261,35 @@ const MainTopBottomRight = styled.div`
   width: 75%;
   background-color: white;
   display: flex;
+
+  .title {
+    font-size: 14px;
+    padding-left: 6px;
+    color: #f7bc01;
+  }
+
+  .info {
+    font-size: 14px;
+    padding-top: 2px;
+    padding-left: 6px;
+  }
+`;
+
+const MainTopBottomRight1 = styled.div`
+  height: 100%;
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+`;
+
+const MainTopBottomRight2 = styled.div`
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
 `;
 
 const MainTopFooter = styled.div`
@@ -267,7 +303,7 @@ const MainTopFooter = styled.div`
 `;
 
 const MainMiddle = styled.div`
-  height: 700px;
+  height: 800px;
   width: 100%;
   background-color: #eaedf1;
   display: flex;
@@ -305,6 +341,16 @@ const MainMiddleVacinesBoxes = styled.div`
   padding: 10px;
   display: flex;
   align-items: center;
+
+  .icon {
+    color: #2658e2;
+    font-size: 18px;
+  }
+
+  .label {
+    padding-top: 1.5px;
+    padding-left: 7px;
+  }
 `;
 
 const MainBottom = styled.div`
@@ -378,7 +424,11 @@ const Vaccinations = () => {
                   </MainTopMiddle>
                   <MainTopBottom>
                     <MainTopBottomLeft>
-                      <div>Image</div>
+                      <img
+                        src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                        alt="pic"
+                        className="avatar"
+                      />
                     </MainTopBottomLeft>
                     <MainTopBottomMiddle>
                       <MainTopBottom1>
@@ -400,7 +450,16 @@ const Vaccinations = () => {
                         </MainTopBottom3Right>
                       </MainTopBottom3>
                     </MainTopBottomMiddle>
-                    <MainTopBottomRight></MainTopBottomRight>
+                    <MainTopBottomRight>
+                      <MainTopBottomRight1>
+                        <div className="title">Photo Id</div>
+                        <div className="info">Not Set</div>
+                      </MainTopBottomRight1>
+                      <MainTopBottomRight2>
+                        <div className="title">Vacine Card(s)</div>
+                        <div className="info">None</div>
+                      </MainTopBottomRight2>
+                    </MainTopBottomRight>
                   </MainTopBottom>
                   <MainTopFooter>
                     <div style={{ paddingLeft: 20 }}>Vaccines</div>
@@ -415,96 +474,100 @@ const Vaccinations = () => {
                 </MainMiddleTop>
                 <MainMiddleVacinesContainer>
                   <MainMiddleVacinesBoxes>
-                    <div>+</div>
-                    <div>Covid-19</div>
+                    <AddRoundedIcon className="icon" />
+                    <div className="label">Covid-19</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <div>+</div>
-                    <div>Influenza</div>
+                    <AddRoundedIcon className="icon" />
+                    <div className="label">Influenza</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <div>+</div>
-                    <div>Diphtheria, Tetanus, Acellular Pertussis</div>
+                    <AddRoundedIcon className="icon" />
+                    <div className="label">
+                      Diphtheria, Tetanus, Acellular Pertussis
+                    </div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <div>+</div>
-                    <div>Haemophilus Influenza Type b</div>
+                    <AddRoundedIcon className="icon" />
+                    <div className="label">Haemophilus Influenza Type b</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <div>+</div>
-                    <div>Polio</div>
+                    <AddRoundedIcon className="icon" />
+                    <div className="label">Polio</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <div>+</div>
-                    <div>Measles, Mumps and Rubella</div>
+                    <AddRoundedIcon className="icon" />
+                    <div className="label">Measles, Mumps and Rubella</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <div>+</div>
-                    <div>Hepatitis A</div>
+                    <AddRoundedIcon className="icon" />
+                    <div className="label">Hepatitis A</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <div>+</div>
-                    <div>Hepatitis B</div>
+                    <AddRoundedIcon className="icon" />
+                    <div className="label">Hepatitis B</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <div>+</div>
-                    <div>Varicella</div>
+                    <AddRoundedIcon className="icon" />
+                    <div className="label">Varicella</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <div>+</div>
-                    <div>Rotavirus</div>
+                    <AddRoundedIcon className="icon" />
+                    <div className="label">Rotavirus</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <div>+</div>
-                    <div>Human Papillomavirus</div>
+                    <AddRoundedIcon className="icon" />
+                    <div className="label">Human Papillomavirus</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <div>+</div>
-                    <div>Tetanus, Diphatheria, Pertussis</div>
+                    <AddRoundedIcon className="icon" />
+                    <div className="label">Tetanus, Diphatheria, Pertussis</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <div>+</div>
-                    <div>Pneumococcal</div>
+                    <AddRoundedIcon className="icon" />
+                    <div className="label">Pneumococcal</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <div>+</div>
-                    <div>Meningococcal Groub B</div>
+                    <AddRoundedIcon className="icon" />
+                    <div className="label">Meningococcal Groub B</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <div>+</div>
-                    <div>Meningococcal Conjugate A, C, W, Y and CY</div>
+                    <AddRoundedIcon className="icon" />
+                    <div className="label">
+                      Meningococcal Conjugate A, C, W, Y and CY
+                    </div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <div>+</div>
-                    <div>Zoster</div>
+                    <AddRoundedIcon className="icon" />
+                    <div className="label">Zoster</div>
                   </MainMiddleVacinesBoxes>
                 </MainMiddleVacinesContainer>
               </MainMiddle>
               <MainBottom>
                 <MainBottomTop>
                   <h3>Travel Vaccine</h3>
-                  <h4>Vaccines</h4>
+                  <h4 className="label">Vaccines</h4>
                 </MainBottomTop>
                 <MainBottomTravelVacineContainer>
                   <MainMiddleVacinesBoxes>
-                    <div>+</div>
-                    <div>Japaneses Encephalitis</div>
+                    <AddRoundedIcon className="icon" />
+                    <div className="label">Japaneses Encephalitis</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <div>+</div>
-                    <div>Rabies</div>
+                    <AddRoundedIcon className="icon" />
+                    <div className="label">Rabies</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <div>+</div>
-                    <div>Typhoid Fever</div>
+                    <AddRoundedIcon className="icon" />
+                    <div className="label">Typhoid Fever</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <div>+</div>
-                    <div>Yellow Fever</div>
+                    <AddRoundedIcon className="icon" />
+                    <div className="label">Yellow Fever</div>
                   </MainMiddleVacinesBoxes>
                   <MainMiddleVacinesBoxes>
-                    <div>+</div>
-                    <div>Cholera</div>
+                    <AddRoundedIcon className="icon" />
+                    <div className="label">Cholera</div>
                   </MainMiddleVacinesBoxes>
                 </MainBottomTravelVacineContainer>
               </MainBottom>
