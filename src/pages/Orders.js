@@ -57,6 +57,7 @@ const RightMainTopLeft = styled.div`
   .subtitle {
     color: #999;
     font-size: 15px;
+    padding-left: 0.1%;
   }
 `;
 
@@ -111,7 +112,7 @@ const RightMainBottomTopBar = styled.div`
   align-items: center;
   border-top: 1.5px solid #999;
   border-bottom: 1px solid #999;
-  padding-right: 10.5%;
+  padding-right: 10.4%;
 
   .category {
     font-size: 14px;
@@ -142,6 +143,7 @@ const Orders = () => {
             <RightMainTop>
               <RightMainTopLeft>
                 <div className="title">Receipt</div>
+                <div className="subtitle">Receipts</div>
               </RightMainTopLeft>
               <RightMainTopRight>
                 <label className="title">Select Entity:</label>
