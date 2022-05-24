@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import Navbar from '../components/homepage/Navbar';
-import Sidebar from '../components/homepage/Sidebar';
+import React from "react";
+import styled from "styled-components";
+import Navbar from "../components/homepage/Navbar";
+import Sidebar from "../components/homepage/Sidebar";
 
 const Container = styled.div`
   height: 100%;
@@ -47,7 +47,7 @@ const RightMainTopLeft = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 20px;
+  padding-left: 1.4%;
 
   .title {
     color: black;
@@ -111,7 +111,7 @@ const RightMainBottomTopBar = styled.div`
   align-items: center;
   border-top: 1.5px solid #999;
   border-bottom: 1px solid #999;
-  padding-right: 150px;
+  padding-right: 10.5%;
 
   .category {
     font-size: 14px;
@@ -125,7 +125,7 @@ const RightMainBottomBottomBar = styled.div`
   display: flex;
   align-items: center;
   border-bottom: 1px solid #999;
-  padding-left: 65px;
+  padding-left: 2.7%;
   color: #999;
 `;
 
@@ -142,7 +142,6 @@ const Orders = () => {
             <RightMainTop>
               <RightMainTopLeft>
                 <div className="title">Receipt</div>
-                <div className="subtitle">Receipt</div>
               </RightMainTopLeft>
               <RightMainTopRight>
                 <label className="title">Select Entity:</label>

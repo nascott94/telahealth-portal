@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import Navbar from '../components/homepage/Navbar';
-import Sidebar from '../components/homepage/Sidebar';
+import React from "react";
+import styled from "styled-components";
+import Navbar from "../components/homepage/Navbar";
+import Sidebar from "../components/homepage/Sidebar";
 
 const Container = styled.div`
   height: 100vh;
@@ -47,6 +47,11 @@ const RightMainTopLeft = styled.div`
   font-size: 18px;
   font-weight: bold;
   color: #999;
+
+  .title {
+    color: black;
+    font-size: 25px;
+  }
 `;
 
 const RightMainTopRight = styled.div`
@@ -238,7 +243,7 @@ const Crendentials = () => {
           <RightMain>
             <RightMainTop>
               <RightMainTopLeft>
-                <h3>COVID Credentials</h3>
+                <h3 className="title">COVID Credentials</h3>
                 <h5>
                   Manage and share your COVID-19 testing and immunity
                   documentation.
