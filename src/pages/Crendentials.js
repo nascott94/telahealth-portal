@@ -51,7 +51,6 @@ const RightMainTopLeft = styled.div`
   font-weight: bold;
   color: #999;
 
-
   .title {
     color: black;
     font-size: 25px;
@@ -286,8 +285,6 @@ const Crendentials = () => {
             <RightMainTop>
               <RightMainTopLeft>
                 <h3 className="title">COVID Credentials</h3>
-                <h5>
-
               </RightMainTopLeft>
               <RightMainTopRight>
                 <RightMainBottomMainTabs></RightMainBottomMainTabs>
