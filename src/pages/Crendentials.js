@@ -30,7 +30,7 @@ const RightMain = styled.div`
 `;
 
 const RightMainTop = styled.div`
-  height: 14%;
+  height: 100px;
   width: 100%;
   background-color: #f6f8f8;
   display: flex;
@@ -39,26 +39,29 @@ const RightMainTop = styled.div`
 `;
 
 const RightMainTopLeft = styled.div`
-  height: 80%;
+  height: 100px;
   width: 50%;
-  padding-top: 20px;
   background-color: #f6f8f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 5px;
-  font-size: 18px;
-  font-weight: bold;
+  padding-left: 1.6%;
   color: #999;
 
   .title {
     color: black;
     font-size: 25px;
   }
+
+  .subtitle {
+    color: #999;
+    font-size: 15px;
+    padding-left: 0.1%;
+  }
 `;
 
 const RightMainTopRight = styled.div`
-  height: 100%;
+  height: 100px;
 `;
 
 const RightMainBottom = styled.div`
@@ -108,7 +111,7 @@ const RightMainBottomSubTabBoxes = styled.div`
   justify-content: center;
   align-items: center;
   clip-path: polygon(6% 0, 94% 0, 100% 14%, 100% 99%, 0 100%, 0 14%);
-  margin-left: 1px;
+  margin-left: 3px;
   font-size: 13px;
 `;
 const CredentialsBox = styled.div`
@@ -124,7 +127,7 @@ const CredentialsBox = styled.div`
 
 const CredentialsTop = styled.div`
   display: flex;
-  height: 40%;
+  height: 210px;
   width: 100%;
   padding-left: 15px;
   padding-top: 10px;
@@ -135,7 +138,7 @@ const CredentialsTopLeft = styled.div`
   width: 15%;
   display: flex;
   align-items: center;
-
+  margin-top: 25px;
   img {
     width: 70px;
     height: 70px;
@@ -144,7 +147,7 @@ const CredentialsTopLeft = styled.div`
   }
 `;
 const CredentialsTopRight = styled.div`
-  height: 100%;
+  height: 100px;
   width: 85%;
   padding-top: 5px;
 
@@ -157,6 +160,7 @@ const CredentialsTopRight = styled.div`
   .info {
     font-size: 14px;
     padding-top: 2px;
+    padding-bottom: 2%;
     padding-left: 6px;
   }
 
@@ -185,11 +189,19 @@ const CredentialsMiddle = styled.div`
   border-top: 1px solid #ccc;
 `;
 
+const CredentailsMiddleBox = styled.div`
+  height: 19%;
+  width: 97%;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+`;
+
 const CredentialsMiddleLeft = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 60%;
+  width: 97%;
   padding-top: 20px;
   padding-left: 15px;
 
@@ -202,19 +214,13 @@ const CredentialsMiddleLeft = styled.div`
 
   .info {
     padding-top: 5px;
+    padding-bottom: 10px;
     font-size: 15px;
 
     .icon {
       color: maroon;
     }
   }
-`;
-const CredentialsMiddleRight = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 40%;
 `;
 
 const CredentialsBottom = styled.div`
@@ -284,7 +290,11 @@ const Crendentials = () => {
           <RightMain>
             <RightMainTop>
               <RightMainTopLeft>
-                <h3 className="title">COVID Credentials</h3>
+                <div className="title">COVID Credentials</div>
+                <div className="subtitle">
+                  Manage and share your COVID-19 testing and immunity
+                  documentation.
+                </div>
               </RightMainTopLeft>
               <RightMainTopRight>
                 <RightMainBottomMainTabs></RightMainBottomMainTabs>
@@ -340,11 +350,16 @@ const Crendentials = () => {
                         The following information will be used to create your
                         COVID Credentials, your shareable digital health pass.
                       </div>
-                      <div>Add/View COVID-19 Vaccination Record</div>
-                      <div>Add/View COVID-19 Diagnostic Test Results</div>
-                      <div>Add/View COVID-19 Antibody Testing</div>
+                      <CredentailsMiddleBox>
+                        Add/View COVID-19 Vaccination Record
+                      </CredentailsMiddleBox>
+                      <CredentailsMiddleBox>
+                        Add/View COVID-19 Diagnostic Test Results
+                      </CredentailsMiddleBox>
+                      <CredentailsMiddleBox>
+                        Add/View COVID-19 Antibody Testing
+                      </CredentailsMiddleBox>
                     </CredentialsMiddleLeft>
-                    <CredentialsMiddleRight></CredentialsMiddleRight>
                   </CredentialsMiddle>
                   <CredentialsBottom>
                     <CredentialsBottomLeft>
