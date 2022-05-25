@@ -19,7 +19,7 @@ const LeftContainer = styled.div`
 const RightContainer = styled.div`
   height: 100vh;
   width: 85%;
-  background-color: white;
+  background-color: #2658e2;
   display: flex;
   flex-direction: column;
 `;
@@ -40,7 +40,7 @@ const RightMainTop = styled.div`
 `;
 
 const RightMainTopLeft = styled.div`
-  height: 100%;
+  height: 70%;
   width: 50%;
   padding-top: 20px;
   background-color: #f6f8f8;
@@ -60,16 +60,16 @@ const RightMainTopLeft = styled.div`
   }
 `;
 
-const RightMainTopRight = styled.div`
-  height: 100%;
-  width: 50%;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  padding-right: 18px;
-`;
+// const RightMainTopRight = styled.div`
+//   height: 100%;
+//   width: 50%;
+//   background-color: #2658e2;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: flex-end;
+//   padding-right: 18px;
+// `;
 
 const RightMainBottom = styled.div`
   height: 85%;
@@ -126,6 +126,7 @@ const RightMainBottomSubTabBoxes = styled.div`
   align-items: center;
   clip-path: polygon(6% 0, 94% 0, 100% 14%, 100% 99%, 0 100%, 0 14%);
   margin-left: 1px;
+  font-size: 13px;
 `;
 
 const RightMainBottomSubContainerTwo = styled.div`
@@ -144,6 +145,8 @@ const SubContainerTwoSection1 = styled.div`
   background-color: none;
   display: flex;
   align-items: center;
+  font-size: 13px;
+  padding-left: 1%;
   border-bottom: 1px solid black;
 `;
 
@@ -161,6 +164,22 @@ const SubContainerTwoSection2Left = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 1%;
+
+  .doc-title {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background: #fff;
+  }
+  .folder {
+    width: 35%;
+    height: 35%;
+    font-size: 12px;
+    /* padding: 10px 10px 10px 10px; */
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+  }
 `;
 
 const SubContainerTwoSection2Right = styled.div`
@@ -237,7 +256,6 @@ const Records = () => {
                   All added documents will be listed here
                 </div>
               </RightMainTopLeft>
-              <RightMainTopRight></RightMainTopRight>
             </RightMainTop>
             <RightMainBottom>
               <RightMainBottomMainTabs>
@@ -270,21 +288,34 @@ const Records = () => {
                   </RightMainBottomSubTabs>
                   <RightMainBottomSubContainerTwo>
                     <SubContainerTwoSection1>
-                      <h5>Clinical Notes</h5>
+                      <div>Clinical Notes</div>
                     </SubContainerTwoSection1>
                     <SubContainerTwoSection2>
                       <SubContainerTwoSection2Left>
-                        <input type="text" id="1name" name="1name" />
-                        <input type="text" id="2name" name="2name" />
-                        <input type="text" id="3name" name="3name" />
-                        <input type="text" id="4name" name="4name" />
+                        <input
+                          type="text"
+                          className="doc-title"
+                          placeholder="Document Title"
+                        />
+                        <select name="folder" className="folder">
+                          <option value="1" selected="selected">
+                            Select Folder
+                          </option>
+                        </select>
+                        <select name="patient" className="patient">
+                          <option value="1" selected="selected">
+                            Olive Scott
+                          </option>
+                          <option value="2">Leo Scott</option>
+                        </select>
+                        <button>Choose File</button>
                       </SubContainerTwoSection2Left>
                       <SubContainerTwoSection2Right>
                         <SubContainerTwoSection2Button>
-                          Text
+                          <button>Upload</button>
                         </SubContainerTwoSection2Button>
                         <SubContainerTwoSection2Button>
-                          Text
+                          <button>Search</button>
                         </SubContainerTwoSection2Button>
                       </SubContainerTwoSection2Right>
                     </SubContainerTwoSection2>

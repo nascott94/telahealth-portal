@@ -2,6 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import Navbar from '../components/homepage/Navbar';
 import Sidebar from '../components/homepage/Sidebar';
+import SearchIcon from '@mui/icons-material/Search';
+import OpenInBrowserRoundedIcon from '@mui/icons-material/OpenInBrowserRounded';
+import CachedRoundedIcon from '@mui/icons-material/CachedRounded';
+import VolumeUpRoundedIcon from '@mui/icons-material/VolumeUpRounded';
+// import FolderRoundedIcon from '@mui/icons-material/FolderRounded';
+// import FilterAltRoundedIcon from '@mui/icons-material/FilterAltRounded';
 
 const Container = styled.div`
   height: 100vh;
@@ -65,13 +71,19 @@ const MessageSideBarLeft = styled.div`
 `;
 
 const MessageSideBarLeftInputs = styled.div`
-  width: 60px;
+  width: 70px;
   height: 30px;
   background-color: white;
   border-bottom: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .icon {
+    height: 15px;
+    width: 15px;
+    margin-left: 10%;
+  }
 `;
 
 const MessageSideBarRight = styled.div`
@@ -82,6 +94,11 @@ const MessageSideBarRight = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  .icon {
+    height: 18px;
+    width: 18px;
+  }
 `;
 
 const MessageSideBarMiddle = styled.div`
@@ -114,17 +131,19 @@ const Messages = () => {
               <MessageSideBarTop>
                 <MessageSideBarLeft>
                   <MessageSideBarLeftInputs>
+                    {/* <FolderRoundedIcon className="icon" /> */}
                     <h5>Inbox</h5>
                   </MessageSideBarLeftInputs>
                   <MessageSideBarLeftInputs>
+                    {/* <FilterAltRoundedIcon className="icon" /> */}
                     <h5>Filter By</h5>
                   </MessageSideBarLeftInputs>
                 </MessageSideBarLeft>
                 <MessageSideBarRight>
-                  <h5>+</h5>
-                  <h5>+</h5>
-                  <h5>+</h5>
-                  <h5>+</h5>
+                  <SearchIcon className="icon" />
+                  <OpenInBrowserRoundedIcon className="icon" />
+                  <CachedRoundedIcon className="icon" />
+                  <VolumeUpRoundedIcon className="icon" />
                 </MessageSideBarRight>
               </MessageSideBarTop>
               <MessageSideBarMiddle>
