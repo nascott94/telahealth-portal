@@ -4,6 +4,7 @@ import Navbar from '../components/homepage/Navbar';
 import Sidebar from '../components/homepage/Sidebar';
 import FileUploadRoundedIcon from '@mui/icons-material/FileUploadRounded';
 import FolderOpenRoundedIcon from '@mui/icons-material/FolderOpenRounded';
+import ShareIcon from '@mui/icons-material/Share';
 
 const Container = styled.div`
   height: 100vh;
@@ -197,7 +198,19 @@ const SubContainerTwoSection2Left = styled.div`
   }
 
   .file-btn {
-    height: 35%;
+    height: 40%;
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12.5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+
+  .icon {
+    padding-right: 5px;
   }
 `;
 
@@ -212,22 +225,49 @@ const SubContainerTwoSection2Right = styled.div`
 `;
 
 const SubContainerTwoSection2Button = styled.div`
-  height: 25px;
-  width: 62px;
+  height: 100%;
+  width: 40%;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
 
   .upload-btn {
-    height: 100%;
-    width: 100%;
+    width: 75%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12.5px;
+    color: lightgrey;
+    background-color: #2658e2;
+    border-radius: 3px;
+    border: 1px solid #2658e2;
+    cursor: pointer;
+  }
+
+  .icon {
+    padding-right: 5px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .search-btn {
+    width: 60%;
+    height: 42%;
+    font-size: 13px;
+    color: lightgrey;
+    background-color: #2658e2;
+    border-radius: 3px;
+    border: 1px solid #2658e2;
+    cursor: pointer;
   }
 `;
 
 const SubContainerTwoSection3 = styled.div`
   height: 20%;
   width: 100%;
+  padding-left: 1%;
   background-color: none;
   display: flex;
   justify-content: space-between;
@@ -236,22 +276,42 @@ const SubContainerTwoSection3 = styled.div`
 `;
 
 const SubContainerTwoSection3Button = styled.div`
-  height: 22px;
-  width: 92px;
-  background-color: orange;
-  border: 0.5px solid black;
+  height: 50px;
+  width: 100px;
+  padding-right: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .share-btn {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    background-color: #f7bc01;
+    border-radius: 3px;
+    border: 1px solid #f7bc01;
+    cursor: pointer;
+  }
+
+  .icon {
+    padding-right: 5px;
+    width: 15px;
+    height: 15px;
+  }
 `;
 
 const SubContainerTwoSection4 = styled.div`
-  height: 20%;
+  height: 15%;
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color: #eaedf1;
   border-bottom: 1px solid black;
+  font-size: 13px;
+  padding-left: 1%;
 `;
 
 const SubContainerTwoSection5 = styled.div`
@@ -260,6 +320,8 @@ const SubContainerTwoSection5 = styled.div`
   background-color: none;
   display: flex;
   align-items: center;
+  font-size: 13px;
+  padding-left: 1%;
 `;
 
 const Records = () => {
@@ -331,13 +393,17 @@ const Records = () => {
                           </option>
                           <option value="2">Leo Scott</option>
                         </select>
-                        <FolderOpenRoundedIcon className="icon" />
-                        <button className="file-btn">Choose File</button>
+                        <button className="file-btn">
+                          <FolderOpenRoundedIcon className="icon" />
+                          Choose File
+                        </button>
                       </SubContainerTwoSection2Left>
                       <SubContainerTwoSection2Right>
                         <SubContainerTwoSection2Button>
-                          <FileUploadRoundedIcon />
-                          <button className="upload-btn">Upload</button>
+                          <button className="upload-btn">
+                            <FileUploadRoundedIcon className="icon" />
+                            Upload
+                          </button>
                         </SubContainerTwoSection2Button>
                         <SubContainerTwoSection2Button>
                           <button className="search-btn">Search</button>
@@ -351,14 +417,17 @@ const Records = () => {
                       <h5>Uploaded Date</h5>
                       <h5>Action</h5>
                       <SubContainerTwoSection3Button>
-                        Share
+                        <button className="share-btn">
+                          <ShareIcon className="icon" />
+                          Share
+                        </button>
                       </SubContainerTwoSection3Button>
                     </SubContainerTwoSection3>
                     <SubContainerTwoSection4>
-                      <h5>No Record To Display</h5>
+                      <div>No Record To Display</div>
                     </SubContainerTwoSection4>
                     <SubContainerTwoSection5>
-                      <h5>Showing 1-0 or 0 items</h5>
+                      <div>Showing 1-0 or 0 items</div>
                     </SubContainerTwoSection5>
                   </RightMainBottomSubContainerTwo>
                 </RightMainBottomSubContainer>
