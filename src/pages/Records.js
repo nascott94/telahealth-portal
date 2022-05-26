@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Navbar from '../components/homepage/Navbar';
 import Sidebar from '../components/homepage/Sidebar';
+import FileUploadRoundedIcon from '@mui/icons-material/FileUploadRounded';
+import FolderOpenRoundedIcon from '@mui/icons-material/FolderOpenRounded';
 
 const Container = styled.div`
   height: 100vh;
@@ -170,15 +172,32 @@ const SubContainerTwoSection2Left = styled.div`
     border: 1px solid #ccc;
     border-radius: 2px;
     background: #fff;
+    width: 25%;
+    height: 30%;
+    font-size: 12px;
   }
   .folder {
-    width: 35%;
+    width: 25%;
     height: 35%;
     font-size: 12px;
     /* padding: 10px 10px 10px 10px; */
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 2px;
+  }
+
+  .patient {
+    width: 25%;
+    height: 35%;
+    font-size: 12px;
+    /* padding: 10px 10px 10px 10px; */
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+  }
+
+  .file-btn {
+    height: 35%;
   }
 `;
 
@@ -193,13 +212,17 @@ const SubContainerTwoSection2Right = styled.div`
 `;
 
 const SubContainerTwoSection2Button = styled.div`
-  height: 22px;
+  height: 25px;
   width: 62px;
-  background-color: green;
-  border: 0.5px solid black;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .upload-btn {
+    height: 100%;
+    width: 100%;
+  }
 `;
 
 const SubContainerTwoSection3 = styled.div`
@@ -308,14 +331,16 @@ const Records = () => {
                           </option>
                           <option value="2">Leo Scott</option>
                         </select>
-                        <button>Choose File</button>
+                        <FolderOpenRoundedIcon className="icon" />
+                        <button className="file-btn">Choose File</button>
                       </SubContainerTwoSection2Left>
                       <SubContainerTwoSection2Right>
                         <SubContainerTwoSection2Button>
-                          <button>Upload</button>
+                          <FileUploadRoundedIcon />
+                          <button className="upload-btn">Upload</button>
                         </SubContainerTwoSection2Button>
                         <SubContainerTwoSection2Button>
-                          <button>Search</button>
+                          <button className="search-btn">Search</button>
                         </SubContainerTwoSection2Button>
                       </SubContainerTwoSection2Right>
                     </SubContainerTwoSection2>
