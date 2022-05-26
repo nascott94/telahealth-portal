@@ -2,14 +2,15 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const Container = styled.div`
-  height: 100%;
+  height: 500px;
   width: 98%;
-  background-color: orange;
+  background-color: white;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   padding: 10px;
   overflow: scroll;
+  border-top: 1px solid black;
 `;
 
 const HeaderContainer = styled.div`
@@ -19,6 +20,7 @@ const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   border-bottom: 1px solid black;
+  padding-bottom: 20px;
 `;
 
 const PatientIDContainer = styled.div`
@@ -28,6 +30,8 @@ const PatientIDContainer = styled.div`
   display: flex;
   align-items: center;
   border-bottom: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
 `;
 
 const NameContainer = styled.div`
@@ -42,30 +46,34 @@ const PhoneContainer = styled.div`
   width: 100%;
   display: flex;
   border-bottom: 1px solid black;
+  margin-bottom: 20px;
 `;
 
 const NamePhoneLeft = styled.div`
-  height: 100px;
+  height: 70px;
   width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-bottom: 20px;
 `;
 
 const NamePhoneMiddle = styled.div`
-  height: 100px;
+  height: 70px;
   width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-bottom: 20px;
 `;
 
 const NamePhoneRight = styled.div`
-  height: 100px;
+  height: 70px;
   width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-bottom: 20px;
 `;
 
 const NationalityContainer = styled.div`
@@ -75,6 +83,8 @@ const NationalityContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   border-bottom: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 20px;
 `;
 
 const EmailContainer = styled.div`
@@ -108,6 +118,8 @@ const LogInContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   border-bottom: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
 `;
 
 const CountryContainer = styled.div`
@@ -123,6 +135,11 @@ const CountryLeft = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  .folder {
+    height: 35px;
+    width: 440px;
+  }
 `;
 
 const CountryRight = styled.div`
@@ -131,6 +148,11 @@ const CountryRight = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  .folder {
+    height: 35px;
+    width: 440px;
+  }
 `;
 
 const DropDownBox = styled.div`
@@ -154,6 +176,11 @@ const PassportLeft = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  .folder {
+    height: 35px;
+    width: 440px;
+  }
 `;
 
 const PassportRight = styled.div`
@@ -162,14 +189,24 @@ const PassportRight = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  .folder {
+    height: 35px;
+    width: 440px;
+  }
 `;
 
 const CheckBoxContainer = styled.div`
   height: 100px;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+
+  .input {
+    margin-right: 10px;
+    height: 30px;
+  }
 `;
 
 const MFAContainer = styled.div`
@@ -189,9 +226,9 @@ const MFAContainerLeft = styled.div`
 
 const MFAPasswordButton = styled.div`
   height: 30px;
-  width: 100px;
+  width: 154px;
   border-radius: 10px;
-  background-color: blue;
+  background-color: #2658e2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -232,6 +269,11 @@ const DateOfBirthContainerBottomLeft = styled.div`
   width: 33.3%;
   display: flex;
   align-items: center;
+
+  .folder {
+    height: 35px;
+    width: 300px;
+  }
 `;
 
 const DateOfBirthContainerBottomMiddle = styled.div`
@@ -239,6 +281,11 @@ const DateOfBirthContainerBottomMiddle = styled.div`
   width: 33.3%;
   display: flex;
   align-items: center;
+
+  .folder {
+    height: 35px;
+    width: 300px;
+  }
 `;
 
 const DateOfBirthContainerBottomRight = styled.div`
@@ -246,6 +293,11 @@ const DateOfBirthContainerBottomRight = styled.div`
   width: 33.3%;
   display: flex;
   align-items: center;
+
+  .folder {
+    height: 35px;
+    width: 300px;
+  }
 `;
 
 const GenderPhotoIDContainer = styled.div`
@@ -254,6 +306,11 @@ const GenderPhotoIDContainer = styled.div`
   display: flex;
   align-items: center;
   border-bottom: 1px solid black;
+
+  .folder {
+    height: 35px;
+    width: 240px;
+  }
 `;
 
 const GenderPhotoIDContainerLeft = styled.div`
@@ -272,15 +329,16 @@ const GenderPhotoIDContainerLeftTop = styled.div`
 
 const GenderPhotoIDContainerLeftBottom = styled.div`
   height: 100px;
-  width: 40%;
+  width: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 `;
 
 const GenderBubble = styled.div`
-  width: 30px;
+  width: 10px;
   height: 30px;
   display: flex;
+  align-items: center;
 `;
 
 const GenderPhotoIDContainerRight = styled.div`
@@ -318,6 +376,11 @@ const UploadHeadshotContainerBottomLeft = styled.div`
   width: 50%;
   display: flex;
   align-items: center;
+
+  .folder {
+    height: 35px;
+    width: 400px;
+  }
 `;
 
 const UploadHeadshotContainerBottomMiddle = styled.div`
@@ -325,6 +388,11 @@ const UploadHeadshotContainerBottomMiddle = styled.div`
   width: 25%;
   display: flex;
   align-items: center;
+
+  .folder {
+    height: 35px;
+    width: 240px;
+  }
 `;
 
 const UploadHeadshotContainerBottomRight = styled.div`
@@ -332,10 +400,15 @@ const UploadHeadshotContainerBottomRight = styled.div`
   width: 25%;
   display: flex;
   align-items: center;
+
+  .folder {
+    height: 35px;
+    width: 240px;
+  }
 `;
 
 const EmergencyContactContainer = styled.div`
-  height: 400px;
+  height: 300px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -343,10 +416,11 @@ const EmergencyContactContainer = styled.div`
 `;
 
 const EmergencyContactContainerTop = styled.div`
-  height: 50px;
+  height: 10px;
   width: 100%;
   display: flex;
   align-items: center;
+  padding-top: 40px;
 `;
 
 const EmergencyContactContainerBottom = styled.div`
@@ -407,7 +481,8 @@ const ButtonContainer = styled.div`
 const UpdateButton = styled.div`
   height: 40px;
   width: 80px;
-  background-color: blue;
+  background-color: #2658e2;
+  color: white;
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -449,7 +524,7 @@ const AccountSettings = () => {
           </NamePhoneMiddle>
           <NamePhoneRight>
             <h4>Fax</h4>
-            <h5></h5>
+            <h5>453-234-2313</h5>
           </NamePhoneRight>
         </PhoneContainer>
         <NationalityContainer>
@@ -473,24 +548,47 @@ const AccountSettings = () => {
         <CountryContainer>
           <CountryLeft>
             <h4>Country</h4>
-            <DropDownBox>Please Select</DropDownBox>
+            <select name="folder" className="folder">
+              <option value="1" selected="selected">
+                Select Folder
+              </option>
+            </select>
           </CountryLeft>
           <CountryRight>
             <h4>Time Zone</h4>
-            <DropDownBox>Please Select</DropDownBox>
+            <select name="folder" className="folder">
+              <option value="1" selected="selected">
+                Select Folder
+              </option>
+            </select>
           </CountryRight>
         </CountryContainer>
         <PassportContainer>
           <PassportLeft>
             <h4>Passport Or Citizen ID Number</h4>
-            <DropDownBox></DropDownBox>
+            <select name="folder" className="folder">
+              <option value="1" selected="selected">
+                Select Folder
+              </option>
+            </select>
           </PassportLeft>
           <PassportRight>
             <h4>Language</h4>
-            <DropDownBox>Please Select</DropDownBox>
+            <select name="folder" className="folder">
+              <option value="1" selected="selected">
+                Select Folder
+              </option>
+            </select>
           </PassportRight>
         </PassportContainer>
         <CheckBoxContainer>
+          <input
+            type="checkbox"
+            id="vehicle1"
+            name="vehicle1"
+            value="Bike"
+            className="input"
+          ></input>
           <h4>Require MFA for Login</h4>
         </CheckBoxContainer>
         <MFAContainer>
@@ -508,13 +606,25 @@ const AccountSettings = () => {
           </DateOfBirthContainerTop>
           <DateOfBirthContainerBottom>
             <DateOfBirthContainerBottomLeft>
-              <DropDownBox></DropDownBox>
+              <select name="folder" className="folder">
+                <option value="1" selected="selected">
+                  Date
+                </option>
+              </select>
             </DateOfBirthContainerBottomLeft>
             <DateOfBirthContainerBottomMiddle>
-              <DropDownBox></DropDownBox>
+              <select name="folder" className="folder">
+                <option value="1" selected="selected">
+                  Month
+                </option>
+              </select>
             </DateOfBirthContainerBottomMiddle>
             <DateOfBirthContainerBottomRight>
-              <DropDownBox></DropDownBox>
+              <select name="folder" className="folder">
+                <option value="1" selected="selected">
+                  Year
+                </option>
+              </select>
             </DateOfBirthContainerBottomRight>
           </DateOfBirthContainerBottom>
         </DateOfBirthContainer>
@@ -525,16 +635,37 @@ const AccountSettings = () => {
             </GenderPhotoIDContainerLeftTop>
             <GenderPhotoIDContainerLeftBottom>
               <GenderBubble>
-                <input type="radio" name="food" /> : Italian
-                <br />
+                <input
+                  type="radio"
+                  id="html"
+                  name="fav_language"
+                  value="HTML"
+                />
+                <label className="bubblebe" for="html">
+                  Male
+                </label>
               </GenderBubble>
               <GenderBubble>
-                <input type="radio" name="food" /> : Italian
-                <br />
+                <input
+                  type="radio"
+                  id="html"
+                  name="fav_language"
+                  value="HTML"
+                />
+                <label className="bubblebe" for="html">
+                  Female
+                </label>
               </GenderBubble>
               <GenderBubble>
-                <input type="radio" name="food" /> : Italian
-                <br />
+                <input
+                  type="radio"
+                  id="html"
+                  name="fav_language"
+                  value="HTML"
+                />
+                <label className="bubblebe" for="html">
+                  Other
+                </label>
               </GenderBubble>
             </GenderPhotoIDContainerLeftBottom>
           </GenderPhotoIDContainerLeft>
@@ -544,8 +675,11 @@ const AccountSettings = () => {
               Attach a photo of the patient's (if over 18) or guardian's photo
               ID.
             </h5>
-            <h2>Choose File</h2>
-            <h4>Capture Using Webcam</h4>
+            <select name="folder" className="folder">
+              <option value="1" selected="selected">
+                Select Folder
+              </option>
+            </select>
             <h5>
               Only .jpeg, .jpg, .png, .gif files are allowed. File size should
               not be greater than 5MB.
@@ -558,13 +692,25 @@ const AccountSettings = () => {
           </UploadHeadshotContainerTop>
           <UploadHeadshotContainerBottom>
             <UploadHeadshotContainerBottomLeft>
-              <DropDownBox>Choose file</DropDownBox>
+              <select name="folder" className="folder">
+                <option value="1" selected="selected">
+                  Select File
+                </option>
+              </select>
             </UploadHeadshotContainerBottomLeft>
             <UploadHeadshotContainerBottomMiddle>
-              <DropDownBox>Choose file</DropDownBox>
+              <select name="folder" className="folder">
+                <option value="1" selected="selected">
+                  Select Race
+                </option>
+              </select>
             </UploadHeadshotContainerBottomMiddle>
             <UploadHeadshotContainerBottomRight>
-              <DropDownBox>Choose file</DropDownBox>
+              <select name="folder" className="folder">
+                <option value="1" selected="selected">
+                  Ethnicity
+                </option>
+              </select>
             </UploadHeadshotContainerBottomRight>
           </UploadHeadshotContainerBottom>
           <h5>File size should not be greater than 5MB.</h5>

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const Container = styled.div`
-  height: 100%;
+  height: 500px;
   width: 100%;
   background-color: yellow;
   display: flex;
