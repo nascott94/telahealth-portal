@@ -3,15 +3,18 @@ import styled from "@emotion/styled";
 
 const Container = styled.div`
   height: 500px;
-  width: 100%;
+  width: 98%;
   background-color: white;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 10px;
+  overflow: scroll;
+  border-top: 1px solid black;
 `;
 
 const HeaderContainer = styled.div`
-  height: 100px;
+  height: 111px;
   width: 98%;
   display: flex;
   align-items: center;
@@ -22,6 +25,15 @@ const AddressContainer = styled.div`
   height: 100px;
   width: 98%;
   display: flex;
+
+  .textInput {
+    height: 25px;
+    width: 435px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid black;
+  }
 `;
 
 const AddressLeft = styled.div`
@@ -60,6 +72,11 @@ const CountryContainerLeft = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
+
+  .folder {
+    height: 30px;
+    width: 440px;
+  }
 `;
 
 const CountryContainerRight = styled.div`
@@ -67,42 +84,183 @@ const CountryContainerRight = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
+
+  .folder {
+    height: 30px;
+    width: 440px;
+  }
 `;
 
-const InputBoxGrey = styled.div`
-  height: 30px;
-  width: 90%;
-  background-color: grey;
+const CityZip = styled.div`
+  height: 80px;
+  width: 98%;
+  display: flex;
   border-bottom: 1px solid black;
+`;
+
+const CityZipLeft = styled.div`
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  .textInput {
+    height: 25px;
+    width: 435px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid black;
+  }
+`;
+
+const CityZipRight = styled.div`
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  .textInput {
+    height: 25px;
+    width: 435px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid black;
+  }
+`;
+
+const PhoneEmail = styled.div`
+  height: 80px;
+  width: 98%;
+  display: flex;
+  border-bottom: 1px solid black;
+  padding-top: 20px;
+`;
+
+const PhoneEmailLeft = styled.div`
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  .textInput {
+    height: 25px;
+    width: 435px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid black;
+  }
+`;
+
+const PhoneEmailRight = styled.div`
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  .textInput {
+    height: 25px;
+    width: 435px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid black;
+  }
 `;
 
 const AddressContactInfo = () => {
   return (
     <>
       <Container>
-        <HeaderContainer>Address and Contact Information</HeaderContainer>
+        <HeaderContainer>
+          <h1>Address and Contact Information</h1>
+        </HeaderContainer>
         <AddressContainer>
           <AddressLeft>
-            <h4>Address 1</h4>
-            <InputBox></InputBox>
+            <label for="addressname">Address 1:</label>
+            <input
+              className="textInput"
+              type="text"
+              id="addressname"
+              name="addressname"
+            />
           </AddressLeft>
           <AddressRight>
-            <h4>Address 2</h4>
-            <InputBox></InputBox>
+            <label for="addressname">Address 2:</label>
+            <input
+              className="textInput"
+              type="text"
+              id="addressname"
+              name="addressname"
+            />
           </AddressRight>
         </AddressContainer>
         <CountryContainer>
           <CountryContainerLeft>
-            <h4>Country of residence</h4>
-            <InputBoxGrey></InputBoxGrey>
-            <h4>County</h4>
-            <InputBoxGrey></InputBoxGrey>
+            <h4>Country Of residence</h4>
+            <select name="folder" className="folder">
+              <option value="1" selected="selected">
+                Please Select
+              </option>
+            </select>
+            <h4>Country</h4>
+            <select name="folder" className="folder">
+              <option value="1" selected="selected">
+                Please Select
+              </option>
+            </select>
           </CountryContainerLeft>
           <CountryContainerRight>
             <h4>State</h4>
-            <InputBoxGrey></InputBoxGrey>
+            <select name="folder" className="folder">
+              <option value="1" selected="selected">
+                Please Select
+              </option>
+            </select>
           </CountryContainerRight>
         </CountryContainer>
+        <CityZip>
+          <CityZipLeft>
+            <label for="addressname">City:</label>
+            <input
+              className="textInput"
+              type="text"
+              id="addressname"
+              name="addressname"
+            />
+          </CityZipLeft>
+          <CityZipRight>
+            <label for="addressname">Zip Code:</label>
+            <input
+              className="textInput"
+              type="text"
+              id="addressname"
+              name="addressname"
+            />
+          </CityZipRight>
+        </CityZip>
+        <PhoneEmail>
+          <PhoneEmailLeft>
+            <label for="addressname">Phone:</label>
+            <input
+              className="textInput"
+              type="text"
+              id="addressname"
+              name="addressname"
+            />
+          </PhoneEmailLeft>
+          <PhoneEmailRight>
+            <label for="addressname">Email:</label>
+            <input
+              className="textInput"
+              type="text"
+              id="addressname"
+              name="addressname"
+            />
+          </PhoneEmailRight>
+        </PhoneEmail>
       </Container>
     </>
   );
