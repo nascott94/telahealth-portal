@@ -108,7 +108,7 @@ const RightMainBottomSubContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid #ccc;
   z-index: 99;
 `;
 
@@ -117,7 +117,7 @@ const RightMainBottomSubTabs = styled.div`
   height: 10%;
   background-color: #f6f8f8;
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
 `;
 
 const RightMainBottomSubTabBoxes = styled.div`
@@ -139,7 +139,8 @@ const RightMainBottomSubContainerTwo = styled.div`
   margin-top: 25px;
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  border: 1px solid #ccc;
+  overflow: hidden;
 `;
 
 const SubContainerTwoSection1 = styled.div`
@@ -150,7 +151,7 @@ const SubContainerTwoSection1 = styled.div`
   align-items: center;
   font-size: 13px;
   padding-left: 1%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
 `;
 
 const SubContainerTwoSection2 = styled.div`
@@ -158,7 +159,7 @@ const SubContainerTwoSection2 = styled.div`
   width: 100%;
   display: flex;
   background-color: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
 `;
 
 const SubContainerTwoSection2Left = styled.div`
@@ -272,7 +273,7 @@ const SubContainerTwoSection3 = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
 `;
 
 const SubContainerTwoSection3Button = styled.div`
@@ -304,12 +305,12 @@ const SubContainerTwoSection3Button = styled.div`
 `;
 
 const SubContainerTwoSection4 = styled.div`
-  height: 15%;
+  height: 10%;
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: #eaedf1;
-  border-bottom: 1px solid black;
+  background-color: #f5f8f8;
+  border-bottom: 1px solid #ccc;
   font-size: 13px;
   padding-left: 1%;
 `;
