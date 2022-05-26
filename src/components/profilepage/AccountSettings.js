@@ -56,6 +56,15 @@ const NamePhoneLeft = styled.div`
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 20px;
+
+  .textInput {
+    height: 18px;
+    width: 300px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
 `;
 
 const NamePhoneMiddle = styled.div`
@@ -65,6 +74,15 @@ const NamePhoneMiddle = styled.div`
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 20px;
+
+  .textInput {
+    height: 18px;
+    width: 300px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
 `;
 
 const NamePhoneRight = styled.div`
@@ -74,6 +92,15 @@ const NamePhoneRight = styled.div`
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 20px;
+
+  .textInput {
+    height: 18px;
+    width: 300px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
 `;
 
 const NationalityContainer = styled.div`
@@ -85,6 +112,11 @@ const NationalityContainer = styled.div`
   border-bottom: 1px solid black;
   padding-top: 10px;
   padding-bottom: 20px;
+
+  .folder {
+    height: 35px;
+    width: 440px;
+  }
 `;
 
 const EmailContainer = styled.div`
@@ -101,6 +133,15 @@ const EmailLeft = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  .textInput {
+    height: 18px;
+    width: 300px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
 `;
 
 const EmailRight = styled.div`
@@ -109,6 +150,15 @@ const EmailRight = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  .textInput {
+    height: 18px;
+    width: 300px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
 `;
 
 const LogInContainer = styled.div`
@@ -120,6 +170,15 @@ const LogInContainer = styled.div`
   border-bottom: 1px solid black;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  .textInput {
+    height: 18px;
+    width: 300px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
 `;
 
 const CountryContainer = styled.div`
@@ -436,7 +495,16 @@ const EmergencyContactBottomLeft = styled.div`
   width: 33.3%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+
+  .textInput {
+    height: 18px;
+    width: 300px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
 `;
 
 const EmergencyContactBottomMiddle = styled.div`
@@ -444,7 +512,16 @@ const EmergencyContactBottomMiddle = styled.div`
   width: 33.3%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+
+  .textInput {
+    height: 18px;
+    width: 300px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
 `;
 
 const EmergencyContactBottomRight = styled.div`
@@ -452,7 +529,18 @@ const EmergencyContactBottomRight = styled.div`
   width: 33.3%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  padding-bottom: 108px;
+  padding-top: 30px;
+
+  .textInput {
+    height: 18px;
+    width: 300px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
 `;
 
 const EmergancyContactBox = styled.div`
@@ -501,49 +589,83 @@ const AccountSettings = () => {
         </PatientIDContainer>
         <NameContainer>
           <NamePhoneLeft>
-            <h4>First Name:</h4>
-            <h5>Nat Scott</h5>
+            <label for="fname">First Name:</label>
+            <input className="textInput" type="text" id="fname" name="fname" />
           </NamePhoneLeft>
           <NamePhoneMiddle>
-            <h4>Middle Name:</h4>
-            <h5>Nat Scott</h5>
+            <label for="mname">Middle Initial:</label>
+            <input className="textInput" type="text" id="mname" name="mname" />
           </NamePhoneMiddle>
           <NamePhoneRight>
-            <h4>Last Name:</h4>
-            <h5>Nat Scott</h5>
+            <label for="lname">Last Name:</label>
+            <input className="textInput" type="text" id="lname" name="lname" />
           </NamePhoneRight>
         </NameContainer>
         <PhoneContainer>
           <NamePhoneLeft>
-            <h4>Office Phone:</h4>
-            <h5>453-987-1324</h5>
+            <label for="opname">Office Phone:</label>
+            <input
+              className="textInput"
+              type="text"
+              id="opname"
+              name="opname"
+            />
           </NamePhoneLeft>
           <NamePhoneMiddle>
-            <h4>Home Phone:</h4>
-            <h5>+1</h5>
+            <label for="hpname">Home Phone</label>
+            <input
+              className="textInput"
+              type="text"
+              id="hpname"
+              name="hpname"
+            />
           </NamePhoneMiddle>
           <NamePhoneRight>
-            <h4>Fax</h4>
-            <h5>453-234-2313</h5>
+            <label for="faxname">Fax:</label>
+            <input
+              className="textInput"
+              type="text"
+              id="faxname"
+              name="faxname"
+            />
           </NamePhoneRight>
         </PhoneContainer>
         <NationalityContainer>
           <h4>Nationality</h4>
-          <h5>Please Select Nationality</h5>
+          <select name="folder" className="folder">
+            <option value="1" selected="selected">
+              Please Select Nationality
+            </option>
+          </select>
         </NationalityContainer>
         <EmailContainer>
           <EmailLeft>
-            <h4>Email:</h4>
-            <h5>NatScott@gmail.com</h5>
+            <label for="emailname">Email:</label>
+            <input
+              className="textInput"
+              type="text"
+              id="emailname"
+              name="emailname"
+            />
           </EmailLeft>
           <EmailRight>
-            <h4>Phone Number:</h4>
-            <h5>784-323-5342</h5>
+            <label for="cellname">Cell Number:</label>
+            <input
+              className="textInput"
+              type="text"
+              id="cellname"
+              name="cellname"
+            />
           </EmailRight>
         </EmailContainer>
         <LogInContainer>
-          <h4>ZAPPY HEALTH Username</h4>
-          <h5>Natfirech</h5>
+          <label for="username">Zappy Health UserName:</label>
+          <input
+            className="textInput"
+            type="text"
+            id="username"
+            name="username"
+          />
         </LogInContainer>
         <CountryContainer>
           <CountryLeft>
@@ -721,15 +843,46 @@ const AccountSettings = () => {
           </EmergencyContactContainerTop>
           <EmergencyContactContainerBottom>
             <EmergencyContactBottomLeft>
-              <EmergancyContactBox>First Name</EmergancyContactBox>
-              <EmergancyContactBox>Home Phone</EmergancyContactBox>
+              <label for="fname">First Name:</label>
+              <input
+                className="textInput"
+                type="text"
+                id="fname"
+                name="fname"
+              />
+              <label for="hphonename">Home Phone:</label>
+              <input
+                className="textInput"
+                type="text"
+                id="hphonename"
+                name="hphonename"
+              />
             </EmergencyContactBottomLeft>
             <EmergencyContactBottomMiddle>
-              <EmergancyContactBox>Last Name</EmergancyContactBox>
-              <EmergancyContactBox>Cell Phone</EmergancyContactBox>
+              <label for="lname">Last Name:</label>
+              <input
+                className="textInput"
+                type="text"
+                id="lname"
+                name="lname"
+              />
+              <label for="cpname">Cell Phone:</label>
+              <input
+                className="textInput"
+                type="text"
+                id="cpname"
+                name="cpname"
+              />
             </EmergencyContactBottomMiddle>
             <EmergencyContactBottomRight>
-              <EmergancyContactBox>Email</EmergancyContactBox>
+              <label for="emailname">Email:</label>
+              <br></br>
+              <input
+                className="textInput"
+                type="text"
+                id="emailname"
+                name="emailname"
+              />
             </EmergencyContactBottomRight>
           </EmergencyContactContainerBottom>
         </EmergencyContactContainer>
