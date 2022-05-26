@@ -25,6 +25,8 @@ const AddressContainer = styled.div`
   height: 100px;
   width: 98%;
   display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   .textInput {
     height: 25px;
@@ -43,6 +45,7 @@ const AddressLeft = styled.div`
   flex-direction: column;
   border-bottom: 1px solid black;
   justify-content: center;
+  padding-bottom: 20px;
 `;
 
 const AddressRight = styled.div`
@@ -52,6 +55,7 @@ const AddressRight = styled.div`
   flex-direction: column;
   border-bottom: 1px solid black;
   justify-content: center;
+  padding-bottom: 20px;
 `;
 
 const InputBox = styled.div`
@@ -84,7 +88,9 @@ const CountryContainerRight = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
-
+  padding-top: 15px:
+  padding-bottom: 15px;
+  
   .folder {
     height: 30px;
     width: 440px;
@@ -96,6 +102,8 @@ const CityZip = styled.div`
   width: 98%;
   display: flex;
   border-bottom: 1px solid black;
+  padding-top: 15px;
+  padding-bottom: 15px;
 `;
 
 const CityZipLeft = styled.div`
@@ -136,6 +144,7 @@ const PhoneEmail = styled.div`
   display: flex;
   border-bottom: 1px solid black;
   padding-top: 20px;
+  padding-bottom: 20px;
 `;
 
 const PhoneEmailLeft = styled.div`
@@ -168,6 +177,92 @@ const PhoneEmailRight = styled.div`
     border-top: none;
     border-bottom: 1px solid black;
   }
+`;
+
+const BillingAddressContainer = styled.div`
+  height: 50px;
+  width: 98%;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+`;
+
+const BillingAddress = styled.div`
+  height: 100px;
+  width: 98%;
+  display: flex;
+
+  .textInput {
+    height: 25px;
+    width: 435px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+  }
+`;
+
+const BillingAddressLeft = styled.div`
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+  justify-content: center;
+  padding-bottom: 20px;
+
+  .textInput {
+    height: 25px;
+    width: 435px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid black;
+  }
+`;
+
+const BillingAddressRight = styled.div`
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+  justify-content: center;
+  padding-bottom: 20px;
+
+  .textInput {
+    height: 25px;
+    width: 435px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid black;
+  }
+`;
+
+const BillingCountryContainer = styled.div`
+  height: 300px;
+  width: 98%;
+  display: flex;
+`;
+
+const BillingCountry2 = styled.div`
+  height: 300px;
+  width: 100%;
+  background-color: pink;
+`;
+
+const ShippingAddressContainer = styled.div`
+  height: 400px;
+  width: 98%;
+  display: flex;
+`;
+
+const ShippingAddress2 = styled.div`
+  height: 400px;
+  width: 100%;
+  background-color: blue;
 `;
 
 const AddressContactInfo = () => {
@@ -261,6 +356,104 @@ const AddressContactInfo = () => {
             />
           </PhoneEmailRight>
         </PhoneEmail>
+        <BillingAddressContainer>
+          <h1>Billing Address</h1>
+        </BillingAddressContainer>
+        <BillingAddress>
+          <BillingAddressLeft>
+            <label for="addressname">Address 1:</label>
+            <input
+              className="textInput"
+              type="text"
+              id="addressname"
+              name="addressname"
+            />
+          </BillingAddressLeft>
+          <BillingAddressRight>
+            <label for="addressname">Address 2:</label>
+            <input
+              className="textInput"
+              type="text"
+              id="addressname"
+              name="addressname"
+            />
+          </BillingAddressRight>
+        </BillingAddress>
+        <BillingCountryContainer>
+          <BillingCountry2>
+            <CountryContainer>
+              <CountryContainerLeft>
+                <h4>Country Of residence</h4>
+                <select name="folder" className="folder">
+                  <option value="1" selected="selected">
+                    Please Select
+                  </option>
+                </select>
+                <h4>Country</h4>
+                <select name="folder" className="folder">
+                  <option value="1" selected="selected">
+                    Please Select
+                  </option>
+                </select>
+              </CountryContainerLeft>
+              <CountryContainerRight>
+                <h4>State</h4>
+                <select name="folder" className="folder">
+                  <option value="1" selected="selected">
+                    Please Select
+                  </option>
+                </select>
+              </CountryContainerRight>
+            </CountryContainer>
+            <CityZip>
+              <CityZipLeft>
+                <label for="addressname">City:</label>
+                <input
+                  className="textInput"
+                  type="text"
+                  id="addressname"
+                  name="addressname"
+                />
+              </CityZipLeft>
+              <CityZipRight>
+                <label for="addressname">Zip Code:</label>
+                <input
+                  className="textInput"
+                  type="text"
+                  id="addressname"
+                  name="addressname"
+                />
+              </CityZipRight>
+            </CityZip>
+          </BillingCountry2>
+        </BillingCountryContainer>
+        <ShippingAddressContainer>
+          <ShippingAddress2>
+            <BillingAddressContainer>
+              <h1>Shipping Address</h1>
+            </BillingAddressContainer>
+            <BillingAddress>
+              <BillingAddressLeft>
+                <label for="addressname">Address 1:</label>
+                <input
+                  className="textInput"
+                  type="text"
+                  id="addressname"
+                  name="addressname"
+                />
+              </BillingAddressLeft>
+              <BillingAddressRight>
+                <label for="addressname">Address 2:</label>
+                <input
+                  className="textInput"
+                  type="text"
+                  id="addressname"
+                  name="addressname"
+                />
+              </BillingAddressRight>
+            </BillingAddress>
+          </ShippingAddress2>
+        </ShippingAddressContainer>
       </Container>
     </>
   );
