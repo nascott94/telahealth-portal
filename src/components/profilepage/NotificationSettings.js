@@ -2,14 +2,15 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const Container = styled.div`
-  height: 500px;
+  height: 270px;
   width: 100%;
-  background-color: orange;
+  background-color: white;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   padding: 10px;
   overflow: scroll;
+  border-top: 1px solid black;
 `;
 
 const ContainerTop = styled.div`
@@ -38,35 +39,48 @@ const MiddleTop = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 `;
 
 const MiddleBottom = styled.div`
   height: 50%;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  justify-content: center;
 `;
 
 const ContainerMiddleLeft = styled.div`
   height: 100%;
-  width: 33.3%;
+  width: 31%;
+
+  .padding {
+    padding-right: 15px;
+  }
 `;
 
 const ContainerMiddleMiddle = styled.div`
   height: 100%;
-  width: 33.3%;
+  width: 31%;
+
+  .padding {
+    padding-right: 15px;
+  }
 `;
 
 const ContainerMiddleright = styled.div`
   height: 100%;
-  width: 33.3%;
+  width: 31%;
+
+  .padding {
+    padding-right: 15px;
+  }
 `;
 
 const ContainerBottom = styled.div`
-  height: 100px;
+  height: 50px;
   width: 98%;
-
   border-bottom: 1px solid black;
 `;
 
@@ -85,10 +99,13 @@ const NotificationSettings = () => {
               <h5>Secure Messaging</h5>
             </MiddleTop>
             <MiddleBottom>
-              Soccer: <input type="checkbox" name="sports" value="soccer" />
-              <br />
-              Soccer: <input type="checkbox" name="sports" value="soccer" />
-              <br />
+              <div className="padding">
+                SMS <input type="checkbox" name="sports" value="soccer" />
+              </div>
+
+              <div className="padding">
+                EMAIL <input type="checkbox" name="sports" value="soccer" />
+              </div>
             </MiddleBottom>
           </ContainerMiddleLeft>
           <ContainerMiddleMiddle>
@@ -96,10 +113,12 @@ const NotificationSettings = () => {
               <h5>Video Call</h5>
             </MiddleTop>
             <MiddleBottom>
-              Soccer: <input type="checkbox" name="sports" value="soccer" />
-              <br />
-              Soccer: <input type="checkbox" name="sports" value="soccer" />
-              <br />
+              <div className="padding">
+                SMS <input type="checkbox" name="sports" value="soccer" />
+              </div>
+              <div className="padding">
+                EMAIL <input type="checkbox" name="sports" value="soccer" />
+              </div>
             </MiddleBottom>
           </ContainerMiddleMiddle>
           <ContainerMiddleright>
@@ -107,10 +126,12 @@ const NotificationSettings = () => {
               <h5>Appointment Reminders</h5>
             </MiddleTop>
             <MiddleBottom>
-              Soccer: <input type="checkbox" name="sports" value="soccer" />
-              <br />
-              Soccer: <input type="checkbox" name="sports" value="soccer" />
-              <br />
+              <div className="padding">
+                SMS <input type="checkbox" name="sports" value="soccer" />
+              </div>
+              <div className="padding">
+                EMAIL <input type="checkbox" name="sports" value="soccer" />
+              </div>
             </MiddleBottom>
           </ContainerMiddleright>
         </ContainerMiddle>

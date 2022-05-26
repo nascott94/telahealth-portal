@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
+import AdjustIcon from "@mui/icons-material/Adjust";
+import AddRoundedIcon from "@mui/icons-material/AddRounded";
 
 const Container = styled.div`
   height: 500px;
@@ -14,12 +16,18 @@ const Container = styled.div`
 `;
 
 const ContainerTop = styled.div`
-  height: 100px;
+  height: 120px;
   width: 98%;
   border-bottom: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  .folder {
+    height: 30px;
+    width: 700px;
+    margin-bottom: 15px;
+  }
 `;
 
 const DropDownBox = styled.div`
@@ -65,6 +73,11 @@ const BottomBoxTopLeft = styled.div`
   width: 70%;
   display: flex;
   align-items: center;
+
+  .icon {
+    height: 45px;
+    width: 45px;
+  }
 `;
 
 const BottomBoxTopRight = styled.div`
@@ -72,6 +85,12 @@ const BottomBoxTopRight = styled.div`
   width: 30%;
   display: flex;
   align-items: center;
+
+  .plusIcon {
+    height: 25px;
+    width: 25px;
+    padding-left: 25px;
+  }
 `;
 
 const BottomBoxBottom = styled.div`
@@ -88,17 +107,21 @@ const MyMedicalInformation = () => {
       <Container>
         <ContainerTop>
           <h4>Patient Name:</h4>
-          <DropDownBox></DropDownBox>
+          <select name="folder" className="folder">
+            <option value="1" selected="selected">
+              Select File
+            </option>
+          </select>
         </ContainerTop>
         <ContainerBottom>
           <BottomBoxContainer>
             <BottomBoxTop>
               <BottomBoxTopLeft>
-                <h5>Danp</h5>
-                <h5>Danp</h5>
+                <AdjustIcon className="icon" />
+                <h2>Vitals</h2>
               </BottomBoxTopLeft>
               <BottomBoxTopRight>
-                <h5>Danp</h5>
+                <AddRoundedIcon className="plusIcon" />
               </BottomBoxTopRight>
             </BottomBoxTop>
             <BottomBoxBottom></BottomBoxBottom>
