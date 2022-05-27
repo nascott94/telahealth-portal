@@ -260,9 +260,73 @@ const ShippingAddressContainer = styled.div`
 `;
 
 const ShippingAddress2 = styled.div`
-  height: 400px;
+  height: 360px;
   width: 100%;
-  background-color: blue;
+  background-color: white;
+`;
+
+const ShippingBottom = styled.div`
+  height: 200px;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid black;
+`;
+
+const ShippingAddressLeft = styled.div`
+  height: 200px;
+  width: 33.33%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .textInput {
+    height: 35px;
+    width: 265px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+  }
+`;
+
+const ShippingAddressMiddle = styled.div`
+  height: 200px;
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+
+  .textInput {
+    height: 35px;
+    width: 265px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+  }
+`;
+
+const ShippingAddressRight = styled.div`
+  height: 200px;
+  width: 33.33%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .textInput {
+    height: 35px;
+    width: 265px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 87px;
+  }
 `;
 
 const AddressContactInfo = () => {
@@ -452,6 +516,49 @@ const AddressContactInfo = () => {
                 />
               </BillingAddressRight>
             </BillingAddress>
+            <ShippingBottom>
+              <ShippingAddressLeft>
+                <label for="addressname">City</label>
+                <input
+                  className="textInput"
+                  type="text"
+                  id="addressname"
+                  name="addressname"
+                />
+                <label for="addressname">Zip</label>
+                <input
+                  className="textInput"
+                  type="text"
+                  id="addressname"
+                  name="addressname"
+                />
+              </ShippingAddressLeft>
+              <ShippingAddressMiddle>
+                <label for="addressname">State</label>
+                <input
+                  className="textInput"
+                  type="text"
+                  id="addressname"
+                  name="addressname"
+                />
+                <label for="addressname">Country</label>
+                <input
+                  className="textInput"
+                  type="text"
+                  id="addressname"
+                  name="addressname"
+                />
+              </ShippingAddressMiddle>
+              <ShippingAddressRight>
+                <label for="addressname">County</label>
+                <input
+                  className="textInput"
+                  type="text"
+                  id="addressname"
+                  name="addressname"
+                />
+              </ShippingAddressRight>
+            </ShippingBottom>
           </ShippingAddress2>
         </ShippingAddressContainer>
       </Container>
