@@ -260,9 +260,104 @@ const ShippingAddressContainer = styled.div`
 `;
 
 const ShippingAddress2 = styled.div`
+  height: 360px;
+  width: 100%;
+  background-color: white;
+`;
+
+const ShippingBottom = styled.div`
+  height: 200px;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid black;
+`;
+
+const ShippingAddressLeft = styled.div`
+  height: 200px;
+  width: 33.33%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .textInput {
+    height: 35px;
+    width: 265px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+  }
+`;
+
+const ShippingAddressMiddle = styled.div`
+  height: 200px;
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+
+  .textInput {
+    height: 35px;
+    width: 265px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+  }
+`;
+
+const ShippingAddressRight = styled.div`
+  height: 200px;
+  width: 33.33%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .textInput {
+    height: 35px;
+    width: 265px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 87px;
+  }
+`;
+
+const DeliveryAddressSection = styled.div`
   height: 400px;
   width: 100%;
-  background-color: blue;
+`;
+
+const DeleiveryAddressContainer = styled.div`
+  height: 400px;
+  width: 100%;
+  background-color: red;
+`;
+
+const UpdateButtonContainer = styled.div`
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+`;
+
+const UpdateButton = styled.div`
+  height: 30px;
+  width: 80px;
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const AddressContactInfo = () => {
@@ -452,8 +547,124 @@ const AddressContactInfo = () => {
                 />
               </BillingAddressRight>
             </BillingAddress>
+            <ShippingBottom>
+              <ShippingAddressLeft>
+                <label for="addressname">City</label>
+                <input
+                  className="textInput"
+                  type="text"
+                  id="addressname"
+                  name="addressname"
+                />
+                <label for="addressname">Zip</label>
+                <input
+                  className="textInput"
+                  type="text"
+                  id="addressname"
+                  name="addressname"
+                />
+              </ShippingAddressLeft>
+              <ShippingAddressMiddle>
+                <label for="addressname">State</label>
+                <input
+                  className="textInput"
+                  type="text"
+                  id="addressname"
+                  name="addressname"
+                />
+                <label for="addressname">Country</label>
+                <input
+                  className="textInput"
+                  type="text"
+                  id="addressname"
+                  name="addressname"
+                />
+              </ShippingAddressMiddle>
+              <ShippingAddressRight>
+                <label for="addressname">County</label>
+                <input
+                  className="textInput"
+                  type="text"
+                  id="addressname"
+                  name="addressname"
+                />
+              </ShippingAddressRight>
+            </ShippingBottom>
           </ShippingAddress2>
         </ShippingAddressContainer>
+        <DeliveryAddressSection>
+          <DeleiveryAddressContainer>
+            <BillingAddressContainer>
+              <h1>Delivery Address</h1>
+            </BillingAddressContainer>
+            <BillingAddress>
+              <BillingAddressLeft>
+                <label for="addressname">Address 1:</label>
+                <input
+                  className="textInput"
+                  type="text"
+                  id="addressname"
+                  name="addressname"
+                />
+              </BillingAddressLeft>
+              <BillingAddressRight>
+                <label for="addressname">Address 2:</label>
+                <input
+                  className="textInput"
+                  type="text"
+                  id="addressname"
+                  name="addressname"
+                />
+              </BillingAddressRight>
+            </BillingAddress>
+            <ShippingBottom>
+              <ShippingAddressLeft>
+                <label for="addressname">City</label>
+                <input
+                  className="textInput"
+                  type="text"
+                  id="addressname"
+                  name="addressname"
+                />
+                <label for="addressname">Zip</label>
+                <input
+                  className="textInput"
+                  type="text"
+                  id="addressname"
+                  name="addressname"
+                />
+              </ShippingAddressLeft>
+              <ShippingAddressMiddle>
+                <label for="addressname">State</label>
+                <input
+                  className="textInput"
+                  type="text"
+                  id="addressname"
+                  name="addressname"
+                />
+                <label for="addressname">Country</label>
+                <input
+                  className="textInput"
+                  type="text"
+                  id="addressname"
+                  name="addressname"
+                />
+              </ShippingAddressMiddle>
+              <ShippingAddressRight>
+                <label for="addressname">County</label>
+                <input
+                  className="textInput"
+                  type="text"
+                  id="addressname"
+                  name="addressname"
+                />
+              </ShippingAddressRight>
+            </ShippingBottom>
+          </DeleiveryAddressContainer>
+        </DeliveryAddressSection>
+        <UpdateButtonContainer>
+          <UpdateButton>Update</UpdateButton>
+        </UpdateButtonContainer>
       </Container>
     </>
   );
