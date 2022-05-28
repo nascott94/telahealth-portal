@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 const Container = styled.div`
   height: 500px;
   width: 100%;
-  background-color: yellow;
+  background-color: white;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -16,6 +16,8 @@ const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   border-bottom: 1px solid black;
+  margin-top: 15px;
+  margin-bottom: 15px;
 `;
 
 const CardOptionContainer = styled.div`
@@ -45,9 +47,19 @@ const CardInfoBox = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
-  background-color: pink;
+  background-color: white;
   display: flex;
   flex-direction: column;
+
+  .textInput {
+    height: 20px;
+    width: 400px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+  }
 `;
 
 const DropDownBox = styled.div`
@@ -75,7 +87,7 @@ const ExperationDateContainer = styled.div`
 `;
 
 const ExperationDateTop = styled.div`
-  height: 50%;
+  height: 20%;
   width: 100%;
   background-color: white;
 `;
@@ -89,10 +101,53 @@ const ExperationDateBottom = styled.div`
 const DropDownBoxExperation = styled.div`
   width: 40%;
   height: 30px;
-  border: 1px solid black;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  margin-bottom: 130px;
+
+  .textInput {
+    height: 20px;
+    width: 400px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid black;
+  }
+`;
+
+const AddButtonContainer = styled.div`
+  height: 150px;
+  width: 98%;
+  background-color: white;
+  margin-top: 20px;
+  border-bottom: 1px solid black;
   display: flex;
   align-items: center;
-  margin-right: 30px;
+  justify-content: flex-end;
+`;
+
+const AddButton = styled.div`
+  height: 20px;
+  width: 70px;
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const ResultsSection = styled.div`
+  height: 150px;
+  width: 98%;
+  background-color: white;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 `;
 
 const PaymentDetails = () => {
@@ -115,17 +170,33 @@ const PaymentDetails = () => {
         <CardInfoContainer>
           <CardInfoTop>
             <CardInfoBox>
-              <h4>Card Label</h4>
-              <DropDownBox></DropDownBox>
+              <label for="addressname">Card Label:</label>
+              <input
+                className="textInput"
+                type="text"
+                id="addressname"
+                name="addressname"
+              />
             </CardInfoBox>
             <CardInfoBox>
-              <h4>Name On Card</h4>
-              <DropDownBox></DropDownBox>
+              <label for="addressname">Name on card:</label>
+              <input
+                className="textInput"
+                type="text"
+                id="addressname"
+                name="addressname"
+              />
             </CardInfoBox>
           </CardInfoTop>
           <CardInfoBottom>
             <CardInfoBox>
-              <h4>Crdit Card Number</h4>
+              <label for="addressname">Name on card:</label>
+              <input
+                className="textInput"
+                type="text"
+                id="addressname"
+                name="addressname"
+              />
             </CardInfoBox>
           </CardInfoBottom>
         </CardInfoContainer>
@@ -135,13 +206,31 @@ const PaymentDetails = () => {
           </ExperationDateTop>
           <ExperationDateBottom>
             <DropDownBoxExperation>
-              <h4>Select Month</h4>
+              <label for="addressname">Select Month:</label>
+              <input
+                className="textInput"
+                type="text"
+                id="addressname"
+                name="addressname"
+              />
             </DropDownBoxExperation>
             <DropDownBoxExperation>
-              <h4>Select Year</h4>
+              <label for="addressname">Select year:</label>
+              <input
+                className="textInput"
+                type="text"
+                id="addressname"
+                name="addressname"
+              />
             </DropDownBoxExperation>
           </ExperationDateBottom>
         </ExperationDateContainer>
+        <AddButtonContainer>
+          <AddButton>Add</AddButton>
+        </AddButtonContainer>
+        <ResultsSection>
+          <h5>showing 1- 0 of 0 items</h5>
+        </ResultsSection>
       </Container>
     </>
   );
