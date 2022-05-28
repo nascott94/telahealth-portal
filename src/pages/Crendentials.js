@@ -127,7 +127,7 @@ const CredentialsBox = styled.div`
 
 const CredentialsTop = styled.div`
   display: flex;
-  height: 210px;
+  height: 160px;
   width: 100%;
   padding-left: 15px;
   padding-top: 10px;
@@ -178,6 +178,24 @@ const CredentialsTopRight = styled.div`
     padding-left: 6px;
     display: flex;
     flex-direction: row-reverse;
+  }
+`;
+
+const CredentialsTopRightTop = styled.div`
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+`;
+
+const CredentialsTopRightBottom = styled.div`
+  height: 20%;
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+
+  .padding {
+    padding-left: 27px;
   }
 `;
 
@@ -329,14 +347,22 @@ const Crendentials = () => {
                       />
                     </CredentialsTopLeft>
                     <CredentialsTopRight>
-                      <div className="title">Name</div>
-                      <div className="info">Olive Scott</div>
-                      <div className="title">Email</div>
-                      <div className="info">olivescott94@outlook.com</div>
-                      <div className="title">Date of Birth</div>
-                      <div className="info">14 April 2020 </div>
-                      <div className="title">Sex</div>
-                      <div className="info">Female</div>
+                      <CredentialsTopRightTop>
+                        <div className="title">Name</div>
+                        <div className="info">Olive Scott</div>
+                        <div className="title">Email</div>
+                        <div className="info">olivescott94@outlook.com</div>
+                      </CredentialsTopRightTop>
+                      <CredentialsTopRightBottom>
+                        <div>
+                          <div className="title">Date of Birth</div>
+                          <div className="info">14 April 2020 </div>
+                        </div>
+                        <div className="padding">
+                          <div className="title">Sex</div>
+                          <div className="info">Female</div>
+                        </div>
+                      </CredentialsTopRightBottom>
                     </CredentialsTopRight>
                     <CredentialsTopRight>
                       <div className="title">Photo ID</div>
