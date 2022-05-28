@@ -35,8 +35,13 @@ const PatientNameContainer = styled.div`
   margin-top: 5px;
 
   .folder {
-    height: 30px;
+    height: 35px;
     width: 440px;
+    background-color: #eaedf1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -67,6 +72,10 @@ const PatientInsuranceLeftTop = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
+
+  .underline {
+    border-bottom: 1px solid black;
+  }
 `;
 const PatientInsuranceLeftBottom = styled.div`
   height: 50%;
@@ -75,6 +84,15 @@ const PatientInsuranceLeftBottom = styled.div`
   align-items: center;
   justify-content: space-between;
   padding-right: 40%;
+
+  .folder {
+    height: 25px;
+    background-color: #eaedf1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
+  }
 `;
 
 const PatientInsuranceRight = styled.div`
@@ -108,7 +126,7 @@ const InsuranceTypeContainerBottom = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: grey;
+  background-color: #ccc;
 `;
 
 const Footer = styled.div`
@@ -156,7 +174,7 @@ const Insurance = () => {
         <PatientInsuranceContainer>
           <PatientInsuranceLeft>
             <PatientInsuranceLeftTop>
-              <h4>Patient Insurance</h4>
+              <h4 className="underline">Patient Insurance</h4>
             </PatientInsuranceLeftTop>
             <PatientInsuranceLeftBottom>
               <h5>Show</h5>

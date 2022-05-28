@@ -107,8 +107,27 @@ const BottomBoxBottom = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
 
+  .blue {
+    background-color: #b5e9e9;
+  }
+
+  .tan {
+    background-color: #fef6dd;
+  }
+
+  .pink {
+    background-color: #ffe1d0;
+  }
+
+  .yellow {
+    background-color: #fff1b5;
+  }
+
+  .green {
+    background-color: #dcf3d0;
+  }
+`;
 const Item = styled.div`
   height: 18%;
   width: 95%;
