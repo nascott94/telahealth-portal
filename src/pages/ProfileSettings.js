@@ -9,7 +9,7 @@ import MyMedicalInformation from "../components/profilepage/MyMedicalInformation
 import Insurance from "../components/profilepage/Insurance";
 import AddressContactInfo from "../components/profilepage/AddressContactInfo";
 import PaymentDetails from "../components/profilepage/PaymentDetails";
-import { SizeMe } from "react-sizeme";
+import greybackground from "../media/greybackground.jpg";
 
 const Container = styled.div`
   height: 100%;
@@ -17,6 +17,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  background-color: #2658e2;
 `;
 
 const LeftContainer = styled.div`
@@ -45,12 +46,18 @@ const RightMain = styled.div`
 const RightMainTop = styled.div`
   height: 20vh;
   width: 100%;
-  background-color: pink;
+  background-image: url(${greybackground});
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding-left: 5%;
   overflow: hidden;
+
+  .avatar {
+    height: 100px;
+    width: 100px;
+    padding-right: 14px;
+  }
 `;
 
 const Pic = styled.div`
@@ -167,7 +174,11 @@ function ProfileSettings() {
           <Navbar></Navbar>
           <RightMain>
             <RightMainTop>
-              <Pic></Pic>
+              <img
+                src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="pic"
+                className="avatar"
+              />
               <h1>Nat Scott</h1>
             </RightMainTop>
             <BottomContainer>

@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from '@emotion/styled';
+import React from "react";
+import styled from "@emotion/styled";
 
 const TopContainer = styled.div`
   .dashboard-top {
@@ -10,7 +10,7 @@ const TopContainer = styled.div`
     -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
     box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
     border-radius: 5px;
-    width: 90%;
+    width: 95%;
     height: 75px;
 
     .left {
@@ -81,13 +81,14 @@ const BottomContainer = styled.div`
         .view-button {
           /* margin-left: auto; */
           justify-content: space-between;
+          width: 194%;
         }
 
         .appt-box {
           -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
           box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
           border-radius: 10px;
-          width: 100%;
+          width: 194%;
           height: 75px;
         }
       }
@@ -100,13 +101,14 @@ const BottomContainer = styled.div`
         .view-button {
           /* margin-left: auto; */
           justify-content: space-between;
+          width: 194%;
         }
 
         .test-box {
           -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
           box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
           border-radius: 10px;
-          width: 100%;
+          width: 194%;
           height: 75px;
         }
       }

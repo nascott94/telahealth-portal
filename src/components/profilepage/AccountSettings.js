@@ -10,7 +10,7 @@ const Container = styled.div`
   flex-direction: column;
   padding: 10px;
   overflow: scroll;
-  border-top: 1px solid black;
+  border-top: 1px solid #ccc;
 `;
 
 const HeaderContainer = styled.div`
@@ -19,8 +19,9 @@ const HeaderContainer = styled.div`
   background-color: white;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid black;
-  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  color: #2658e2;
 `;
 
 const PatientIDContainer = styled.div`
@@ -29,7 +30,7 @@ const PatientIDContainer = styled.div`
   background-color: white;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
   padding-top: 10px;
   padding-bottom: 10px;
 `;
@@ -38,14 +39,14 @@ const NameContainer = styled.div`
   height: 100px;
   width: 100%;
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
 `;
 
 const PhoneContainer = styled.div`
   height: 100px;
   width: 100%;
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
   margin-bottom: 20px;
 `;
 
@@ -63,7 +64,7 @@ const NamePhoneLeft = styled.div`
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -81,7 +82,7 @@ const NamePhoneMiddle = styled.div`
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -99,7 +100,7 @@ const NamePhoneRight = styled.div`
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -109,13 +110,18 @@ const NationalityContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
   padding-top: 10px;
   padding-bottom: 20px;
 
   .folder {
     height: 35px;
     width: 440px;
+    background-color: #eaedf1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -124,7 +130,7 @@ const EmailContainer = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
 `;
 
 const EmailLeft = styled.div`
@@ -140,7 +146,7 @@ const EmailLeft = styled.div`
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -157,7 +163,7 @@ const EmailRight = styled.div`
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -167,7 +173,7 @@ const LogInContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -177,7 +183,7 @@ const LogInContainer = styled.div`
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -185,7 +191,7 @@ const CountryContainer = styled.div`
   height: 200px;
   width: 100%;
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
 `;
 
 const CountryLeft = styled.div`
@@ -198,6 +204,11 @@ const CountryLeft = styled.div`
   .folder {
     height: 35px;
     width: 440px;
+    background-color: #eaedf1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -211,13 +222,18 @@ const CountryRight = styled.div`
   .folder {
     height: 35px;
     width: 440px;
+    background-color: #eaedf1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
 const DropDownBox = styled.div`
   width: 90%;
   height: 30px;
-  border: 1px solid black;
+  border: 1px solid #ccc;
   display: flex;
   align-items: center;
 `;
@@ -226,7 +242,7 @@ const PassportContainer = styled.div`
   height: 200px;
   width: 100%;
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
 `;
 
 const PassportLeft = styled.div`
@@ -239,6 +255,11 @@ const PassportLeft = styled.div`
   .folder {
     height: 35px;
     width: 440px;
+    background-color: #eaedf1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -252,6 +273,11 @@ const PassportRight = styled.div`
   .folder {
     height: 35px;
     width: 440px;
+    background-color: #eaedf1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -272,7 +298,7 @@ const MFAContainer = styled.div`
   height: 100px;
   width: 100%;
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
 `;
 
 const MFAContainerLeft = styled.div`
@@ -306,7 +332,7 @@ const DateOfBirthContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
 `;
 
 const DateOfBirthContainerTop = styled.div`
@@ -332,6 +358,11 @@ const DateOfBirthContainerBottomLeft = styled.div`
   .folder {
     height: 35px;
     width: 300px;
+    background-color: #eaedf1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -344,6 +375,11 @@ const DateOfBirthContainerBottomMiddle = styled.div`
   .folder {
     height: 35px;
     width: 300px;
+    background-color: #eaedf1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -356,6 +392,11 @@ const DateOfBirthContainerBottomRight = styled.div`
   .folder {
     height: 35px;
     width: 300px;
+    background-color: #eaedf1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -364,11 +405,12 @@ const GenderPhotoIDContainer = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
 
   .folder {
     height: 35px;
     width: 240px;
+    background-color: #eaedf1;
   }
 `;
 
@@ -413,7 +455,7 @@ const UploadHeadshotContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
 `;
 
 const UploadHeadshotContainerTop = styled.div`
@@ -439,6 +481,11 @@ const UploadHeadshotContainerBottomLeft = styled.div`
   .folder {
     height: 35px;
     width: 400px;
+    background-color: #eaedf1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -451,6 +498,11 @@ const UploadHeadshotContainerBottomMiddle = styled.div`
   .folder {
     height: 35px;
     width: 240px;
+    background-color: #eaedf1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -463,6 +515,11 @@ const UploadHeadshotContainerBottomRight = styled.div`
   .folder {
     height: 35px;
     width: 240px;
+    background-color: #eaedf1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -471,7 +528,7 @@ const EmergencyContactContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
 `;
 
 const EmergencyContactContainerTop = styled.div`
@@ -503,7 +560,7 @@ const EmergencyContactBottomLeft = styled.div`
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -520,7 +577,7 @@ const EmergencyContactBottomMiddle = styled.div`
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -539,7 +596,7 @@ const EmergencyContactBottomRight = styled.div`
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -548,7 +605,7 @@ const EmergancyContactBox = styled.div`
   width: 90%;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
 `;
 
 const UpdateButtonContainer = styled.div`

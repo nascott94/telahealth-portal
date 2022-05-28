@@ -14,13 +14,13 @@ const Container = styled.div`
   flex-direction: column;
   padding: 10px;
   overflow: scroll;
-  border-top: 1px solid black;
+  border-top: 1px solid #ccc;
 `;
 
 const ContainerTop = styled.div`
   height: 120px;
   width: 98%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,13 +29,18 @@ const ContainerTop = styled.div`
     height: 30px;
     width: 700px;
     margin-bottom: 15px;
+    background-color: #eaedf1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
 const DropDownBox = styled.div`
   width: 90%;
   height: 30px;
-  border: 1px solid black;
+  border-bottom: 1px solid #ccc;
   display: flex;
   align-items: center;
   margin-bottom: 10px;
@@ -94,7 +99,7 @@ const BottomBoxTopRight = styled.div`
 `;
 
 const BottomBoxBottom = styled.div`
-  height: 75%;
+  height: 85%;
   width: 97%;
   background-color: blue;
   border-radius: 10px;
@@ -102,8 +107,27 @@ const BottomBoxBottom = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
 
+  .blue {
+    background-color: #b5e9e9;
+  }
+
+  .tan {
+    background-color: #fef6dd;
+  }
+
+  .pink {
+    background-color: #ffe1d0;
+  }
+
+  .yellow {
+    background-color: #fff1b5;
+  }
+
+  .green {
+    background-color: #dcf3d0;
+  }
+`;
 const Item = styled.div`
   height: 18%;
   width: 95%;
