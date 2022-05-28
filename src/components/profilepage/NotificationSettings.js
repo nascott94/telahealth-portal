@@ -10,7 +10,8 @@ const Container = styled.div`
   flex-direction: column;
   padding: 10px;
   overflow: scroll;
-  border-top: 1px solid black;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
 `;
 
 const ContainerTop = styled.div`
@@ -19,19 +20,21 @@ const ContainerTop = styled.div`
 `;
 
 const HeaderContainer = styled.div`
-  height: 100px;
+  height: 67px;
   width: 100%;
+  margin-top: -10px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
+  color: #2658e2;
 `;
 
 const ContainerMiddle = styled.div`
-  height: 130px;
+  height: 50px;
   width: 98%;
-
   display: flex;
   border-bottom: 1px solid black;
+  padding-bottom: 18px;
 `;
 
 const MiddleTop = styled.div`
