@@ -75,7 +75,7 @@ const RightMainBottom = styled.div`
 
   .patient {
     margin-right: auto;
-    margin-left: 110px;
+    margin-left: 7.5%;
     margin-bottom: 20px;
     width: 35%;
     font-size: 15px;
@@ -94,7 +94,7 @@ const RightMainBottomMainTabs = styled.div`
 `;
 
 const RightMainBottomContainer = styled.div`
-  height: 75%;
+  height: 650px;
   width: 85%;
   background-color: white;
   display: flex;
@@ -115,8 +115,9 @@ const RightMainBottomSubTabBoxes = styled.div`
   font-size: 13px;
 `;
 const CredentialsBox = styled.div`
-  height: 100%;
+  height: 200px;
   width: 100%;
+  margin-bottom: 400px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -131,6 +132,7 @@ const CredentialsTop = styled.div`
   width: 100%;
   padding-left: 15px;
   padding-top: 10px;
+  margin-bottom: 50px;
 `;
 
 const CredentialsTopLeft = styled.div`
@@ -201,10 +203,18 @@ const CredentialsTopRightBottom = styled.div`
 
 const CredentialsMiddle = styled.div`
   display: flex;
-  height: 40%;
+  height: 800px;
   width: 100%;
   background-color: white;
   border-top: 1px solid #ccc;
+
+  .patient {
+    width: 500px;
+    height: 45px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+  }
 `;
 
 const CredentailsMiddleBox = styled.div`
@@ -246,6 +256,7 @@ const CredentialsBottom = styled.div`
   height: 20%;
   width: 100%;
   border-top: 1px solid rgb(231, 228, 228);
+  margin-top: 100px;
 `;
 const CredentialsBottomLeft = styled.div`
   display: flex;
@@ -376,15 +387,24 @@ const Crendentials = () => {
                         The following information will be used to create your
                         COVID Credentials, your shareable digital health pass.
                       </div>
-                      <CredentailsMiddleBox>
-                        Add/View COVID-19 Vaccination Record
-                      </CredentailsMiddleBox>
-                      <CredentailsMiddleBox>
-                        Add/View COVID-19 Diagnostic Test Results
-                      </CredentailsMiddleBox>
-                      <CredentailsMiddleBox>
-                        Add/View COVID-19 Antibody Testing
-                      </CredentailsMiddleBox>
+                      <select name="patient" className="patient">
+                        <option value="1" selected="selected">
+                          Add/View COVID-19 Vaccination Record
+                        </option>
+                        <option value="2"></option>
+                      </select>
+                      <select name="patient" className="patient">
+                        <option value="1" selected="selected">
+                          Add/View COVID-19 Diagnostic Test Results
+                        </option>
+                        <option value="2"></option>
+                      </select>
+                      <select name="patient" className="patient">
+                        <option value="1" selected="selected">
+                          Add/View COVID-19 Antibody Testing
+                        </option>
+                        <option value="2"></option>
+                      </select>
                     </CredentialsMiddleLeft>
                   </CredentialsMiddle>
                   <CredentialsBottom>

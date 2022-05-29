@@ -56,7 +56,7 @@ const RightMainTop = styled.div`
   .avatar {
     height: 100px;
     width: 100px;
-    padding-right: 14px;
+    padding-right: 10px;
   }
 `;
 
