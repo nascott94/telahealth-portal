@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import Navbar from '../components/homepage/Navbar';
-import Sidebar from '../components/homepage/Sidebar';
+import React from "react";
+import styled from "styled-components";
+import Navbar from "../components/homepage/Navbar";
+import Sidebar from "../components/homepage/Sidebar";
 
 const Container = styled.div`
   height: 100vh;
@@ -88,7 +88,7 @@ const RightMainContentBox = styled.div`
 `;
 
 const RightMainContentBoxTabContainter = styled.div`
-  height: 15%;
+  height: 8%;
   width: 100%;
   background-color: #eaedf1;
   display: flex;
@@ -99,7 +99,7 @@ const RightMainContentBoxTab = styled.div`
   height: 100%;
   width: 15%;
   background-color: white;
-  clip-path: polygon(11% 38%, 89% 38%, 100% 100%, 0% 100%);
+  clip-path: polygon(11% 18%, 89% 18%, 100% 100%, 0% 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,14 +108,14 @@ const RightMainContentBoxTab = styled.div`
 const RightMainContentBoxOptionsContainter = styled.div`
   height: 15%;
   width: 100%;
-  background-color: #394052;
+  background-color: #8dbad2;
   display: flex;
 `;
 
 const RightMainContentBoxOptionsContainterLeft = styled.div`
   height: 15%;
   width: 70%;
-  background-color: #394052;
+  background-color: #8dbad2;
   display: flex;
   justify-content: space-between;
 `;
@@ -123,7 +123,7 @@ const RightMainContentBoxOptionsContainterLeft = styled.div`
 const RightMainContentBoxOptionBox = styled.div`
   height: 650%;
   width: 18%;
-  background-color: #394052;
+  background-color: #8dbad2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,7 +132,7 @@ const RightMainContentBoxOptionBox = styled.div`
 const RightMainContentBoxOptionsContainterRight = styled.div`
   height: 15%;
   width: 30%;
-  background-color: #394052;
+  background-color: #8dbad2;
   display: flex;
   justify-content: flex-end;
   padding-right: 100px;
