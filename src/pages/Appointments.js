@@ -42,7 +42,7 @@ const RightMainTop = styled.div`
 const RightMainTopLeft = styled.div`
   height: 100%;
   width: 50%;
-  padding-top: 20px;
+
   background-color: #f6f8f8;
   display: flex;
   flex-direction: column;
@@ -139,7 +139,7 @@ const RightMainContentBoxOptionsContainterRight = styled.div`
 `;
 
 const RightMainContentBoxAppointmentsBox = styled.div`
-  height: 62%;
+  height: 70%;
   width: 60%;
   background-color: white;
   border-radius: 10px;

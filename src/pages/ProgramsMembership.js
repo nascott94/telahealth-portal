@@ -32,7 +32,7 @@ const RightMain = styled.div`
 `;
 
 const RightMainTop = styled.div`
-  height: 15%;
+  height: 14%;
   width: 100%;
   background-color: #f6f8f8;
   display: flex;
