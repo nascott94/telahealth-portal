@@ -37,6 +37,7 @@ const RightMainTop = styled.div`
   display: flex;
   overflow: hidden;
   border-bottom: 1px solid #ccc;
+  padding-bottom: 27px;
 `;
 
 const RightMainTopLeft = styled.div`
@@ -52,6 +53,7 @@ const RightMainTopLeft = styled.div`
   .title {
     color: black;
     font-size: 25px;
+    padding-top: 20px;
   }
 
   .subtitle {

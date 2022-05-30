@@ -37,7 +37,6 @@ const RightMainTop = styled.div`
   background-color: #f6f8f8;
   display: flex;
   overflow: hidden;
-  border-bottom: 1px solid #ccc;
 `;
 
 const RightMainTopLeft = styled.div`
@@ -110,7 +109,7 @@ const RightMainBottomTopBar = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-top: 1.5px solid #999;
+  border-top: 1px solid #999;
   border-bottom: 1px solid #999;
   padding-right: 11.3%;
 

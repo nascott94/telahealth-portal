@@ -36,7 +36,7 @@ const RightMain = styled.div`
 `;
 
 const RightMainTop = styled.div`
-  height: 100px;
+  height: 127px;
   width: 100%;
   background-color: #f6f8f8;
   display: flex;
