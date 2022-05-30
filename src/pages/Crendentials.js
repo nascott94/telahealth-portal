@@ -4,10 +4,11 @@ import Navbar from "../components/homepage/Navbar";
 import Sidebar from "../components/homepage/Sidebar";
 
 const Container = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   display: flex;
   flex-direction: row;
+  background-color: #2658e2;
 `;
 
 const LeftContainer = styled.div`
@@ -17,7 +18,7 @@ const LeftContainer = styled.div`
 `;
 
 const RightContainer = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 85%;
   background-color: white;
   display: flex;
@@ -25,7 +26,7 @@ const RightContainer = styled.div`
 `;
 
 const RightMain = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 100%;
 `;
 
@@ -72,6 +73,7 @@ const RightMainBottom = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
 
   .patient {
     margin-right: auto;
@@ -88,24 +90,26 @@ const RightMainBottom = styled.div`
 
 const RightMainBottomMainTabs = styled.div`
   width: 85%;
-  height: 7%;
+  height: 19%;
+  padding-bottom: 10px;
   background-color: #f6f8f8;
   display: flex;
 `;
 
 const RightMainBottomContainer = styled.div`
-  height: 650px;
+  height: 100%;
   width: 85%;
-  background-color: white;
+  background-color: #eaedf1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 20px;
 `;
 
 const RightMainBottomSubTabBoxes = styled.div`
   width: 10%;
-  height: 100%;
+  height: 40px;
   background: white;
   display: flex;
   justify-content: center;
@@ -117,7 +121,7 @@ const RightMainBottomSubTabBoxes = styled.div`
 const CredentialsBox = styled.div`
   height: 200px;
   width: 100%;
-  margin-bottom: 400px;
+  margin-bottom: 600px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -209,7 +213,7 @@ const CredentialsMiddle = styled.div`
   border-top: 1px solid #ccc;
 
   .patient {
-    width: 500px;
+    width: 1000px;
     height: 45px;
     border-right: none;
     border-left: none;
@@ -256,15 +260,17 @@ const CredentialsBottom = styled.div`
   height: 20%;
   width: 100%;
   border-top: 1px solid rgb(231, 228, 228);
-  margin-top: 100px;
+  margin-top: 10px;
 `;
 const CredentialsBottomLeft = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 50%;
-  background-color: white;
+  height: 200px;
+  width: 80%;
+  background-color: pink;
+  margin-top: -10px;
 
   .title {
     color: grey;
@@ -286,13 +292,19 @@ const CredentialsBottomLeft = styled.div`
     border: none;
     width: 50%;
   }
+
+  .patient {
+    width: 500px;
+  }
 `;
 const CredentialsBottomRight = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 200px;
   width: 50%;
+  background-color: white;
+  margin-top: -10px;
 
   button {
     border: none;
@@ -410,17 +422,20 @@ const Crendentials = () => {
                   <CredentialsBottom>
                     <CredentialsBottomLeft>
                       <div className="title">Add/View Vitals</div>
-                      <select name="patient" className="patient">
-                        <option value="1" selected="selected">
-                          Fahrenheit
-                        </option>
-                        <option value="2">Celsius</option>
-                      </select>
-                      <input
-                        type="text"
-                        className="temp"
-                        placeholder="Temperature"
-                      ></input>
+                      <div>
+                        <select name="patient" className="patient">
+                          <option value="1" selected="selected">
+                            Fahrenheit
+                          </option>
+                          <option value="2">Celsius</option>
+                        </select>
+                        <select name="patient" className="patient">
+                          <option value="1" selected="selected">
+                            Temperature
+                          </option>
+                          <option value="2">Celsius</option>
+                        </select>
+                      </div>
                       <button className="update-btn">Update</button>
                     </CredentialsBottomLeft>
                     <CredentialsBottomRight></CredentialsBottomRight>
