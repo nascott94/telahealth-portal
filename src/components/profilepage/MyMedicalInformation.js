@@ -58,13 +58,63 @@ const ContainerBottom = styled.div`
 `;
 
 const BottomBoxContainer = styled.div`
-  height: 340px;
+  height: 310px;
   width: 240px;
   background-color: white;
   margin: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .blue {
+    background-color: #b5e9e9;
+    height: 340px;
+    width: 240px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tan {
+    background-color: #fef6dd;
+    height: 340px;
+    width: 240px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pink {
+    background-color: #ffe1d0;
+    height: 340px;
+    width: 240px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .yellow {
+    background-color: #fff1b5;
+    height: 340px;
+    width: 240px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .green {
+    background-color: #dcf3d0;
+    height: 340px;
+    width: 240px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const BottomBoxTop = styled.div`
@@ -107,26 +157,6 @@ const BottomBoxBottom = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  .blue {
-    background-color: #b5e9e9;
-  }
-
-  .tan {
-    background-color: #fef6dd;
-  }
-
-  .pink {
-    background-color: #ffe1d0;
-  }
-
-  .yellow {
-    background-color: #fff1b5;
-  }
-
-  .green {
-    background-color: #dcf3d0;
-  }
 `;
 const Item = styled.div`
   height: 18%;
@@ -155,7 +185,7 @@ const MyMedicalInformation = () => {
     <>
       <Container>
         <ContainerTop>
-          <h4>Patient Name:</h4>
+          <div>Patient Name:</div>
           <select name="folder" className="folder">
             <option value="1" selected="selected">
               Select File
@@ -167,13 +197,181 @@ const MyMedicalInformation = () => {
             <BottomBoxTop>
               <BottomBoxTopLeft>
                 <AdjustIcon className="icon" />
-                <h3>Vitals</h3>
+                <div>Vitals</div>
               </BottomBoxTopLeft>
               <BottomBoxTopRight>
                 <AddRoundedIcon className="plusIcon" />
               </BottomBoxTopRight>
             </BottomBoxTop>
-            <BottomBoxBottom>
+            <BottomBoxBottom className="blue">
+              <Item>
+                <ItemLeft>
+                  <MedicalServicesIcon />
+                </ItemLeft>
+                <ItemRight>
+                  <div>No Data Available</div>
+                </ItemRight>
+              </Item>
+            </BottomBoxBottom>
+          </BottomBoxContainer>
+          <BottomBoxContainer>
+            <BottomBoxTop>
+              <BottomBoxTopLeft>
+                <AdjustIcon className="icon" />
+                <div>Medications</div>
+              </BottomBoxTopLeft>
+              <BottomBoxTopRight>
+                <AddRoundedIcon className="plusIcon" />
+              </BottomBoxTopRight>
+            </BottomBoxTop>
+            <BottomBoxBottom className="tan">
+              <Item>
+                <ItemLeft>
+                  <MedicalServicesIcon />
+                </ItemLeft>
+                <ItemRight>
+                  <div>No Data Available</div>
+                </ItemRight>
+              </Item>
+            </BottomBoxBottom>
+          </BottomBoxContainer>
+          <BottomBoxContainer>
+            <BottomBoxTop>
+              <BottomBoxTopLeft>
+                <AdjustIcon className="icon" />
+                <div>Allergies</div>
+              </BottomBoxTopLeft>
+              <BottomBoxTopRight>
+                <AddRoundedIcon className="plusIcon" />
+              </BottomBoxTopRight>
+            </BottomBoxTop>
+            <BottomBoxBottom className="pink">
+              <Item>
+                <ItemLeft>
+                  <MedicalServicesIcon />
+                </ItemLeft>
+                <ItemRight>
+                  <div>No Data Available</div>
+                </ItemRight>
+              </Item>
+            </BottomBoxBottom>
+          </BottomBoxContainer>
+          <BottomBoxContainer>
+            <BottomBoxTop>
+              <BottomBoxTopLeft>
+                <AdjustIcon className="icon" />
+                <div>Surgical history</div>
+              </BottomBoxTopLeft>
+              <BottomBoxTopRight>
+                <AddRoundedIcon className="plusIcon" />
+              </BottomBoxTopRight>
+            </BottomBoxTop>
+            <BottomBoxBottom className="yellow">
+              <Item>
+                <ItemLeft>
+                  <MedicalServicesIcon />
+                </ItemLeft>
+                <ItemRight>
+                  <div>No Data Available</div>
+                </ItemRight>
+              </Item>
+            </BottomBoxBottom>
+          </BottomBoxContainer>
+          <BottomBoxContainer>
+            <BottomBoxTop>
+              <BottomBoxTopLeft>
+                <AdjustIcon className="icon" />
+                <div>Social history</div>
+              </BottomBoxTopLeft>
+              <BottomBoxTopRight>
+                <AddRoundedIcon className="plusIcon" />
+              </BottomBoxTopRight>
+            </BottomBoxTop>
+            <BottomBoxBottom className="blue">
+              <Item>
+                <ItemLeft>
+                  <MedicalServicesIcon />
+                </ItemLeft>
+                <ItemRight>
+                  <div>No Data Available</div>
+                </ItemRight>
+              </Item>
+            </BottomBoxBottom>
+          </BottomBoxContainer>
+          <BottomBoxContainer>
+            <BottomBoxTop>
+              <BottomBoxTopLeft>
+                <AdjustIcon className="icon" />
+                <div>Family history</div>
+              </BottomBoxTopLeft>
+              <BottomBoxTopRight>
+                <AddRoundedIcon className="plusIcon" />
+              </BottomBoxTopRight>
+            </BottomBoxTop>
+            <BottomBoxBottom className="tan">
+              <Item>
+                <ItemLeft>
+                  <MedicalServicesIcon />
+                </ItemLeft>
+                <ItemRight>
+                  <div>No Data Available</div>
+                </ItemRight>
+              </Item>
+            </BottomBoxBottom>
+          </BottomBoxContainer>
+          <BottomBoxContainer>
+            <BottomBoxTop>
+              <BottomBoxTopLeft>
+                <AdjustIcon className="icon" />
+                <div>Medical history</div>
+              </BottomBoxTopLeft>
+              <BottomBoxTopRight>
+                <AddRoundedIcon className="plusIcon" />
+              </BottomBoxTopRight>
+            </BottomBoxTop>
+            <BottomBoxBottom className="pink">
+              <Item>
+                <ItemLeft>
+                  <MedicalServicesIcon />
+                </ItemLeft>
+                <ItemRight>
+                  <div>No Data Available</div>
+                </ItemRight>
+              </Item>
+            </BottomBoxBottom>
+          </BottomBoxContainer>
+          <BottomBoxContainer>
+            <BottomBoxTop>
+              <BottomBoxTopLeft>
+                <AdjustIcon className="icon" />
+                <div>Goal</div>
+              </BottomBoxTopLeft>
+              <BottomBoxTopRight>
+                <AddRoundedIcon className="plusIcon" />
+              </BottomBoxTopRight>
+            </BottomBoxTop>
+            <BottomBoxBottom className="yellow">
+              <Item>
+                <ItemLeft>
+                  <MedicalServicesIcon />
+                </ItemLeft>
+                <ItemRight>
+                  <div>No Data Available</div>
+                </ItemRight>
+              </Item>
+            </BottomBoxBottom>
+          </BottomBoxContainer>
+          <BottomBoxContainer>
+            <BottomBoxTop>
+              <BottomBoxTopLeft>
+                <AdjustIcon className="icon" />
+                <div>Care Team</div>
+              </BottomBoxTopLeft>
+              <BottomBoxTopRight>
+                <AddRoundedIcon className="plusIcon" />
+              </BottomBoxTopRight>
+            </BottomBoxTop>
+            <BottomBoxBottom className="blue">
               <Item>
                 <ItemLeft>
                   <MedicalServicesIcon />
@@ -188,19 +386,19 @@ const MyMedicalInformation = () => {
             <BottomBoxTop>
               <BottomBoxTopLeft>
                 <AdjustIcon className="icon" />
-                <h3>Medications</h3>
+                <div>Conditions</div>
               </BottomBoxTopLeft>
               <BottomBoxTopRight>
                 <AddRoundedIcon className="plusIcon" />
               </BottomBoxTopRight>
             </BottomBoxTop>
-            <BottomBoxBottom>
+            <BottomBoxBottom className="tan">
               <Item>
                 <ItemLeft>
                   <MedicalServicesIcon />
                 </ItemLeft>
                 <ItemRight>
-                  <h5>No Data Available</h5>
+                  <div>No Data Available</div>
                 </ItemRight>
               </Item>
             </BottomBoxBottom>
@@ -209,19 +407,19 @@ const MyMedicalInformation = () => {
             <BottomBoxTop>
               <BottomBoxTopLeft>
                 <AdjustIcon className="icon" />
-                <h3>Allergies</h3>
+                <div>Covid Credentails</div>
               </BottomBoxTopLeft>
               <BottomBoxTopRight>
                 <AddRoundedIcon className="plusIcon" />
               </BottomBoxTopRight>
             </BottomBoxTop>
-            <BottomBoxBottom>
+            <BottomBoxBottom className="pink">
               <Item>
                 <ItemLeft>
                   <MedicalServicesIcon />
                 </ItemLeft>
                 <ItemRight>
-                  <h5>No Data Available</h5>
+                  <div>No Data Available</div>
                 </ItemRight>
               </Item>
             </BottomBoxBottom>
@@ -230,19 +428,19 @@ const MyMedicalInformation = () => {
             <BottomBoxTop>
               <BottomBoxTopLeft>
                 <AdjustIcon className="icon" />
-                <h3>Surgical history</h3>
+                <div>Growth Chart</div>
               </BottomBoxTopLeft>
               <BottomBoxTopRight>
                 <AddRoundedIcon className="plusIcon" />
               </BottomBoxTopRight>
             </BottomBoxTop>
-            <BottomBoxBottom>
+            <BottomBoxBottom className="yellow">
               <Item>
                 <ItemLeft>
                   <MedicalServicesIcon />
                 </ItemLeft>
                 <ItemRight>
-                  <h5>No Data Available</h5>
+                  <div>No Data Available</div>
                 </ItemRight>
               </Item>
             </BottomBoxBottom>
@@ -251,187 +449,19 @@ const MyMedicalInformation = () => {
             <BottomBoxTop>
               <BottomBoxTopLeft>
                 <AdjustIcon className="icon" />
-                <h3>Social history</h3>
+                <div>Medical Devices</div>
               </BottomBoxTopLeft>
               <BottomBoxTopRight>
                 <AddRoundedIcon className="plusIcon" />
               </BottomBoxTopRight>
             </BottomBoxTop>
-            <BottomBoxBottom>
+            <BottomBoxBottom className="blue">
               <Item>
                 <ItemLeft>
                   <MedicalServicesIcon />
                 </ItemLeft>
                 <ItemRight>
-                  <h5>No Data Available</h5>
-                </ItemRight>
-              </Item>
-            </BottomBoxBottom>
-          </BottomBoxContainer>
-          <BottomBoxContainer>
-            <BottomBoxTop>
-              <BottomBoxTopLeft>
-                <AdjustIcon className="icon" />
-                <h3>Family history</h3>
-              </BottomBoxTopLeft>
-              <BottomBoxTopRight>
-                <AddRoundedIcon className="plusIcon" />
-              </BottomBoxTopRight>
-            </BottomBoxTop>
-            <BottomBoxBottom>
-              <Item>
-                <ItemLeft>
-                  <MedicalServicesIcon />
-                </ItemLeft>
-                <ItemRight>
-                  <h5>No Data Available</h5>
-                </ItemRight>
-              </Item>
-            </BottomBoxBottom>
-          </BottomBoxContainer>
-          <BottomBoxContainer>
-            <BottomBoxTop>
-              <BottomBoxTopLeft>
-                <AdjustIcon className="icon" />
-                <h3>Medical history</h3>
-              </BottomBoxTopLeft>
-              <BottomBoxTopRight>
-                <AddRoundedIcon className="plusIcon" />
-              </BottomBoxTopRight>
-            </BottomBoxTop>
-            <BottomBoxBottom>
-              <Item>
-                <ItemLeft>
-                  <MedicalServicesIcon />
-                </ItemLeft>
-                <ItemRight>
-                  <h5>No Data Available</h5>
-                </ItemRight>
-              </Item>
-            </BottomBoxBottom>
-          </BottomBoxContainer>
-          <BottomBoxContainer>
-            <BottomBoxTop>
-              <BottomBoxTopLeft>
-                <AdjustIcon className="icon" />
-                <h3>Goal</h3>
-              </BottomBoxTopLeft>
-              <BottomBoxTopRight>
-                <AddRoundedIcon className="plusIcon" />
-              </BottomBoxTopRight>
-            </BottomBoxTop>
-            <BottomBoxBottom>
-              <Item>
-                <ItemLeft>
-                  <MedicalServicesIcon />
-                </ItemLeft>
-                <ItemRight>
-                  <h5>No Data Available</h5>
-                </ItemRight>
-              </Item>
-            </BottomBoxBottom>
-          </BottomBoxContainer>
-          <BottomBoxContainer>
-            <BottomBoxTop>
-              <BottomBoxTopLeft>
-                <AdjustIcon className="icon" />
-                <h3>Care Team</h3>
-              </BottomBoxTopLeft>
-              <BottomBoxTopRight>
-                <AddRoundedIcon className="plusIcon" />
-              </BottomBoxTopRight>
-            </BottomBoxTop>
-            <BottomBoxBottom>
-              <Item>
-                <ItemLeft>
-                  <MedicalServicesIcon />
-                </ItemLeft>
-                <ItemRight>
-                  <h5>No Data Available</h5>
-                </ItemRight>
-              </Item>
-            </BottomBoxBottom>
-          </BottomBoxContainer>
-          <BottomBoxContainer>
-            <BottomBoxTop>
-              <BottomBoxTopLeft>
-                <AdjustIcon className="icon" />
-                <h3>Conditions</h3>
-              </BottomBoxTopLeft>
-              <BottomBoxTopRight>
-                <AddRoundedIcon className="plusIcon" />
-              </BottomBoxTopRight>
-            </BottomBoxTop>
-            <BottomBoxBottom>
-              <Item>
-                <ItemLeft>
-                  <MedicalServicesIcon />
-                </ItemLeft>
-                <ItemRight>
-                  <h5>No Data Available</h5>
-                </ItemRight>
-              </Item>
-            </BottomBoxBottom>
-          </BottomBoxContainer>
-          <BottomBoxContainer>
-            <BottomBoxTop>
-              <BottomBoxTopLeft>
-                <AdjustIcon className="icon" />
-                <h3>Covid Credentails</h3>
-              </BottomBoxTopLeft>
-              <BottomBoxTopRight>
-                <AddRoundedIcon className="plusIcon" />
-              </BottomBoxTopRight>
-            </BottomBoxTop>
-            <BottomBoxBottom>
-              <Item>
-                <ItemLeft>
-                  <MedicalServicesIcon />
-                </ItemLeft>
-                <ItemRight>
-                  <h5>No Data Available</h5>
-                </ItemRight>
-              </Item>
-            </BottomBoxBottom>
-          </BottomBoxContainer>
-          <BottomBoxContainer>
-            <BottomBoxTop>
-              <BottomBoxTopLeft>
-                <AdjustIcon className="icon" />
-                <h3>Growth Chart</h3>
-              </BottomBoxTopLeft>
-              <BottomBoxTopRight>
-                <AddRoundedIcon className="plusIcon" />
-              </BottomBoxTopRight>
-            </BottomBoxTop>
-            <BottomBoxBottom>
-              <Item>
-                <ItemLeft>
-                  <MedicalServicesIcon />
-                </ItemLeft>
-                <ItemRight>
-                  <h5>No Data Available</h5>
-                </ItemRight>
-              </Item>
-            </BottomBoxBottom>
-          </BottomBoxContainer>
-          <BottomBoxContainer>
-            <BottomBoxTop>
-              <BottomBoxTopLeft>
-                <AdjustIcon className="icon" />
-                <h3>Medical Devices</h3>
-              </BottomBoxTopLeft>
-              <BottomBoxTopRight>
-                <AddRoundedIcon className="plusIcon" />
-              </BottomBoxTopRight>
-            </BottomBoxTop>
-            <BottomBoxBottom>
-              <Item>
-                <ItemLeft>
-                  <MedicalServicesIcon />
-                </ItemLeft>
-                <ItemRight>
-                  <h5>No Data Available</h5>
+                  <div>No Data Available</div>
                 </ItemRight>
               </Item>
             </BottomBoxBottom>

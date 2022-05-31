@@ -27,6 +27,8 @@ const HeaderContainer = styled.div`
   align-items: center;
   border-bottom: 1px solid #ccc;
   color: #2658e2;
+  font-size: 28px;
+  margin-top: 2px;
 `;
 
 const ContainerMiddle = styled.div`
@@ -92,14 +94,12 @@ const NotificationSettings = () => {
     <>
       <Container>
         <ContainerTop>
-          <HeaderContainer>
-            <h1>Notification Settings</h1>
-          </HeaderContainer>
+          <HeaderContainer>Notification Settings</HeaderContainer>
         </ContainerTop>
         <ContainerMiddle>
           <ContainerMiddleLeft>
             <MiddleTop>
-              <h5>Secure Messaging</h5>
+              <div>Secure Messaging</div>
             </MiddleTop>
             <MiddleBottom>
               <div className="padding">
@@ -113,7 +113,7 @@ const NotificationSettings = () => {
           </ContainerMiddleLeft>
           <ContainerMiddleMiddle>
             <MiddleTop>
-              <h5>Video Call</h5>
+              <div>Video Call</div>
             </MiddleTop>
             <MiddleBottom>
               <div className="padding">
@@ -126,7 +126,7 @@ const NotificationSettings = () => {
           </ContainerMiddleMiddle>
           <ContainerMiddleright>
             <MiddleTop>
-              <h5>Appointment Reminders</h5>
+              <div>Appointment Reminders</div>
             </MiddleTop>
             <MiddleBottom>
               <div className="padding">

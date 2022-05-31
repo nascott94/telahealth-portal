@@ -14,11 +14,16 @@ const Container = styled.div`
 `;
 
 const HeaderContainer = styled.div`
-  height: 111px;
-  width: 98%;
+  height: 67px;
+  width: 100%;
+  margin-top: -10px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
+  color: #2658e2;
+  font-size: 28px;
+  margin-top: 15px;
+  padding-bottom: 13px;
 `;
 
 const AddressContainer = styled.div`
@@ -376,9 +381,7 @@ const AddressContactInfo = () => {
   return (
     <>
       <Container>
-        <HeaderContainer>
-          <h1>Address and Contact Information</h1>
-        </HeaderContainer>
+        <HeaderContainer>Address and Contact Information</HeaderContainer>
         <AddressContainer>
           <AddressLeft>
             <label for="addressname">Address 1:</label>
@@ -401,13 +404,13 @@ const AddressContactInfo = () => {
         </AddressContainer>
         <CountryContainer>
           <CountryContainerLeft>
-            <h4>Country Of residence</h4>
+            <div>Country Of residence</div>
             <select name="folder" className="folder">
               <option value="1" selected="selected">
                 Please Select
               </option>
             </select>
-            <h4>Country</h4>
+            <div>Country</div>
             <select name="folder" className="folder">
               <option value="1" selected="selected">
                 Please Select
@@ -415,7 +418,7 @@ const AddressContactInfo = () => {
             </select>
           </CountryContainerLeft>
           <CountryContainerRight>
-            <h4>State</h4>
+            <div>State</div>
             <select name="folder" className="folder">
               <option value="1" selected="selected">
                 Please Select
@@ -464,7 +467,7 @@ const AddressContactInfo = () => {
           </PhoneEmailRight>
         </PhoneEmail>
         <BillingAddressContainer>
-          <h1>Billing Address</h1>
+          <div>Billing Address</div>
         </BillingAddressContainer>
         <BillingAddress>
           <BillingAddressLeft>
@@ -490,7 +493,7 @@ const AddressContactInfo = () => {
           <BillingCountry2>
             <CountryContainer>
               <CountryContainerLeft>
-                <h4>Country Of residence</h4>
+                <div>Country Of residence</div>
                 <select name="folder" className="folder">
                   <option value="1" selected="selected">
                     Please Select
@@ -504,7 +507,7 @@ const AddressContactInfo = () => {
                 </select>
               </CountryContainerLeft>
               <CountryContainerRight>
-                <h4>State</h4>
+                <div>State</div>
                 <select name="folder" className="folder">
                   <option value="1" selected="selected">
                     Please Select
@@ -537,7 +540,7 @@ const AddressContactInfo = () => {
         <ShippingAddressContainer>
           <ShippingAddress2>
             <BillingAddressContainer>
-              <h1 className="shippingAddress">Shipping Address</h1>
+              <div className="shippingAddress">Shipping Address</div>
             </BillingAddressContainer>
             <BillingAddress>
               <BillingAddressLeft>
@@ -607,7 +610,7 @@ const AddressContactInfo = () => {
         <DeliveryAddressSection>
           <DeleiveryAddressContainer>
             <BillingAddressContainer>
-              <h1>Delivery Address</h1>
+              <div>Delivery Address</div>
             </BillingAddressContainer>
             <BillingAddress>
               <BillingAddressLeft>
