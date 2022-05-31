@@ -180,11 +180,15 @@ const PhoneEmailRight = styled.div`
 `;
 
 const BillingAddressContainer = styled.div`
-  height: 50px;
+  height: 40px;
   width: 98%;
   display: flex;
   align-items: center;
   padding-top: 10px;
+
+  .shippingAddress {
+    padding-top: -90px;
+  }
 `;
 
 const BillingAddress = styled.div`
@@ -201,6 +205,10 @@ const BillingAddress = styled.div`
     border-bottom: 1px solid black;
     padding-bottom: 20px;
   }
+
+  .addressMargin {
+    margin-top: -100px;
+  }
 `;
 
 const BillingAddressLeft = styled.div`
@@ -213,12 +221,16 @@ const BillingAddressLeft = styled.div`
   padding-bottom: 20px;
 
   .textInput {
-    height: 25px;
+    height: 10px;
     width: 435px;
     border-right: none;
     border-left: none;
     border-top: none;
     border-bottom: 1px solid black;
+  }
+
+  .margin {
+    margin-top: -40px;
   }
 `;
 
@@ -232,7 +244,7 @@ const BillingAddressRight = styled.div`
   padding-bottom: 20px;
 
   .textInput {
-    height: 25px;
+    height: 10px;
     width: 435px;
     border-right: none;
     border-left: none;
@@ -525,7 +537,7 @@ const AddressContactInfo = () => {
         <ShippingAddressContainer>
           <ShippingAddress2>
             <BillingAddressContainer>
-              <h1>Shipping Address</h1>
+              <h1 className="shippingAddress">Shipping Address</h1>
             </BillingAddressContainer>
             <BillingAddress>
               <BillingAddressLeft>
