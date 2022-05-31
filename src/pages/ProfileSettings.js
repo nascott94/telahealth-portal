@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import Navbar from "../components/homepage/Navbar";
-import Sidebar from "../components/homepage/Sidebar";
-import { useState } from "react";
-import NotificationSettings from "../components/profilepage/NotificationSettings";
-import AccountSettings from "../components/profilepage/AccountSettings";
-import MyMedicalInformation from "../components/profilepage/MyMedicalInformation";
-import Insurance from "../components/profilepage/Insurance";
-import AddressContactInfo from "../components/profilepage/AddressContactInfo";
-import PaymentDetails from "../components/profilepage/PaymentDetails";
-import greybackground from "../media/greybackground.jpg";
+import React from 'react';
+import styled from 'styled-components';
+import Navbar from '../components/homepage/Navbar';
+import Sidebar from '../components/homepage/Sidebar';
+import { useState } from 'react';
+import NotificationSettings from '../components/profilepage/NotificationSettings';
+import AccountSettings from '../components/profilepage/AccountSettings';
+import MyMedicalInformation from '../components/profilepage/MyMedicalInformation';
+import Insurance from '../components/profilepage/Insurance';
+import AddressContactInfo from '../components/profilepage/AddressContactInfo';
+import PaymentDetails from '../components/profilepage/PaymentDetails';
+import greybackground from '../media/greybackground.jpg';
 
 const Container = styled.div`
   height: 100%;
@@ -52,6 +52,7 @@ const RightMainTop = styled.div`
   justify-content: flex-start;
   padding-left: 5%;
   overflow: hidden;
+  font-size: 28px;
 
   .avatar {
     height: 100px;
@@ -60,12 +61,12 @@ const RightMainTop = styled.div`
   }
 `;
 
-const Pic = styled.div`
-  height: 12vh;
-  width: 7%;
-  background-color: black;
-  margin-right: 2%;
-`;
+// const Pic = styled.div`
+//   height: 12vh;
+//   width: 7%;
+//   background-color: black;
+//   margin-right: 2%;
+// `;
 
 const BottomContainer = styled.div`
   height: 100%;
@@ -96,10 +97,12 @@ const Tab = styled.div`
   height: 100%;
   width: 14%;
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid lightgrey;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 13px;
+  cursor: pointer;
 `;
 
 function ProfileSettings() {
@@ -179,28 +182,28 @@ function ProfileSettings() {
                 alt="pic"
                 className="avatar"
               />
-              <h1>Nat Scott</h1>
+              <div>Olive Scott</div>
             </RightMainTop>
             <BottomContainer>
               <RightMainBottomComponentContainer>
                 <ComponentTabContainer>
                   <Tab onClick={firstButton}>
-                    <h5>Account Settings</h5>
+                    <div>Account Settings</div>
                   </Tab>
                   <Tab onClick={secondButton}>
-                    <h5>Notification Settings</h5>
+                    <div>Notification Settings</div>
                   </Tab>
                   <Tab onClick={thirdButton}>
-                    <h5>My medical Information</h5>
+                    <div>My Medical Information</div>
                   </Tab>
                   <Tab onClick={fourthButton}>
-                    <h5>Insurance</h5>
+                    <div>Insurance</div>
                   </Tab>
                   <Tab onClick={fifthButton}>
-                    <h5>address and Contact Info</h5>
+                    <div>Address/Contact Info</div>
                   </Tab>
                   <Tab onClick={sixthButton}>
-                    <h5>Payment Details</h5>
+                    <div>Payment Details</div>
                   </Tab>
                 </ComponentTabContainer>
                 {toggle && <AccountSettings />}
