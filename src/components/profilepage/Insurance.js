@@ -164,7 +164,7 @@ const Insurance = () => {
           <NavBarBoxes>Dental Insurance</NavBarBoxes>
         </NavBarContainer>
         <PatientNameContainer>
-          <h4>Patient Name:</h4>
+          <div>Patient Name:</div>
           <select name="folder" className="folder">
             <option value="1" selected="selected">
               Nat Scott
@@ -174,28 +174,28 @@ const Insurance = () => {
         <PatientInsuranceContainer>
           <PatientInsuranceLeft>
             <PatientInsuranceLeftTop>
-              <h4 className="underline">Patient Insurance</h4>
+              <div className="underline">Patient Insurance</div>
             </PatientInsuranceLeftTop>
             <PatientInsuranceLeftBottom>
-              <h5>Show</h5>
+              <div>Show</div>
               <select name="folder" className="folder">
                 <option value="1" selected="selected">
                   10
                 </option>
               </select>
-              <h5>entries</h5>
+              <div>entries</div>
             </PatientInsuranceLeftBottom>
           </PatientInsuranceLeft>
           <PatientInsuranceRight></PatientInsuranceRight>
         </PatientInsuranceContainer>
         <InsuranceTypeContainer>
           <InsuranceTypeContainerTop>
-            <h5>Company Name</h5>
-            <h5>Plan Name</h5>
-            <h5>Insurance Type</h5>
-            <h5>Policy Number</h5>
-            <h5>Policy Type</h5>
-            <h5>Action</h5>
+            <div>Company Name</div>
+            <div>Plan Name</div>
+            <div>Insurance Type</div>
+            <div>Policy Number</div>
+            <div>Policy Type</div>
+            <div>Action</div>
           </InsuranceTypeContainerTop>
           <InsuranceTypeContainerBottom>
             No Insurance Available
@@ -204,8 +204,8 @@ const Insurance = () => {
         <Footer>
           <FooterLeft>Showing 0 to 0 of 0 entries</FooterLeft>
           <FooterRight>
-            <h4>Next</h4>
-            <h4>Back</h4>
+            <div>Next</div>
+            <div>Back</div>
           </FooterRight>
         </Footer>
       </Container>

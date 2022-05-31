@@ -11,13 +11,16 @@ const Container = styled.div`
 `;
 
 const HeaderContainer = styled.div`
-  height: 100px;
-  width: 98%;
+  height: 67px;
+  width: 100%;
+  margin-top: -10px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
+  color: #2658e2;
+  font-size: 28px;
   margin-top: 15px;
-  margin-bottom: 15px;
+  padding-bottom: 13px;
 `;
 
 const CardOptionContainer = styled.div`
@@ -154,18 +157,16 @@ const PaymentDetails = () => {
   return (
     <>
       <Container>
-        <HeaderContainer>
-          <h1>Credit Card Information</h1>
-        </HeaderContainer>
+        <HeaderContainer>Credit Card Information</HeaderContainer>
         <CardOptionContainer>
-          <h4>Card Label</h4>
-          <h4>Name On Card</h4>
-          <h4>Credit Card Number</h4>
-          <h4>Experation Date</h4>
-          <h4>Action</h4>
+          <div>Card Label</div>
+          <div>Name On Card</div>
+          <div>Credit Card Number</div>
+          <div>Experation Date</div>
+          <div>Action</div>
         </CardOptionContainer>
         <HeaderContainer>
-          <h1>Add New Card Information</h1>
+          <div>Add New Card Information</div>
         </HeaderContainer>
         <CardInfoContainer>
           <CardInfoTop>
@@ -202,7 +203,7 @@ const PaymentDetails = () => {
         </CardInfoContainer>
         <ExperationDateContainer>
           <ExperationDateTop>
-            <h4>Experation Date</h4>
+            <div>Experation Date</div>
           </ExperationDateTop>
           <ExperationDateBottom>
             <DropDownBoxExperation>
@@ -229,7 +230,7 @@ const PaymentDetails = () => {
           <AddButton>Add</AddButton>
         </AddButtonContainer>
         <ResultsSection>
-          <h5>showing 1- 0 of 0 items</h5>
+          <div>showing 1- 0 of 0 items</div>
         </ResultsSection>
       </Container>
     </>
