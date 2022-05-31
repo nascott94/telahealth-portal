@@ -43,6 +43,7 @@ const RightMainTop = styled.div`
 const RightMainTopLeft = styled.div`
   height: 100px;
   width: 50%;
+
   background-color: #f6f8f8;
   display: flex;
   flex-direction: column;
@@ -220,7 +221,7 @@ const CredentialsMiddleLeft = styled.div`
   height: 100%;
   width: 44%;
   padding-top: 20px;
-  padding-left: 15px;
+  padding-left: 25px;
 
   .title {
     color: grey;
@@ -259,6 +260,9 @@ const CredentialsBottomLeft = styled.div`
   width: 80%;
   background-color: white;
   margin-top: -10px;
+  padding-top: 20px;
+  padding-left: 7px;
+  padding-bottom: 15px;
 
   .title {
     color: grey;
@@ -280,14 +284,12 @@ const CredentialsBottomLeft = styled.div`
 
   .update-btn {
     border: none;
-    width: 15%;
-    /* border-right: 1px solid black;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black; */
+    width: 11%;
+    height: 15%;
     background-color: #f7bc01;
     margin-left: 3%;
     border-radius: 5%;
+    cursor: pointer;
   }
 
   .patient {
@@ -302,6 +304,8 @@ const CredentialsBottomRight = styled.div`
   width: 50%;
   background-color: white;
   margin-top: -10px;
+  padding-bottom: 15px;
+  padding-top: 20px;
 
   button {
     border: none;

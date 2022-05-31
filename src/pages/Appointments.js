@@ -1,7 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import Navbar from "../components/homepage/Navbar";
-import Sidebar from "../components/homepage/Sidebar";
+import React from 'react';
+import styled from 'styled-components';
+import Navbar from '../components/homepage/Navbar';
+import Sidebar from '../components/homepage/Sidebar';
+import { BsToggles2 } from 'react-icons/bs';
 
 const Container = styled.div`
   height: 100vh;
@@ -102,10 +103,21 @@ const RightMainContentBoxTabContainter = styled.div`
 const RightMainContentBoxTab = styled.div`
   height: 100%;
   width: 15%;
-  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 14px;
+  background-color: #8dbbd1;
+
+  .cancel {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
 `;
 
 const RightMainContentBoxOptionsContainter = styled.div`
@@ -130,6 +142,12 @@ const RightMainContentBoxOptionBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+
+  .options {
+    padding-left: 5px;
+  }
 `;
 
 const RightMainContentBoxOptionsContainterRight = styled.div`
@@ -155,7 +173,7 @@ const RightMainContentBoxAppointmentsBox = styled.div`
 `;
 
 const Button = styled.div`
-  width: 30%;
+  width: 26%;
   height: 10%;
   padding: 17px;
   background-color: #f7bc01;
@@ -172,16 +190,24 @@ const Button = styled.div`
   }
 `;
 
-const ToggleButton = styled.div`
-  height: 290%;
-  width: 40%;
+const ToggleButton = styled.button`
+  height: 300%;
+  width: 15%;
   background-color: #f7bc01;
   margin-top: 17%;
   margin-left: 50%;
   border-radius: 8px;
+  border: none;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+
+  .icon {
+    height: 70%;
+    width: 70%;
+  }
 `;
 
 const Appointments = () => {
@@ -212,36 +238,36 @@ const Appointments = () => {
                   <RightMainContentBoxTab>
                     <div>Appointments</div>
                   </RightMainContentBoxTab>
-                  <RightMainContentBoxTab className="margin">
-                    <div>canceled</div>
+                  <RightMainContentBoxTab>
+                    <div className="cancel">Canceled</div>
                   </RightMainContentBoxTab>
                 </RightMainContentBoxTabContainter>
                 <RightMainContentBoxOptionsContainter>
                   <RightMainContentBoxOptionsContainterLeft>
                     <RightMainContentBoxOptionBox>
                       <input type="radio" />
-                      <h5>All</h5>
+                      <div className="options">All</div>
                     </RightMainContentBoxOptionBox>
                     <RightMainContentBoxOptionBox>
                       <input type="radio" />
-                      <h5>e-Visits</h5>
+                      <div className="options">e-Visits</div>
                     </RightMainContentBoxOptionBox>
                     <RightMainContentBoxOptionBox>
                       <input type="radio" />
-                      <h5>in-Office</h5>
+                      <div className="options"> In-Office</div>
                     </RightMainContentBoxOptionBox>
                     <RightMainContentBoxOptionBox>
                       <input type="radio" />
-                      <h5>House Calls</h5>
+                      <div className="options">House Calls</div>
                     </RightMainContentBoxOptionBox>
                     <RightMainContentBoxOptionBox>
                       <input type="radio" />
-                      <h5>Health Programs</h5>
+                      <div className="options">Health Programs</div>
                     </RightMainContentBoxOptionBox>
                   </RightMainContentBoxOptionsContainterLeft>
                   <RightMainContentBoxOptionsContainterRight>
                     <ToggleButton>
-                      <div>Toggle Items</div>
+                      <BsToggles2 className="icon" />
                     </ToggleButton>
                   </RightMainContentBoxOptionsContainterRight>
                 </RightMainContentBoxOptionsContainter>
