@@ -1,18 +1,18 @@
-import React from "react";
-import styled from "styled-components";
-import Navbar from "../components/homepage/Navbar";
-import Sidebar from "../components/homepage/Sidebar";
+import React from 'react';
+import styled from 'styled-components';
+import Navbar from '../components/homepage/Navbar';
+import Sidebar from '../components/homepage/Sidebar';
 
 const Container = styled.div`
   height: 100%;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   background-color: #2658e2;
 `;
 
 const LeftContainer = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 15%;
   background-color: #2658e2;
 `;
@@ -128,9 +128,6 @@ const CredentialsBox = styled.div`
   background-color: white;
   display: flex;
   flex-direction: column;
-  /* border-radius: 5px; */
-  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
-  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
 `;
 
 const CredentialsTop = styled.div`
@@ -214,23 +211,7 @@ const CredentialsMiddle = styled.div`
   width: 100%;
   background-color: white;
   border-top: 1px solid #ccc;
-
-  .patient {
-    width: 80%;
-    height: 45px;
-    border-right: none;
-    border-left: none;
-    border-top: none;
-    border-bottom: 1px solid #ccc;
-  }
-`;
-
-const CredentailsMiddleBox = styled.div`
-  height: 19%;
-  width: 97%;
-  border-bottom: 1px solid black;
-  display: flex;
-  align-items: center;
+  border-bottom: 1px solid #ccc;
 `;
 
 const CredentialsMiddleLeft = styled.div`
@@ -252,10 +233,14 @@ const CredentialsMiddleLeft = styled.div`
     padding-top: 5px;
     padding-bottom: 10px;
     font-size: 15px;
+  }
 
-    .icon {
-      color: maroon;
-    }
+  .patient {
+    width: 200%;
+    height: 45px;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -415,19 +400,16 @@ const Crendentials = () => {
                         <option value="1" selected="selected">
                           Add/View COVID-19 Vaccination Record
                         </option>
-                        <option value="2"></option>
                       </select>
                       <select name="patient" className="patient">
                         <option value="1" selected="selected">
                           Add/View COVID-19 Diagnostic Test Results
                         </option>
-                        <option value="2"></option>
                       </select>
                       <select name="patient" className="patient">
                         <option value="1" selected="selected">
                           Add/View COVID-19 Antibody Testing
                         </option>
-                        <option value="2"></option>
                       </select>
                     </CredentialsMiddleLeft>
                   </CredentialsMiddle>
