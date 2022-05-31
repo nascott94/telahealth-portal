@@ -124,10 +124,11 @@ const CredentialsBox = styled.div`
   height: 200px;
   width: 100%;
   margin-bottom: 600px;
+  margin-top: -10px;
   background-color: white;
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
   box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
 `;
@@ -215,11 +216,12 @@ const CredentialsMiddle = styled.div`
   border-top: 1px solid #ccc;
 
   .patient {
-    width: 1000px;
+    width: 80%;
     height: 45px;
     border-right: none;
     border-left: none;
     border-top: none;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -235,7 +237,7 @@ const CredentialsMiddleLeft = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 97%;
+  width: 44%;
   padding-top: 20px;
   padding-left: 15px;
 
@@ -268,10 +270,9 @@ const CredentialsBottomLeft = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: 200px;
   width: 80%;
-  background-color: pink;
+  background-color: white;
   margin-top: -10px;
 
   .title {
@@ -279,6 +280,8 @@ const CredentialsBottomLeft = styled.div`
     font-weight: bold;
     padding-top: 10px;
     font-size: 15px;
+    padding-left: 3%;
+    padding-bottom: 1%;
   }
 
   .info {
@@ -292,11 +295,18 @@ const CredentialsBottomLeft = styled.div`
 
   .update-btn {
     border: none;
-    width: 50%;
+    width: 15%;
+    /* border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black; */
+    background-color: #f7bc01;
+    margin-left: 3%;
+    border-radius: 5%;
   }
 
   .patient {
-    width: 500px;
+    width: 57%;
   }
 `;
 const CredentialsBottomRight = styled.div`
