@@ -461,7 +461,7 @@ const GenderPhotoIDContainer = styled.div`
 `;
 
 const GenderPhotoIDContainerLeft = styled.div`
-  height: 140px;
+  height: 150px;
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -472,6 +472,8 @@ const GenderPhotoIDContainerLeftTop = styled.div`
   width: 40%;
   display: flex;
   align-items: center;
+  font-size: 15px;
+  font-weight: bold;
 `;
 
 const GenderPhotoIDContainerLeftBottom = styled.div`
@@ -479,6 +481,7 @@ const GenderPhotoIDContainerLeftBottom = styled.div`
   width: 50%;
   display: flex;
   justify-content: space-between;
+  margin-left: 30px;
 `;
 
 const GenderBubble = styled.div`
@@ -486,14 +489,26 @@ const GenderBubble = styled.div`
   height: 30px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  font-size: 14px;
+
+  .bubble {
+    padding-left: 5px;
+  }
 `;
 
 const GenderPhotoIDContainerRight = styled.div`
-  height: 200px;
+  height: 150px;
   width: 50%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  font-size: 13px;
+
+  .photo-id {
+    font-size: 15px;
+    font-weight: bold;
+  }
 `;
 
 const UploadHeadshotContainer = styled.div`
@@ -509,6 +524,8 @@ const UploadHeadshotContainerTop = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
+  font-size: 15px;
+  font-weight: bold;
 `;
 
 const UploadHeadshotContainerBottom = styled.div`
@@ -864,7 +881,7 @@ const AccountSettings = () => {
         <GenderPhotoIDContainer>
           <GenderPhotoIDContainerLeft>
             <GenderPhotoIDContainerLeftTop>
-              <h4>Gender</h4>
+              Gender
             </GenderPhotoIDContainerLeftTop>
             <GenderPhotoIDContainerLeftBottom>
               <GenderBubble>
@@ -874,7 +891,7 @@ const AccountSettings = () => {
                   name="fav_language"
                   value="HTML"
                 />
-                <label className="bubblebe" for="html">
+                <label className="bubble" for="html">
                   Male
                 </label>
               </GenderBubble>
@@ -885,7 +902,7 @@ const AccountSettings = () => {
                   name="fav_language"
                   value="HTML"
                 />
-                <label className="bubblebe" for="html">
+                <label className="bubble" for="html">
                   Female
                 </label>
               </GenderBubble>
@@ -896,32 +913,32 @@ const AccountSettings = () => {
                   name="fav_language"
                   value="HTML"
                 />
-                <label className="bubblebe" for="html">
+                <label className="bubble" for="html">
                   Other
                 </label>
               </GenderBubble>
             </GenderPhotoIDContainerLeftBottom>
           </GenderPhotoIDContainerLeft>
           <GenderPhotoIDContainerRight>
-            <h4>Photo ID</h4>
-            <h5>
+            <div className="photo-id">Photo ID</div>
+            <div>
               Attach a photo of the patient's (if over 18) or guardian's photo
               ID.
-            </h5>
+            </div>
             <select name="folder" className="folder">
               <option value="1" selected="selected">
                 Select Folder
               </option>
             </select>
-            <h5>
+            <div>
               Only .jpeg, .jpg, .png, .gif files are allowed. File size should
               not be greater than 5MB.
-            </h5>
+            </div>
           </GenderPhotoIDContainerRight>
         </GenderPhotoIDContainer>
         <UploadHeadshotContainer>
           <UploadHeadshotContainerTop>
-            <h4>Upload Headshot</h4>
+            Upload Headshot
           </UploadHeadshotContainerTop>
           <UploadHeadshotContainerBottom>
             <UploadHeadshotContainerBottomLeft>
