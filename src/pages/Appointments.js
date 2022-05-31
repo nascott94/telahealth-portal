@@ -93,13 +93,16 @@ const RightMainContentBoxTabContainter = styled.div`
   background-color: #eaedf1;
   display: flex;
   justify-content: flex-start;
+
+  .margin {
+    margin-left: 0.7px;
+  }
 `;
 
 const RightMainContentBoxTab = styled.div`
   height: 100%;
   width: 15%;
   background-color: white;
-  clip-path: polygon(11% 18%, 89% 18%, 100% 100%, 0% 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,7 +117,7 @@ const RightMainContentBoxOptionsContainter = styled.div`
 
 const RightMainContentBoxOptionsContainterLeft = styled.div`
   height: 15%;
-  width: 70%;
+  width: 61%;
   background-color: #8dbad2;
   display: flex;
   justify-content: space-between;
@@ -131,11 +134,11 @@ const RightMainContentBoxOptionBox = styled.div`
 
 const RightMainContentBoxOptionsContainterRight = styled.div`
   height: 15%;
-  width: 30%;
+  width: 40%;
   background-color: #8dbad2;
   display: flex;
-  justify-content: flex-end;
-  padding-right: 100px;
+  align-items: center;
+  justify-content: center;
 `;
 
 const RightMainContentBoxAppointmentsBox = styled.div`
@@ -169,6 +172,18 @@ const Button = styled.div`
   }
 `;
 
+const ToggleButton = styled.div`
+  height: 290%;
+  width: 40%;
+  background-color: #f7bc01;
+  margin-top: 65px;
+  margin-left: 230px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 const Appointments = () => {
   return (
     <>
@@ -195,10 +210,10 @@ const Appointments = () => {
               <RightMainContentBox>
                 <RightMainContentBoxTabContainter>
                   <RightMainContentBoxTab>
-                    <h5>Appointments</h5>
+                    <div>Appointments</div>
                   </RightMainContentBoxTab>
-                  <RightMainContentBoxTab>
-                    <h5>canceled</h5>
+                  <RightMainContentBoxTab className="margin">
+                    <div>canceled</div>
                   </RightMainContentBoxTab>
                 </RightMainContentBoxTabContainter>
                 <RightMainContentBoxOptionsContainter>
@@ -225,9 +240,9 @@ const Appointments = () => {
                     </RightMainContentBoxOptionBox>
                   </RightMainContentBoxOptionsContainterLeft>
                   <RightMainContentBoxOptionsContainterRight>
-                    <RightMainContentBoxOptionBox>
-                      Toggle Button
-                    </RightMainContentBoxOptionBox>
+                    <ToggleButton>
+                      <div>Toggle Items</div>
+                    </ToggleButton>
                   </RightMainContentBoxOptionsContainterRight>
                 </RightMainContentBoxOptionsContainter>
                 <RightMainContentBoxAppointmentsBox>
