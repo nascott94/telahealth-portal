@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "@emotion/styled";
+import React from 'react';
+import styled from '@emotion/styled';
 
 const Container = styled.div`
   height: 500px;
@@ -11,6 +11,7 @@ const Container = styled.div`
   padding: 10px;
   overflow: scroll;
   border-top: 1px solid #ccc;
+  color: grey;
 `;
 
 const HeaderContainer = styled.div`
@@ -20,8 +21,10 @@ const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 12px;
   color: #2658e2;
+  font-size: 28px;
 `;
 
 const PatientIDContainer = styled.div`
@@ -31,14 +34,17 @@ const PatientIDContainer = styled.div`
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ccc;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  color: black;
 `;
 
 const NameContainer = styled.div`
   height: 100px;
   width: 100%;
   display: flex;
+  padding-top: 12px;
   border-bottom: 1px solid #ccc;
 `;
 
@@ -48,6 +54,7 @@ const PhoneContainer = styled.div`
   display: flex;
   border-bottom: 1px solid #ccc;
   margin-bottom: 20px;
+  padding-top: 12px;
 `;
 
 const NamePhoneLeft = styled.div`
@@ -57,6 +64,8 @@ const NamePhoneLeft = styled.div`
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: bold;
 
   .textInput {
     height: 18px;
@@ -64,7 +73,8 @@ const NamePhoneLeft = styled.div`
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid grey;
+    font-size: 15px;
   }
 `;
 
@@ -75,14 +85,16 @@ const NamePhoneMiddle = styled.div`
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 20px;
-
+  font-size: 15px;
+  font-weight: bold;
   .textInput {
     height: 18px;
     width: 300px;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid grey;
+    font-size: 15px;
   }
 `;
 
@@ -93,6 +105,8 @@ const NamePhoneRight = styled.div`
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: bold;
 
   .textInput {
     height: 18px;
@@ -100,7 +114,8 @@ const NamePhoneRight = styled.div`
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid grey;
+    font-size: 15px;
   }
 `;
 
@@ -113,6 +128,8 @@ const NationalityContainer = styled.div`
   border-bottom: 1px solid #ccc;
   padding-top: 10px;
   padding-bottom: 20px;
+  font-size: 15px;
+  font-weight: bold;
 
   .folder {
     height: 35px;
@@ -131,6 +148,8 @@ const EmailContainer = styled.div`
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ccc;
+  font-size: 15px;
+  font-weight: bold;
 `;
 
 const EmailLeft = styled.div`
@@ -139,6 +158,8 @@ const EmailLeft = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 15px;
+  font-weight: bold;
 
   .textInput {
     height: 18px;
@@ -146,7 +167,7 @@ const EmailLeft = styled.div`
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid grey;
   }
 `;
 
@@ -163,7 +184,7 @@ const EmailRight = styled.div`
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid grey;
   }
 `;
 
@@ -176,6 +197,8 @@ const LogInContainer = styled.div`
   border-bottom: 1px solid #ccc;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-size: 15px;
+  font-weight: bold;
 
   .textInput {
     height: 18px;
@@ -183,7 +206,7 @@ const LogInContainer = styled.div`
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid grey;
   }
 `;
 
@@ -200,6 +223,8 @@ const CountryLeft = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 15px;
+  font-weight: bold;
 
   .folder {
     height: 35px;
@@ -218,6 +243,8 @@ const CountryRight = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 15px;
+  font-weight: bold;
 
   .folder {
     height: 35px;
@@ -230,19 +257,21 @@ const CountryRight = styled.div`
   }
 `;
 
-const DropDownBox = styled.div`
-  width: 90%;
-  height: 30px;
-  border: 1px solid #ccc;
-  display: flex;
-  align-items: center;
-`;
+// const DropDownBox = styled.div`
+//   width: 90%;
+//   height: 30px;
+//   border: 1px solid #ccc;
+//   display: flex;
+//   align-items: center;
+// `;
 
 const PassportContainer = styled.div`
   height: 200px;
   width: 100%;
   display: flex;
   border-bottom: 1px solid #ccc;
+  font-size: 15px;
+  font-weight: bold;
 `;
 
 const PassportLeft = styled.div`
@@ -251,6 +280,8 @@ const PassportLeft = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 15px;
+  font-weight: bold;
 
   .folder {
     height: 35px;
@@ -287,6 +318,7 @@ const CheckBoxContainer = styled.div`
   display: flex;
   align-items: center;
   padding-top: 20px;
+  font-size: 15px;
 
   .input {
     margin-right: 10px;
@@ -307,32 +339,46 @@ const MFAContainerLeft = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 15px;
+  font-weight: bold;
 `;
 
-const MFAPasswordButton = styled.div`
+const MFAPasswordButton = styled.button`
   height: 30px;
-  width: 154px;
+  width: 130px;
+  margin-top: 5px;
   border-radius: 10px;
+  border: none;
   background-color: #2658e2;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 13px;
+  color: white;
+  cursor: pointer;
 `;
 
 const MFAContainerRight = styled.div`
   height: 100px;
   width: 80%;
   display: flex;
+  margin-top: 10px;
   flex-direction: column;
   justify-content: center;
+  font-size: 13px;
+  cursor: pointer;
 `;
 
 const DateOfBirthContainer = styled.div`
   height: 80px;
   width: 100%;
+  margin-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #ccc;
+  font-size: 15px;
+  font-weight: bold;
 `;
 
 const DateOfBirthContainerTop = styled.div`
@@ -600,13 +646,13 @@ const EmergencyContactBottomRight = styled.div`
   }
 `;
 
-const EmergancyContactBox = styled.div`
-  height: 50%;
-  width: 90%;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #ccc;
-`;
+// const EmergancyContactBox = styled.div`
+//   height: 50%;
+//   width: 90%;
+//   display: flex;
+//   align-items: center;
+//   border-bottom: 1px solid #ccc;
+// `;
 
 const UpdateButtonContainer = styled.div`
   height: 70px;
@@ -638,16 +684,18 @@ const AccountSettings = () => {
   return (
     <>
       <Container>
-        <HeaderContainer>
-          <h1>Account Settings</h1>
-        </HeaderContainer>
-        <PatientIDContainer>
-          <h3>Patient ID : 678 045 234 1534</h3>
-        </PatientIDContainer>
+        <HeaderContainer>Account Settings</HeaderContainer>
+        <PatientIDContainer>Patient ID : 678 045 234 1534</PatientIDContainer>
         <NameContainer>
           <NamePhoneLeft>
             <label for="fname">First Name:</label>
-            <input className="textInput" type="text" id="fname" name="fname" />
+            <input
+              className="textInput"
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Olive"
+            />
           </NamePhoneLeft>
           <NamePhoneMiddle>
             <label for="mname">Middle Initial:</label>
@@ -655,7 +703,13 @@ const AccountSettings = () => {
           </NamePhoneMiddle>
           <NamePhoneRight>
             <label for="lname">Last Name:</label>
-            <input className="textInput" type="text" id="lname" name="lname" />
+            <input
+              className="textInput"
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="Scott"
+            />
           </NamePhoneRight>
         </NameContainer>
         <PhoneContainer>
@@ -688,7 +742,7 @@ const AccountSettings = () => {
           </NamePhoneRight>
         </PhoneContainer>
         <NationalityContainer>
-          <h4>Nationality</h4>
+          <div>Nationality</div>
           <select name="folder" className="folder">
             <option value="1" selected="selected">
               Please Select Nationality
@@ -726,7 +780,7 @@ const AccountSettings = () => {
         </LogInContainer>
         <CountryContainer>
           <CountryLeft>
-            <h4>Country</h4>
+            <div>Country</div>
             <select name="folder" className="folder">
               <option value="1" selected="selected">
                 Select Folder
@@ -734,7 +788,7 @@ const AccountSettings = () => {
             </select>
           </CountryLeft>
           <CountryRight>
-            <h4>Time Zone</h4>
+            <div>Time Zone</div>
             <select name="folder" className="folder">
               <option value="1" selected="selected">
                 Select Folder
@@ -744,7 +798,7 @@ const AccountSettings = () => {
         </CountryContainer>
         <PassportContainer>
           <PassportLeft>
-            <h4>Passport Or Citizen ID Number</h4>
+            <div>Passport Or Citizen ID Number</div>
             <select name="folder" className="folder">
               <option value="1" selected="selected">
                 Select Folder
@@ -752,7 +806,7 @@ const AccountSettings = () => {
             </select>
           </PassportLeft>
           <PassportRight>
-            <h4>Language</h4>
+            <div>Language</div>
             <select name="folder" className="folder">
               <option value="1" selected="selected">
                 Select Folder
@@ -768,20 +822,20 @@ const AccountSettings = () => {
             value="Bike"
             className="input"
           ></input>
-          <h4>Require MFA for Login</h4>
+          <div>Require MFA for Login</div>
         </CheckBoxContainer>
         <MFAContainer>
           <MFAContainerLeft>
-            <h4>MFA Alternate Code:</h4>
-            <MFAPasswordButton>Hello</MFAPasswordButton>
+            <div>MFA Alternate Code:</div>
+            <MFAPasswordButton>Change Password</MFAPasswordButton>
           </MFAContainerLeft>
           <MFAContainerRight>
-            <h5>Set-Up Multi Factor Authentification</h5>
+            <div>Set-Up Multi Factor Authentification</div>
           </MFAContainerRight>
         </MFAContainer>
         <DateOfBirthContainer>
           <DateOfBirthContainerTop>
-            <h4>Date of Birth</h4>
+            <div>Date of Birth</div>
           </DateOfBirthContainerTop>
           <DateOfBirthContainerBottom>
             <DateOfBirthContainerBottomLeft>
