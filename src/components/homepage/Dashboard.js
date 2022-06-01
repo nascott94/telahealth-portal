@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "@emotion/styled";
+import React from 'react';
+import styled from '@emotion/styled';
 
 const TopContainer = styled.div`
   .dashboard-top {
@@ -75,16 +75,15 @@ const BottomContainer = styled.div`
 
       .appointments {
         display: flex;
-        flex-direction: column;
+        flex-flow: row wrap;
         padding-top: 30px;
 
         .view-button {
-          /* margin-left: auto; */
-          justify-content: space-between;
           width: 194%;
         }
-
         .appt-box {
+          display: flex;
+          flex-direction: column;
           -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
           box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
           border-radius: 10px;
