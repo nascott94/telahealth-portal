@@ -142,7 +142,6 @@ const CityZip = styled.div`
   height: 80px;
   width: 98%;
   display: flex;
-  /* border-bottom: 1px solid black; */
   padding-top: 15px;
   padding-bottom: 15px;
 `;
@@ -205,6 +204,7 @@ const PhoneEmailLeft = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 10px;
 
   .title {
     font-size: 15px;
@@ -227,6 +227,7 @@ const PhoneEmailRight = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 10px;
 
   .title {
     font-size: 15px;
@@ -249,7 +250,7 @@ const BillingAddressContainer = styled.div`
   width: 98%;
   display: flex;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 25px;
   font-size: 20px;
 
   .shippingAddress {
@@ -335,6 +336,7 @@ const BillingCountryContainer = styled.div`
   height: 300px;
   width: 98%;
   display: flex;
+  border-bottom: 1px solid #ccc;
 `;
 
 const BillingCountry2 = styled.div`
@@ -592,7 +594,7 @@ const AddressContactInfo = () => {
                 </select>
               </CountryContainerLeft>
               <CountryContainerRight>
-                <div>State</div>
+                <div className="title">State</div>
                 <select name="folder" className="folder">
                   <option value="1" selected="selected">
                     Please Select
@@ -602,7 +604,9 @@ const AddressContactInfo = () => {
             </CountryContainer>
             <CityZip>
               <CityZipLeft>
-                <label for="addressname">City</label>
+                <label for="addressname" className="title">
+                  City
+                </label>
                 <input
                   className="textInput"
                   type="text"
@@ -611,7 +615,9 @@ const AddressContactInfo = () => {
                 />
               </CityZipLeft>
               <CityZipRight>
-                <label for="addressname">Zip Code</label>
+                <label for="addressname" className="title">
+                  Zip Code
+                </label>
                 <input
                   className="textInput"
                   type="text"
