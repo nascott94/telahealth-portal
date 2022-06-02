@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Navbar from "../components/homepage/Navbar";
 import Sidebar from "../components/homepage/Sidebar";
+import Footer from "../components/homepage/Footer";
 
 const Container = styled.div`
   height: 100%;
@@ -175,6 +176,7 @@ const ProductServices = () => {
           </RightMain>
         </RightContainer>
       </Container>
+      <Footer />
     </>
   );
 };

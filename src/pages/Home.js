@@ -47,6 +47,11 @@ const HealthPassContainer = styled.div`
   background-color: white;
 `;
 
+const FooterContainer = styled.div`
+  height: 100px;
+  width: 100%;
+`;
+
 const Home = () => {
   return (
     <>
@@ -64,9 +69,11 @@ const Home = () => {
           <HealthPassContainer>
             <HealthPass />
           </HealthPassContainer>
+          <Footer />
         </RestofPageContainer>
       </Container>
-      <Footer />
+      {/* <FooterContainer> */}
+      {/* </FooterContainer> */}
     </>
   );
 };

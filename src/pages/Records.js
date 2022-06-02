@@ -1,10 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import Navbar from '../components/homepage/Navbar';
-import Sidebar from '../components/homepage/Sidebar';
-import FileUploadRoundedIcon from '@mui/icons-material/FileUploadRounded';
-import FolderOpenRoundedIcon from '@mui/icons-material/FolderOpenRounded';
-import ShareIcon from '@mui/icons-material/Share';
+import React from "react";
+import styled from "styled-components";
+import Navbar from "../components/homepage/Navbar";
+import Sidebar from "../components/homepage/Sidebar";
+import FileUploadRoundedIcon from "@mui/icons-material/FileUploadRounded";
+import FolderOpenRoundedIcon from "@mui/icons-material/FolderOpenRounded";
+import ShareIcon from "@mui/icons-material/Share";
+import Footer from "../components/homepage/Footer";
 
 const Container = styled.div`
   height: 100vh;
@@ -437,6 +438,7 @@ const Records = () => {
           </RightMain>
         </RightContainer>
       </Container>
+      <Footer />
     </>
   );
 };

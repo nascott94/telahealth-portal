@@ -1,11 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
-import Navbar from '../components/homepage/Navbar';
-import Sidebar from '../components/homepage/Sidebar';
-import SearchIcon from '@mui/icons-material/Search';
-import OpenInBrowserRoundedIcon from '@mui/icons-material/OpenInBrowserRounded';
-import CachedRoundedIcon from '@mui/icons-material/CachedRounded';
-import VolumeUpRoundedIcon from '@mui/icons-material/VolumeUpRounded';
+import React from "react";
+import styled from "styled-components";
+import Navbar from "../components/homepage/Navbar";
+import Sidebar from "../components/homepage/Sidebar";
+import SearchIcon from "@mui/icons-material/Search";
+import OpenInBrowserRoundedIcon from "@mui/icons-material/OpenInBrowserRounded";
+import CachedRoundedIcon from "@mui/icons-material/CachedRounded";
+import VolumeUpRoundedIcon from "@mui/icons-material/VolumeUpRounded";
+import Footer from "../components/homepage/Footer";
 // import FolderRoundedIcon from '@mui/icons-material/FolderRounded';
 // import FilterAltRoundedIcon from '@mui/icons-material/FilterAltRounded';
 
@@ -14,6 +15,7 @@ const Container = styled.div`
   width: 100vw;
   display: flex;
   flex-direction: row;
+  background-color: #2658e2;
 `;
 
 const LeftContainer = styled.div`
@@ -155,6 +157,7 @@ const Messages = () => {
           </RightMain>
         </RightContainer>
       </Container>
+      <Footer />
     </>
   );
 };
