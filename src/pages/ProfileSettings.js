@@ -1,15 +1,16 @@
-import React from 'react';
-import styled from 'styled-components';
-import Navbar from '../components/homepage/Navbar';
-import Sidebar from '../components/homepage/Sidebar';
-import { useState } from 'react';
-import NotificationSettings from '../components/profilepage/NotificationSettings';
-import AccountSettings from '../components/profilepage/AccountSettings';
-import MyMedicalInformation from '../components/profilepage/MyMedicalInformation';
-import Insurance from '../components/profilepage/Insurance';
-import AddressContactInfo from '../components/profilepage/AddressContactInfo';
-import PaymentDetails from '../components/profilepage/PaymentDetails';
-import greybackground from '../media/greybackground.jpg';
+import React from "react";
+import styled from "styled-components";
+import Navbar from "../components/homepage/Navbar";
+import Sidebar from "../components/homepage/Sidebar";
+import { useState } from "react";
+import NotificationSettings from "../components/profilepage/NotificationSettings";
+import AccountSettings from "../components/profilepage/AccountSettings";
+import MyMedicalInformation from "../components/profilepage/MyMedicalInformation";
+import Insurance from "../components/profilepage/Insurance";
+import AddressContactInfo from "../components/profilepage/AddressContactInfo";
+import PaymentDetails from "../components/profilepage/PaymentDetails";
+import greybackground from "../media/greybackground.jpg";
+import Footer from "../components/homepage/Footer";
 
 const Container = styled.div`
   height: 100%;
@@ -217,6 +218,7 @@ function ProfileSettings() {
           </RightMain>
         </RightContainer>
       </Container>
+      <Footer />
     </>
   );
 }

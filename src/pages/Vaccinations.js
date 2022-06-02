@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Navbar from "../components/homepage/Navbar";
 import Sidebar from "../components/homepage/Sidebar";
 import AddRoundedIcon from "@mui/icons-material/AddRounded";
+import Footer from "../components/homepage/Footer";
 
 const Container = styled.div`
   height: 100%;
@@ -575,6 +576,7 @@ const Vaccinations = () => {
           </RightMain>
         </RightContainer>
       </Container>
+      <Footer />
     </>
   );
 };

@@ -1,8 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import Navbar from '../components/homepage/Navbar';
-import Sidebar from '../components/homepage/Sidebar';
-import { BsToggles2 } from 'react-icons/bs';
+import React from "react";
+import styled from "styled-components";
+import Navbar from "../components/homepage/Navbar";
+import Sidebar from "../components/homepage/Sidebar";
+import { BsToggles2 } from "react-icons/bs";
+import Footer from "../components/homepage/Footer";
 
 const Container = styled.div`
   height: 100vh;
@@ -279,6 +280,7 @@ const Appointments = () => {
           </RightMain>
         </RightContainer>
       </Container>
+      <Footer />
     </>
   );
 };
