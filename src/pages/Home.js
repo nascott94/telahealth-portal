@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
-import Sidebar from '../components/homepage/Sidebar';
-import Navbar from '../components/homepage/Navbar';
-import Dashboard from '../components/homepage/Dashboard';
-import HealthPass from '../components/homepage/HealthPass';
-import Footer from '../components/homepage/Footer';
+import React from "react";
+import styled from "styled-components";
+import Sidebar from "../components/homepage/Sidebar";
+import Navbar from "../components/homepage/Navbar";
+import Dashboard from "../components/homepage/Dashboard";
+import HealthPass from "../components/homepage/HealthPass";
+import Footer from "../components/homepage/Footer";
 
 const Container = styled.div`
   height: 100%;
@@ -47,11 +47,6 @@ const HealthPassContainer = styled.div`
   background-color: white;
 `;
 
-const FooterContainer = styled.div`
-  height: 20px;
-  width: 100%;
-`;
-
 const Home = () => {
   return (
     <>
@@ -71,9 +66,7 @@ const Home = () => {
           </HealthPassContainer>
         </RestofPageContainer>
       </Container>
-      <FooterContainer>
-        <Footer />
-      </FooterContainer>
+      <Footer />
     </>
   );
 };
