@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from '@emotion/styled';
+import React from "react";
+import styled from "@emotion/styled";
 
 const TopContainer = styled.div`
   .dashboard-top {
@@ -52,9 +52,17 @@ const TopContainer = styled.div`
 `;
 
 const BottomContainer = styled.div`
-  .dashboard-bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-top: 25px;
+  width: 95%;
+  height: 400px;
+  padding-left: 1.5%;
+
+  /* .dashboard-bottom {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 10px;
     padding-top: 25px;
     width: 90%;
@@ -99,7 +107,7 @@ const BottomContainer = styled.div`
 
         .view-button {
           /* margin-left: auto; */
-          justify-content: space-between;
+          /* justify-content: space-between;
           width: 194%;
         }
 
@@ -110,10 +118,10 @@ const BottomContainer = styled.div`
           width: 194%;
           height: 75px;
         }
-      }
+      } */
     }
 
-    .right {
+    /* .right {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -125,8 +133,82 @@ const BottomContainer = styled.div`
         border: 1px solid #ccc;
         border-radius: 6px;
       }
-    }
+    } */ */
   }
+`;
+
+const BottomContainerTop = styled.div`
+  height: 110px;
+  width: 100%;
+  background-color: #eaedf1;
+  display: flex;
+`;
+
+const BottomTopLeft = styled.div`
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+const BottomTopRight = styled.div`
+  height: 200px;
+  width: 100%;
+
+  .folder {
+    width: 100%;
+    height: 20%;
+    border: 1px solid #ccc;
+  }
+`;
+
+const BottomContainerBottom = styled.div`
+  height: 300px;
+  width: 100%;
+  background-color: #eaedf1;
+  display: flex;
+`;
+
+const BottomBottomLeft = styled.div`
+  height: 100%;
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+const ViewBox = styled.div`
+  height: 45%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+`;
+
+const ViewBoxTop = styled.div`
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #eaedf1;
+
+  .margin {
+    margin-left: 75px;
+  }
+`;
+
+const ViewBoxBottom = styled.div`
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const BottomBottomRight = styled.div`
+  height: 100%;
+  width: 50%;
 `;
 
 const Dashboard = () => {
@@ -144,7 +226,43 @@ const Dashboard = () => {
         </div>
       </TopContainer>
       <BottomContainer>
-        <div className="dashboard-bottom">
+        <BottomContainerTop>
+          <BottomTopLeft>
+            <h1>Hello Natalie</h1>
+            <div>Welcome to your dashboard</div>
+          </BottomTopLeft>
+          <BottomTopRight>
+            <select name="folder" className="folder">
+              <option value="1" selected="selected">
+                Natalie Scott (self)
+              </option>
+            </select>
+          </BottomTopRight>
+        </BottomContainerTop>
+        <BottomContainerBottom>
+          <BottomBottomLeft>
+            <ViewBox>
+              <ViewBoxTop>
+                <div>Today's appointments and registrations </div>
+                <div className="margin">View All</div>
+              </ViewBoxTop>
+              <ViewBoxBottom>
+                <div>None today.</div>
+              </ViewBoxBottom>
+            </ViewBox>
+            <ViewBox>
+              <ViewBoxTop>
+                <div>Today's appointments and registrations </div>
+                <div className="margin">View All</div>
+              </ViewBoxTop>
+              <ViewBoxBottom>
+                <div>None today.</div>
+              </ViewBoxBottom>
+            </ViewBox>
+          </BottomBottomLeft>
+          <BottomBottomRight></BottomBottomRight>
+        </BottomContainerBottom>
+        {/* <div className="dashboard-bottom">
           <div className="left">
             <div className="title">Hello Olive</div>
             <div className="sub-title">Welcome to your dashboard</div>
@@ -167,7 +285,7 @@ const Dashboard = () => {
               <option value="2">Leo Scott</option>
             </select>
           </div>
-        </div>
+        </div> */}
       </BottomContainer>
     </>
   );
