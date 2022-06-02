@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "@emotion/styled";
+import React from 'react';
+import styled from '@emotion/styled';
 
 const TopContainer = styled.div`
   .dashboard-top {
@@ -12,6 +12,7 @@ const TopContainer = styled.div`
     border-radius: 5px;
     width: 95%;
     height: 75px;
+    background-color: white;
 
     .left {
       display: flex;
@@ -107,7 +108,7 @@ const BottomContainer = styled.div`
 
         .view-button {
           /* margin-left: auto; */
-          /* justify-content: space-between;
+  /* justify-content: space-between;
           width: 194%;
         }
 
@@ -119,9 +120,8 @@ const BottomContainer = styled.div`
           height: 75px;
         }
       } */
-    }
 
-    /* .right {
+  /* .right {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -133,8 +133,7 @@ const BottomContainer = styled.div`
         border: 1px solid #ccc;
         border-radius: 6px;
       }
-    } */ */
-  }
+    } */
 `;
 
 const BottomContainerTop = styled.div`

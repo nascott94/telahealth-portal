@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import QrCode from "../../media/frame.png";
-import CloseIcon from "@mui/icons-material/Close";
+import React from 'react';
+import styled from 'styled-components';
+import QrCode from '../../media/frame.png';
+import CloseIcon from '@mui/icons-material/Close';
 
 const Container = styled.div`
   height: 98%;
@@ -179,7 +179,7 @@ const HealthPass = () => {
             />
           </HealthPassTopLeft>
           <HealthPassTopRight>
-            <div className="name">Olive Scott</div>
+            <div className="name">Natalie Scott</div>
             <div className="credentials">Credentials ID: 1276 09 2389</div>
             <button>View ID & Passport</button>
           </HealthPassTopRight>
