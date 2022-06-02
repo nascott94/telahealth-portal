@@ -87,10 +87,29 @@ const CountryContainerLeft = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
+  padding-top: 8px;
+
+  .title {
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+  }
+
+  .title-2 {
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+    padding-top: 5px;
+  }
 
   .folder {
     height: 30px;
     width: 440px;
+    background-color: #eaedf1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -99,12 +118,23 @@ const CountryContainerRight = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
-  padding-top: 15px;
+  padding-top: 8px;
   padding-bottom: 15px;
+
+  .title {
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+  }
 
   .folder {
     height: 30px;
     width: 440px;
+    background-color: #eaedf1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #ccc;
   }
 `;
 
@@ -112,7 +142,7 @@ const CityZip = styled.div`
   height: 80px;
   width: 98%;
   display: flex;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   padding-top: 15px;
   padding-bottom: 15px;
 `;
@@ -122,6 +152,12 @@ const CityZipLeft = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
+
+  .title {
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+  }
 
   .textInput {
     height: 25px;
@@ -139,6 +175,12 @@ const CityZipRight = styled.div`
   display: flex;
   flex-direction: column;
 
+  .title {
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+  }
+
   .textInput {
     height: 25px;
     width: 435px;
@@ -153,7 +195,7 @@ const PhoneEmail = styled.div`
   height: 80px;
   width: 98%;
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
   padding-top: 20px;
   padding-bottom: 20px;
 `;
@@ -163,6 +205,12 @@ const PhoneEmailLeft = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
+
+  .title {
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+  }
 
   .textInput {
     height: 25px;
@@ -180,6 +228,12 @@ const PhoneEmailRight = styled.div`
   display: flex;
   flex-direction: column;
 
+  .title {
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+  }
+
   .textInput {
     height: 25px;
     width: 435px;
@@ -196,6 +250,7 @@ const BillingAddressContainer = styled.div`
   display: flex;
   align-items: center;
   padding-top: 10px;
+  font-size: 20px;
 
   .shippingAddress {
     padding-top: -90px;
@@ -231,6 +286,12 @@ const BillingAddressLeft = styled.div`
   justify-content: center;
   padding-bottom: 20px;
 
+  .title {
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+  }
+
   .textInput {
     height: 10px;
     width: 435px;
@@ -254,6 +315,12 @@ const BillingAddressRight = styled.div`
   justify-content: center;
   padding-bottom: 20px;
 
+  .title {
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+  }
+
   .textInput {
     height: 10px;
     width: 435px;
@@ -273,7 +340,7 @@ const BillingCountryContainer = styled.div`
 const BillingCountry2 = styled.div`
   height: 300px;
   width: 100%;
-  background-color: pink;
+  background-color: white;
 `;
 
 const ShippingAddressContainer = styled.div`
@@ -390,7 +457,7 @@ const AddressContactInfo = () => {
         <HeaderContainer>Address and Contact Information</HeaderContainer>
         <AddressContainer>
           <AddressLeft>
-            <label for="addressname">Address 1:</label>
+            <label for="addressname">Address 1</label>
             <input
               className="textInput"
               type="text"
@@ -399,7 +466,7 @@ const AddressContactInfo = () => {
             />
           </AddressLeft>
           <AddressRight>
-            <label for="addressname">Address 2:</label>
+            <label for="addressname">Address 2</label>
             <input
               className="textInput"
               type="text"
@@ -410,13 +477,13 @@ const AddressContactInfo = () => {
         </AddressContainer>
         <CountryContainer>
           <CountryContainerLeft>
-            <div>Country Of residence</div>
+            <div className="title">Country of residence</div>
             <select name="folder" className="folder">
               <option value="1" selected="selected">
                 Please Select
               </option>
             </select>
-            <div>Country</div>
+            <div className="title-2">Country</div>
             <select name="folder" className="folder">
               <option value="1" selected="selected">
                 Please Select
@@ -424,7 +491,7 @@ const AddressContactInfo = () => {
             </select>
           </CountryContainerLeft>
           <CountryContainerRight>
-            <div>State</div>
+            <div className="title">State</div>
             <select name="folder" className="folder">
               <option value="1" selected="selected">
                 Please Select
@@ -434,7 +501,9 @@ const AddressContactInfo = () => {
         </CountryContainer>
         <CityZip>
           <CityZipLeft>
-            <label for="addressname">City:</label>
+            <label for="addressname" className="title">
+              City
+            </label>
             <input
               className="textInput"
               type="text"
@@ -443,7 +512,9 @@ const AddressContactInfo = () => {
             />
           </CityZipLeft>
           <CityZipRight>
-            <label for="addressname">Zip Code:</label>
+            <label for="addressname" className="title">
+              Zip Code
+            </label>
             <input
               className="textInput"
               type="text"
@@ -454,7 +525,9 @@ const AddressContactInfo = () => {
         </CityZip>
         <PhoneEmail>
           <PhoneEmailLeft>
-            <label for="addressname">Phone:</label>
+            <label for="addressname" className="title">
+              Phone
+            </label>
             <input
               className="textInput"
               type="text"
@@ -463,7 +536,9 @@ const AddressContactInfo = () => {
             />
           </PhoneEmailLeft>
           <PhoneEmailRight>
-            <label for="addressname">Email:</label>
+            <label for="addressname" className="title">
+              Email
+            </label>
             <input
               className="textInput"
               type="text"
@@ -477,7 +552,9 @@ const AddressContactInfo = () => {
         </BillingAddressContainer>
         <BillingAddress>
           <BillingAddressLeft>
-            <label for="addressname">Address 1:</label>
+            <label for="addressname" className="title">
+              Address 1
+            </label>
             <input
               className="textInput"
               type="text"
@@ -486,7 +563,9 @@ const AddressContactInfo = () => {
             />
           </BillingAddressLeft>
           <BillingAddressRight>
-            <label for="addressname">Address 2:</label>
+            <label for="addressname" className="title">
+              Address 2
+            </label>
             <input
               className="textInput"
               type="text"
@@ -499,13 +578,13 @@ const AddressContactInfo = () => {
           <BillingCountry2>
             <CountryContainer>
               <CountryContainerLeft>
-                <div>Country of residence</div>
+                <div className="title">Country of residence</div>
                 <select name="folder" className="folder">
                   <option value="1" selected="selected">
                     Please Select
                   </option>
                 </select>
-                <h4>Country</h4>
+                <div className="title">Country</div>
                 <select name="folder" className="folder">
                   <option value="1" selected="selected">
                     Please Select
@@ -523,7 +602,7 @@ const AddressContactInfo = () => {
             </CountryContainer>
             <CityZip>
               <CityZipLeft>
-                <label for="addressname">City:</label>
+                <label for="addressname">City</label>
                 <input
                   className="textInput"
                   type="text"
@@ -532,7 +611,7 @@ const AddressContactInfo = () => {
                 />
               </CityZipLeft>
               <CityZipRight>
-                <label for="addressname">Zip Code:</label>
+                <label for="addressname">Zip Code</label>
                 <input
                   className="textInput"
                   type="text"
@@ -550,7 +629,7 @@ const AddressContactInfo = () => {
             </BillingAddressContainer>
             <BillingAddress>
               <BillingAddressLeft>
-                <label for="addressname">Address 1:</label>
+                <label for="addressname">Address 1</label>
                 <input
                   className="textInput"
                   type="text"
@@ -559,7 +638,7 @@ const AddressContactInfo = () => {
                 />
               </BillingAddressLeft>
               <BillingAddressRight>
-                <label for="addressname">Address 2:</label>
+                <label for="addressname">Address 2</label>
                 <input
                   className="textInput"
                   type="text"
@@ -620,7 +699,7 @@ const AddressContactInfo = () => {
             </BillingAddressContainer>
             <BillingAddress>
               <BillingAddressLeft>
-                <label for="addressname">Address 1:</label>
+                <label for="addressname">Address 1</label>
                 <input
                   className="textInput"
                   type="text"
@@ -629,7 +708,7 @@ const AddressContactInfo = () => {
                 />
               </BillingAddressLeft>
               <BillingAddressRight>
-                <label for="addressname">Address 2:</label>
+                <label for="addressname">Address 2</label>
                 <input
                   className="textInput"
                   type="text"
