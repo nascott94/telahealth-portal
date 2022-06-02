@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "@emotion/styled";
+import React from 'react';
+import styled from '@emotion/styled';
 
 const Container = styled.div`
   height: 270px;
@@ -35,7 +35,7 @@ const ContainerMiddle = styled.div`
   height: 50px;
   width: 98%;
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
   padding-bottom: 18px;
 `;
 
@@ -45,6 +45,8 @@ const MiddleTop = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 15px;
+  font-weight: bold;
 `;
 
 const MiddleBottom = styled.div`
@@ -54,6 +56,8 @@ const MiddleBottom = styled.div`
   justify-content: space-between;
   align-items: center;
   justify-content: center;
+  font-size: 14px;
+  color: grey;
 `;
 
 const ContainerMiddleLeft = styled.div`
@@ -86,7 +90,7 @@ const ContainerMiddleright = styled.div`
 const ContainerBottom = styled.div`
   height: 50px;
   width: 98%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
 `;
 
 const NotificationSettings = () => {
@@ -98,16 +102,14 @@ const NotificationSettings = () => {
         </ContainerTop>
         <ContainerMiddle>
           <ContainerMiddleLeft>
-            <MiddleTop>
-              <div>Secure Messaging</div>
-            </MiddleTop>
+            <MiddleTop>Secure Messaging</MiddleTop>
             <MiddleBottom>
               <div className="padding">
-                SMS <input type="checkbox" name="sports" value="soccer" />
+                <input type="checkbox" name="sports" value="soccer" /> SMS
               </div>
 
               <div className="padding">
-                EMAIL <input type="checkbox" name="sports" value="soccer" />
+                <input type="checkbox" name="sports" value="soccer" /> Email
               </div>
             </MiddleBottom>
           </ContainerMiddleLeft>
@@ -117,10 +119,10 @@ const NotificationSettings = () => {
             </MiddleTop>
             <MiddleBottom>
               <div className="padding">
-                SMS <input type="checkbox" name="sports" value="soccer" />
+                <input type="checkbox" name="sports" value="soccer" /> SMS
               </div>
               <div className="padding">
-                EMAIL <input type="checkbox" name="sports" value="soccer" />
+                <input type="checkbox" name="sports" value="soccer" /> Email
               </div>
             </MiddleBottom>
           </ContainerMiddleMiddle>
@@ -130,10 +132,10 @@ const NotificationSettings = () => {
             </MiddleTop>
             <MiddleBottom>
               <div className="padding">
-                SMS <input type="checkbox" name="sports" value="soccer" />
+                <input type="checkbox" name="sports" value="soccer" /> SMS
               </div>
               <div className="padding">
-                EMAIL <input type="checkbox" name="sports" value="soccer" />
+                <input type="checkbox" name="sports" value="soccer" /> Email
               </div>
             </MiddleBottom>
           </ContainerMiddleright>

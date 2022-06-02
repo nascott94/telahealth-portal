@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "@emotion/styled";
+import React from 'react';
+import styled from '@emotion/styled';
 
 const Container = styled.div`
   height: 500px;
@@ -10,7 +10,7 @@ const Container = styled.div`
   flex-direction: column;
   padding: 10px;
   overflow: scroll;
-  border-top: 1px solid black;
+  border-top: 1px solid #ccc;
 `;
 
 const HeaderContainer = styled.div`
@@ -48,9 +48,12 @@ const AddressLeft = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
   justify-content: center;
   padding-bottom: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: grey;
 `;
 
 const AddressRight = styled.div`
@@ -58,16 +61,19 @@ const AddressRight = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
   justify-content: center;
   padding-bottom: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: grey;
 `;
 
-const InputBox = styled.div`
-  height: 30px;
-  width: 90%;
-  border-bottom: 1px solid black;
-`;
+// const InputBox = styled.div`
+//   height: 30px;
+//   width: 90%;
+//   border-bottom: 1px solid black;
+// `;
 
 const CountryContainer = styled.div`
   height: 130px;
@@ -93,9 +99,9 @@ const CountryContainerRight = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
-  padding-top: 15px:
+  padding-top: 15px;
   padding-bottom: 15px;
-  
+
   .folder {
     height: 30px;
     width: 440px;
@@ -493,7 +499,7 @@ const AddressContactInfo = () => {
           <BillingCountry2>
             <CountryContainer>
               <CountryContainerLeft>
-                <div>Country Of residence</div>
+                <div>Country of residence</div>
                 <select name="folder" className="folder">
                   <option value="1" selected="selected">
                     Please Select

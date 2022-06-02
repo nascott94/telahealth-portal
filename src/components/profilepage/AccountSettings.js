@@ -600,6 +600,8 @@ const EmergencyContactContainerTop = styled.div`
   display: flex;
   align-items: center;
   padding-top: 40px;
+  font-size: 15px;
+  font-weight: bold;
 `;
 
 const EmergencyContactContainerBottom = styled.div`
@@ -623,7 +625,8 @@ const EmergencyContactBottomLeft = styled.div`
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid grey;
+    font-size: 14px;
   }
 `;
 
@@ -640,7 +643,8 @@ const EmergencyContactBottomMiddle = styled.div`
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid grey;
+    font-size: 14px;
   }
 `;
 
@@ -651,7 +655,7 @@ const EmergencyContactBottomRight = styled.div`
   flex-direction: column;
   justify-content: center;
   padding-bottom: 108px;
-  padding-top: 30px;
+  padding-top: 13px;
 
   .textInput {
     height: 18px;
@@ -659,7 +663,8 @@ const EmergencyContactBottomRight = styled.div`
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid grey;
+    font-size: 14px;
   }
 `;
 
@@ -967,49 +972,54 @@ const AccountSettings = () => {
         </UploadHeadshotContainer>
         <EmergencyContactContainer>
           <EmergencyContactContainerTop>
-            <h4>Emergency Contact Information :</h4>
+            Emergency Contact Information:
           </EmergencyContactContainerTop>
           <EmergencyContactContainerBottom>
             <EmergencyContactBottomLeft>
-              <label for="fname">First Name:</label>
+              {/* <label for="fname">First Name:</label> */}
               <input
                 className="textInput"
                 type="text"
                 id="fname"
                 name="fname"
+                placeholder="First Name"
               />
-              <label for="hphonename">Home Phone:</label>
+              {/* <label for="hphonename">Home Phone:</label> */}
               <input
                 className="textInput"
                 type="text"
                 id="hphonename"
                 name="hphonename"
+                placeholder="Home Phone"
               />
             </EmergencyContactBottomLeft>
             <EmergencyContactBottomMiddle>
-              <label for="lname">Last Name:</label>
+              {/* <label for="lname">Last Name:</label> */}
               <input
                 className="textInput"
                 type="text"
                 id="lname"
                 name="lname"
+                placeholder="Last Name"
               />
-              <label for="cpname">Cell Phone:</label>
+              {/* <label for="cpname">Cell Phone:</label> */}
               <input
                 className="textInput"
                 type="text"
                 id="cpname"
                 name="cpname"
+                placeholder="Cell Phone"
               />
             </EmergencyContactBottomMiddle>
             <EmergencyContactBottomRight>
-              <label for="emailname">Email:</label>
+              {/* <label for="emailname">Email:</label> */}
               <br></br>
               <input
                 className="textInput"
                 type="text"
                 id="emailname"
                 name="emailname"
+                placeholder="Email"
               />
             </EmergencyContactBottomRight>
           </EmergencyContactContainerBottom>

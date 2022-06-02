@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "@emotion/styled";
+import React from 'react';
+import styled from '@emotion/styled';
 
 const Container = styled.div`
   height: 500px;
@@ -8,7 +8,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: white;
-  border-top: 1px solid black;
+  border-top: 1px solid #ccc;
 `;
 
 const NavBarContainer = styled.div`
@@ -16,7 +16,7 @@ const NavBarContainer = styled.div`
   width: 98%;
   display: flex;
   margin-top: 11px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
 `;
 
 const NavBarBoxes = styled.div`
@@ -25,6 +25,9 @@ const NavBarBoxes = styled.div`
   display: flex;
   align-items: center;
   background-color: white;
+  font-size: 15px;
+  font-weight: bold;
+  color: grey;
 `;
 
 const PatientNameContainer = styled.div`
@@ -33,6 +36,8 @@ const PatientNameContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
 
   .folder {
     height: 35px;
@@ -45,18 +50,20 @@ const PatientNameContainer = styled.div`
   }
 `;
 
-const DropDownBox = styled.div`
-  width: 40%;
-  height: 30px;
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
-`;
+// const DropDownBox = styled.div`
+//   width: 40%;
+//   height: 30px;
+//   border: 1px solid black;
+//   display: flex;
+//   align-items: center;
+//   margin-right: 30px;
+// `;
 
 const PatientInsuranceContainer = styled.div`
   height: 100px;
   width: 98%;
+  font-size: 14px;
+  font-weight: bold;
 `;
 
 const PatientInsuranceLeft = styled.div`
@@ -74,7 +81,7 @@ const PatientInsuranceLeftTop = styled.div`
   align-items: center;
 
   .underline {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ccc;
   }
 `;
 const PatientInsuranceLeftBottom = styled.div`
@@ -100,7 +107,7 @@ const PatientInsuranceRight = styled.div`
   width: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: right
+  justify-content: right;
   align-items: center;
 `;
 
@@ -118,6 +125,8 @@ const InsuranceTypeContainerTop = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 14px;
+  font-weight: bold;
 `;
 
 const InsuranceTypeContainerBottom = styled.div`
@@ -127,6 +136,7 @@ const InsuranceTypeContainerBottom = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #ccc;
+  font-size: 14px;
 `;
 
 const Footer = styled.div`
@@ -135,6 +145,7 @@ const Footer = styled.div`
   background-color: white;
   justify-content: space-between;
   display: flex;
+  font-size: 14px;
 `;
 
 const FooterLeft = styled.div`
@@ -151,6 +162,12 @@ const FooterRight = styled.div`
   align-items: center;
   justify-content: space-between;
   padding-right: 20px;
+
+  button {
+    height: 50%;
+    width: 48%;
+    cursor: pointer;
+  }
 `;
 
 const Insurance = () => {
@@ -167,7 +184,7 @@ const Insurance = () => {
           <div>Patient Name:</div>
           <select name="folder" className="folder">
             <option value="1" selected="selected">
-              Nat Scott
+              Olive Scott
             </option>
           </select>
         </PatientNameContainer>
@@ -204,8 +221,8 @@ const Insurance = () => {
         <Footer>
           <FooterLeft>Showing 0 to 0 of 0 entries</FooterLeft>
           <FooterRight>
-            <div>Next</div>
-            <div>Back</div>
+            <button>Next</button>
+            <button>Back</button>
           </FooterRight>
         </Footer>
       </Container>
