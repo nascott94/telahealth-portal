@@ -36,7 +36,13 @@ const DashboardContainer = styled.div`
   width: 100%;
   padding-top: 20px;
   padding-left: 20px;
-  background-color: white;
+  background-color: #eaedf1;
+`;
+
+const DashboardContainerBottom = styled.div`
+  height: 40%;
+  width: 100%;
+  background-color: #eaedf1;
 `;
 
 const HealthPassContainer = styled.div`
@@ -44,7 +50,8 @@ const HealthPassContainer = styled.div`
   width: 100%;
   padding-top: 40px;
   padding-left: 20px;
-  background-color: white;
+  background-color: #eaedf1;
+  padding-bottom: 15px;
 `;
 
 const FooterContainer = styled.div`
@@ -66,14 +73,13 @@ const Home = () => {
           <DashboardContainer>
             <Dashboard />
           </DashboardContainer>
+
           <HealthPassContainer>
             <HealthPass />
           </HealthPassContainer>
-          <Footer />
         </RestofPageContainer>
       </Container>
-      {/* <FooterContainer> */}
-      {/* </FooterContainer> */}
+      <Footer />
     </>
   );
 };

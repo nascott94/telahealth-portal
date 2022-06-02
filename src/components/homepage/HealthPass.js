@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import QrCode from '../../media/frame.png';
-import CloseIcon from '@mui/icons-material/Close';
+import React from "react";
+import styled from "styled-components";
+import QrCode from "../../media/frame.png";
+import CloseIcon from "@mui/icons-material/Close";
 
 const Container = styled.div`
   height: 98%;
@@ -10,6 +10,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding-left: 20px;
+  background-color: #eaedf1;
 `;
 
 const HealthPassBox = styled.div`
