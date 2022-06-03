@@ -1,10 +1,11 @@
-import React from "react";
-import styled from "@emotion/styled";
+import React from 'react';
+import styled from '@emotion/styled';
 
 const Container = styled.div`
   height: 500px;
   width: 100%;
   background-color: white;
+  border-top: 1px solid #ccc;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -19,8 +20,9 @@ const HeaderContainer = styled.div`
   border-bottom: 1px solid #ccc;
   color: #2658e2;
   font-size: 28px;
-  margin-top: 15px;
+  margin-top: 20px;
   padding-bottom: 15px;
+  font-size: 24px;
 `;
 
 const CardOptionContainer = styled.div`
@@ -30,6 +32,9 @@ const CardOptionContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  font-weight: bold;
+  color: grey;
 `;
 
 const CardInfoContainer = styled.div`
@@ -58,24 +63,28 @@ const CardInfoBox = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: grey;
+
   .textInput {
     height: 20px;
     width: 400px;
     border-top: none;
     border-right: none;
     border-left: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid black;
     margin-bottom: 15px;
   }
 `;
 
-const DropDownBox = styled.div`
-  width: 90%;
-  height: 30px;
-  border-bottom: 1px solid #ccc;
-  display: flex;
-  align-items: center;
-`;
+// const DropDownBox = styled.div`
+//   width: 90%;
+//   height: 30px;
+//   border-bottom: 1px solid #ccc;
+//   display: flex;
+//   align-items: center;
+// `;
 
 const CardInfoBottom = styled.div`
   height: 50%;
@@ -97,6 +106,9 @@ const ExperationDateTop = styled.div`
   height: 20%;
   width: 100%;
   background-color: white;
+  font-size: 14px;
+  font-weight: bold;
+  color: grey;
 `;
 
 const ExperationDateBottom = styled.div`
@@ -122,6 +134,7 @@ const DropDownBoxExperation = styled.div`
     border-right: none;
     border-left: none;
     border-bottom: 1px solid #ccc;
+    font-size: 13px;
   }
 `;
 
@@ -137,16 +150,18 @@ const AddButtonContainer = styled.div`
   margin-bottom: 10px;
 `;
 
-const AddButton = styled.div`
+const AddButton = styled.button`
   height: 40px;
   width: 80px;
   background-color: #2658e2;
   color: white;
   border-radius: 5px;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 14px;
+  cursor: pointer;
 `;
 
 const ResultsSection = styled.div`
@@ -157,6 +172,8 @@ const ResultsSection = styled.div`
   align-items: center;
   padding-bottom: 30px;
   padding-left: 2%;
+  font-size: 14px;
+  font-weight: bold;
 `;
 
 const PaymentDetails = () => {
@@ -171,9 +188,7 @@ const PaymentDetails = () => {
           <div>Experation Date</div>
           <div>Action</div>
         </CardOptionContainer>
-        <HeaderContainer>
-          <div>Add New Card Information</div>
-        </HeaderContainer>
+        <HeaderContainer>Add New Card Information</HeaderContainer>
         <CardInfoContainer>
           <CardInfoTop>
             <CardInfoBox>

@@ -24,7 +24,7 @@ const HeaderContainer = styled.div`
   padding-top: 10px;
   padding-bottom: 12px;
   color: #2658e2;
-  font-size: 28px;
+  font-size: 25px;
 `;
 
 const PatientIDContainer = styled.div`
