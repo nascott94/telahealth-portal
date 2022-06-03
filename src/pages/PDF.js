@@ -2,18 +2,21 @@ import React from 'react';
 import styled from 'styled-components';
 import Navbar from '../components/homepage/Navbar';
 import Sidebar from '../components/homepage/Sidebar';
+import Footer from '../components/homepage/Footer';
 
 const Container = styled.div`
   height: 100vh;
   width: 100%;
+  overflow: none;
   display: flex;
   flex-direction: row;
+  background-color: #2658e2;
 `;
 
 const LeftContainer = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 15%;
-  background-color: blue;
+  background-color: #2658e2;
 `;
 
 const RightContainer = styled.div`
@@ -25,7 +28,7 @@ const RightContainer = styled.div`
 `;
 
 const RightMain = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: #eaedf1;
 `;
@@ -46,10 +49,17 @@ const RightMainTopLeft = styled.div`
   flex-direction: column;
   justify-content: center;
   padding-left: 5px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #999;
   padding-left: 33px;
+
+  .title {
+    color: black;
+    font-size: 25px;
+  }
+
+  .subtitle {
+    color: #999;
+    font-size: 15px;
+  }
 `;
 
 const RightMainTopRight = styled.div`
@@ -80,9 +90,10 @@ const RightMainBottomTopBar = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   padding-right: 150px;
+  font-size: 13.5px;
 `;
 
 const RightMainBottomBottomBar = styled.div`
@@ -91,8 +102,11 @@ const RightMainBottomBottomBar = styled.div`
   background-color: white;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
   padding-left: 65px;
+  font-size: 13px;
+  font-weight: bold;
+  color: grey;
 `;
 
 const PDF = () => {
@@ -107,27 +121,30 @@ const PDF = () => {
           <RightMain>
             <RightMainTop>
               <RightMainTopLeft>
-                <h3>PDF Center</h3>
-                <h5>All your downloaded PDFs will be shown here</h5>
+                <div className="title">PDF Center</div>
+                <div className="subtitle">
+                  All your downloaded PDFs will be shown here
+                </div>
               </RightMainTopLeft>
               <RightMainTopRight></RightMainTopRight>
             </RightMainTop>
             <RightMainBottom>
               <RightMainBottomTopBar>
-                <h5>Select All</h5>
-                <h5>Document Type</h5>
-                <h5>Start Date</h5>
-                <h5>End Date</h5>
-                <h5>Created Date</h5>
-                <h5>Action</h5>
+                <div>Select All</div>
+                <div>Document Type</div>
+                <div>Start Date</div>
+                <div>End Date</div>
+                <div>Created Date</div>
+                <div>Action</div>
               </RightMainBottomTopBar>
               <RightMainBottomBottomBar>
-                <h5>No Documents Found</h5>
+                <div>No Documents Found</div>
               </RightMainBottomBottomBar>
             </RightMainBottom>
           </RightMain>
         </RightContainer>
       </Container>
+      <Footer />
     </>
   );
 };

@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "@emotion/styled";
-import { Link } from "react-router-dom";
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
-import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
-import VideoCallRoundedIcon from "@mui/icons-material/VideoCallRounded";
-import FolderOpenIcon from "@mui/icons-material/FolderOpen";
+import React from 'react';
+import styled from '@emotion/styled';
+import { Link } from 'react-router-dom';
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
+import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
+import VideoCallRoundedIcon from '@mui/icons-material/VideoCallRounded';
+import FolderOpenIcon from '@mui/icons-material/FolderOpen';
 // import AddBoxOutlinedIcon from '@mui/icons-material/AddBoxOutlined';
 
 const Container = styled.div`
@@ -161,7 +161,7 @@ const Navbar = () => {
           <div className="search">
             <input type="text" placeholder="Search" />
             <SearchOutlinedIcon />
-            <Link to="/messages" style={{ textDecoration: "none" }}>
+            <Link to="/messages" style={{ textDecoration: 'none' }}>
               <button className="compose-btn">
                 {/* <AddBoxOutlinedIcon className="compose-icon" /> */}+ Compose
                 New Message
@@ -170,7 +170,7 @@ const Navbar = () => {
           </div>
           <div className="items">
             <div className="item">
-              <Link to="/pdf" style={{ textDecoration: "none" }}>
+              <Link to="/pdf" style={{ textDecoration: 'none' }}>
                 <FolderOpenIcon
                   className="icon"
                   style={{
@@ -196,19 +196,19 @@ const Navbar = () => {
               Video Call
             </div>
             <div className="item">
-              <Link to="/messages" style={{ textDecoration: "none" }}>
+              <Link to="/messages" style={{ textDecoration: 'none' }}>
                 <NotificationsNoneOutlinedIcon className="icon" />
                 <div className="counter">1</div>
               </Link>
             </div>
             <div className="item">
-              <Link to="/messages" style={{ textDecoration: "none" }}>
+              <Link to="/messages" style={{ textDecoration: 'none' }}>
                 <ChatBubbleOutlineOutlinedIcon className="icon" />
                 <div className="counter">2</div>
               </Link>
             </div>
             <div className="item">
-              <div className="name">Olive Scott</div>
+              <div className="name">Natalie Scott</div>
               <div className="dropdown">
                 <div className="dropbtn">
                   <img
@@ -218,13 +218,13 @@ const Navbar = () => {
                   />
                   <div>
                     <div className="dropdown-content">
-                      <Link to="/profile" style={{ textDecoration: "none" }}>
+                      <Link to="/profile" style={{ textDecoration: 'none' }}>
                         <li>Profile</li>
                       </Link>
-                      <Link to="/settings" style={{ textDecoration: "none" }}>
+                      <Link to="/profile" style={{ textDecoration: 'none' }}>
                         <li>Settings</li>
                       </Link>
-                      <Link to="/logout" style={{ textDecoration: "none" }}>
+                      <Link to="/profile" style={{ textDecoration: 'none' }}>
                         <li>Logout</li>
                       </Link>
                     </div>

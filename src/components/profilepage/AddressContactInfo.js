@@ -21,7 +21,7 @@ const HeaderContainer = styled.div`
   align-items: center;
   border-bottom: 1px solid #ccc;
   color: #2658e2;
-  font-size: 28px;
+  font-size: 25px;
   margin-top: 15px;
   padding-bottom: 13px;
 `;
@@ -90,13 +90,13 @@ const CountryContainerLeft = styled.div`
   padding-top: 8px;
 
   .title {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     color: grey;
   }
 
   .title-2 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     color: grey;
     padding-top: 5px;
@@ -122,7 +122,7 @@ const CountryContainerRight = styled.div`
   padding-bottom: 15px;
 
   .title {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     color: grey;
   }
@@ -153,7 +153,7 @@ const CityZipLeft = styled.div`
   flex-direction: column;
 
   .title {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     color: grey;
   }
@@ -175,7 +175,7 @@ const CityZipRight = styled.div`
   flex-direction: column;
 
   .title {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     color: grey;
   }
@@ -207,7 +207,7 @@ const PhoneEmailLeft = styled.div`
   padding-bottom: 10px;
 
   .title {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     color: grey;
   }
@@ -230,7 +230,7 @@ const PhoneEmailRight = styled.div`
   padding-bottom: 10px;
 
   .title {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     color: grey;
   }
@@ -252,6 +252,8 @@ const BillingAddressContainer = styled.div`
   align-items: center;
   padding-top: 25px;
   font-size: 20px;
+  color: black;
+  font-weight: normal;
 
   .shippingAddress {
     padding-top: -90px;
@@ -288,7 +290,7 @@ const BillingAddressLeft = styled.div`
   padding-bottom: 20px;
 
   .title {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     color: grey;
   }
@@ -317,7 +319,7 @@ const BillingAddressRight = styled.div`
   padding-bottom: 20px;
 
   .title {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     color: grey;
   }
@@ -355,13 +357,22 @@ const ShippingAddress2 = styled.div`
   height: 360px;
   width: 100%;
   background-color: white;
+  font-size: 14px;
+  font-weight: bold;
+  color: grey;
+
+  .title {
+    font-size: 14px;
+    font-weight: bold;
+    color: grey;
+  }
 `;
 
 const ShippingBottom = styled.div`
   height: 200px;
   width: 100%;
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
 `;
 
 const ShippingAddressLeft = styled.div`
@@ -371,6 +382,9 @@ const ShippingAddressLeft = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: grey;
 
   .textInput {
     height: 35px;
@@ -390,6 +404,9 @@ const ShippingAddressMiddle = styled.div`
   flex-direction: column;
   justify-content: center;
   background-color: white;
+  font-size: 14px;
+  font-weight: bold;
+  color: grey;
 
   .textInput {
     height: 35px;
@@ -409,6 +426,9 @@ const ShippingAddressRight = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: grey;
 
   .textInput {
     height: 35px;
@@ -429,7 +449,12 @@ const DeliveryAddressSection = styled.div`
 const DeleiveryAddressContainer = styled.div`
   height: 400px;
   width: 100%;
-  background-color: red;
+
+  .title {
+    font-size: 14px;
+    font-weight: bold;
+    color: grey;
+  }
 `;
 
 const UpdateButtonContainer = styled.div`
@@ -440,16 +465,19 @@ const UpdateButtonContainer = styled.div`
   align-items: center;
 `;
 
-const UpdateButton = styled.div`
-  height: 30px;
-  width: 80px;
-  border: 1px solid black;
+const UpdateButton = styled.button`
+  height: 40px;
+  width: 90px;
   margin-top: 10px;
   margin-bottom: 10px;
-  background-color: orange;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 14px;
+  background-color: #f7bc01;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
 `;
 
 const AddressContactInfo = () => {
@@ -635,7 +663,9 @@ const AddressContactInfo = () => {
             </BillingAddressContainer>
             <BillingAddress>
               <BillingAddressLeft>
-                <label for="addressname">Address 1</label>
+                <label for="addressname" className="title">
+                  Address 1
+                </label>
                 <input
                   className="textInput"
                   type="text"
@@ -705,7 +735,9 @@ const AddressContactInfo = () => {
             </BillingAddressContainer>
             <BillingAddress>
               <BillingAddressLeft>
-                <label for="addressname">Address 1</label>
+                <label for="addressname" className="title">
+                  Address 1
+                </label>
                 <input
                   className="textInput"
                   type="text"
@@ -714,7 +746,9 @@ const AddressContactInfo = () => {
                 />
               </BillingAddressLeft>
               <BillingAddressRight>
-                <label for="addressname">Address 2</label>
+                <label for="addressname" className="title">
+                  Address 2
+                </label>
                 <input
                   className="textInput"
                   type="text"

@@ -94,11 +94,11 @@ const HealthPassMiddleLeft = styled.div`
   .info {
     padding-top: 5px;
     font-size: 15px;
+  }
 
-    .icon {
-      color: maroon;
-      // QUESTION FOR DAN
-    }
+  .icon {
+    color: maroon;
+    /* padding-top: 20px; */
   }
 `;
 const HealthPassMiddleRight = styled.div`
@@ -128,7 +128,7 @@ const HealthPassBottomLeft = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 50px;
   width: 50%;
   background-color: white;
   border-right: 1px solid rgb(231, 228, 228);
@@ -150,7 +150,7 @@ const HealthPassBottomRight = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 50px;
   width: 50%;
 
   button {
