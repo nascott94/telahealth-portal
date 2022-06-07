@@ -21,12 +21,15 @@ const TopContainer = styled.div`
       .title {
         font-size: 20px;
         color: black;
+        padding-top: 10px;
+        padding-left: 10px;
       }
       .sub-title {
         font-weight: bold;
         font-size: 15px;
         color: rgb(160, 160, 160);
         margin-top: 5px;
+        padding-left: 10px;
       }
     }
 
@@ -35,6 +38,7 @@ const TopContainer = styled.div`
       flex-direction: column;
       justify-content: space-between;
       padding-right: 30px;
+      padding-top: 10px;
 
       .appt-button {
         width: 100%;
