@@ -1,6 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import Logosrc from "../media/logo.png";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import Logosrc from '../media/zappi-logo.png';
 
 const LoginContainer = styled.div`
   height: 100vh;
@@ -49,12 +50,12 @@ const BottomLoginBox = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 160px;
-  height: 45px;
+  width: 290px;
+  height: 290px;
 `;
 
 const InputBox = styled.input.attrs({
-  type: "input",
+  type: 'input',
 })`
   height: 45px;
   width: 80%;
@@ -62,25 +63,43 @@ const InputBox = styled.input.attrs({
   border: 0.5px solid grey;
   text-transform: uppercase;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 11px;
+  padding-left: 9px;
+  border-radius: 4px;
 `;
 
 const IAgreeContainer = styled.div`
-  height: 25px;
+  height: 15px;
   width: 90%;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 13px;
+  color: #8f8f8f;
+
+  .check-box {
+    padding-right: 4px;
+    padding-top: 2px;
+  }
 `;
 
-const LoginButton = styled.div`
+const LoginButton = styled.button`
   width: 82%;
   height: 40%;
-  background-color: orange;
+  background-color: #f7bc01;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  color: #292929;
+  cursor: pointer;
+  :hover {
+    background-color: #f9d24d;
+  }
 `;
 
 const ResetOptions = styled.div`
@@ -89,6 +108,14 @@ const ResetOptions = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 12px;
+
+  button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    color: #7a7a7a;
+  }
 `;
 
 const Login = () => {
@@ -105,16 +132,22 @@ const Login = () => {
               <InputBox placeholder="Password"></InputBox>
             </MiddleLoginBox>
             <IAgreeContainer>
-              <span>
+              <span className="check-box">
                 <input type="checkbox" />
               </span>
-              <label class="checkmark">I Agree to all terms and polocies</label>
+              <label class="checkmark">
+                I agree to all terms and policies.
+              </label>
             </IAgreeContainer>
             <BottomLoginBox>
-              <LoginButton>LOG IN</LoginButton>
+              <LoginButton>
+                <Link to="/" style={{ textDecoration: 'none' }}>
+                  LOG IN
+                </Link>
+              </LoginButton>
               <ResetOptions>
-                <h5>FORGET PASSWORD</h5>
-                <h5>NEW USER? REGISTER</h5>
+                <button>FORGET PASSWORD</button>
+                <button>NEW USER? REGISTER</button>
               </ResetOptions>
             </BottomLoginBox>
           </LoginBox>

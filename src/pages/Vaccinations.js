@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import Navbar from "../components/homepage/Navbar";
-import Sidebar from "../components/homepage/Sidebar";
-import AddRoundedIcon from "@mui/icons-material/AddRounded";
-import Footer from "../components/homepage/Footer";
+import React from 'react';
+import styled from 'styled-components';
+import Navbar from '../components/homepage/Navbar';
+import Sidebar from '../components/homepage/Sidebar';
+import AddRoundedIcon from '@mui/icons-material/AddRounded';
+import Footer from '../components/homepage/Footer';
 
 const Container = styled.div`
   height: 100%;
@@ -400,7 +400,7 @@ const Vaccinations = () => {
                 <div>Create Your Online Vaccination Record</div>
               </RightMainTopLeft>
               <RightMainTopRight>
-                <button>Vacination Button</button>
+                <button>Vaccination Button</button>
               </RightMainTopRight>
             </RightMainTop>
             <RightMainBottom>
