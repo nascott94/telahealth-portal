@@ -49,7 +49,7 @@ const TopContainer = styled.div`
         border: none;
         cursor: pointer;
         :hover {
-          background-color: #eaedf1;
+          background-color: #f9d24d;
         }
       }
     }

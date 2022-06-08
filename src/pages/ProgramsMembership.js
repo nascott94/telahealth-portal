@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import Navbar from "../components/homepage/Navbar";
-import Sidebar from "../components/homepage/Sidebar";
-import Footer from "../components/homepage/Footer";
+import React from 'react';
+import styled from 'styled-components';
+import Navbar from '../components/homepage/Navbar';
+import Sidebar from '../components/homepage/Sidebar';
+import Footer from '../components/homepage/Footer';
 
 const Container = styled.div`
   height: 100%;
@@ -139,7 +139,7 @@ const Box2Section1SearchBar = styled.div`
     border: none;
     cursor: pointer;
     :hover {
-      background-color: #eaedf1;
+      background-color: #f9d24d;
     }
   }
   .clear-btn {
@@ -152,7 +152,7 @@ const Box2Section1SearchBar = styled.div`
     border: none;
     cursor: pointer;
     :hover {
-      background-color: #f7bc01;
+      background-color: #eef1f4;
     }
   }
 `;

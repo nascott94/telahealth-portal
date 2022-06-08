@@ -478,6 +478,9 @@ const UpdateButton = styled.button`
   border-radius: 10px;
   border: none;
   cursor: pointer;
+  :hover {
+    background-color: #f9d24d;
+  }
 `;
 
 const AddressContactInfo = () => {
