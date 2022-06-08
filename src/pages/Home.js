@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import Sidebar from "../components/homepage/Sidebar";
-import Navbar from "../components/homepage/Navbar";
-import Dashboard from "../components/homepage/Dashboard";
-import HealthPass from "../components/homepage/HealthPass";
-import Footer from "../components/homepage/Footer";
+import React from 'react';
+import styled from 'styled-components';
+import Sidebar from '../components/homepage/Sidebar';
+import Navbar from '../components/homepage/Navbar';
+import Dashboard from '../components/homepage/Dashboard';
+import HealthPass from '../components/homepage/HealthPass';
+import Footer from '../components/homepage/Footer';
 
 const Container = styled.div`
   height: 100%;
@@ -39,12 +39,6 @@ const DashboardContainer = styled.div`
   background-color: #eaedf1;
 `;
 
-const DashboardContainerBottom = styled.div`
-  height: 40%;
-  width: 100%;
-  background-color: #eaedf1;
-`;
-
 const HealthPassContainer = styled.div`
   height: 40%;
   width: 100%;
@@ -52,11 +46,6 @@ const HealthPassContainer = styled.div`
   padding-left: 20px;
   background-color: #eaedf1;
   padding-bottom: 15px;
-`;
-
-const FooterContainer = styled.div`
-  height: 100px;
-  width: 100%;
 `;
 
 const Home = () => {
@@ -73,7 +62,6 @@ const Home = () => {
           <DashboardContainer>
             <Dashboard />
           </DashboardContainer>
-
           <HealthPassContainer>
             <HealthPass />
           </HealthPassContainer>

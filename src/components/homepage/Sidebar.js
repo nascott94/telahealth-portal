@@ -90,7 +90,7 @@ const Sidebar = () => {
               <span>Profile</span>
             </li>
           </Link>
-          <Link to="/logout" style={{ textDecoration: 'none' }}>
+          <Link to="/login" style={{ textDecoration: 'none' }}>
             <li>
               <ExitToAppIcon className="icon" />
               <span>Logout</span>

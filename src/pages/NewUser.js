@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Logosrc from '../media/logo.png';
+import Logosrc from '../media/zappi-logo.png';
 
 const NewUserContainer = styled.div`
   height: 100vh;
@@ -17,13 +17,18 @@ const NewUserBox = styled.div`
 `;
 
 const TopNewUserBox = styled.div`
-  height: 15%;
+  height: 10%;
   width: 100%;
+  padding-top: 20px;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+`;
+const Logo = styled.img`
+  width: 240px;
+  height: 290px;
 `;
 
 const MiddlenewUserBox = styled.div`
@@ -33,9 +38,13 @@ const MiddlenewUserBox = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: white;
+
+  .title {
+    font-size: 15px;
+  }
 `;
 
 const BottomNewUserBox = styled.div`
@@ -46,6 +55,11 @@ const BottomNewUserBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .title {
+    color: black;
+    font-size: 13px;
+  }
 `;
 
 const InputBox = styled.input.attrs({
@@ -58,12 +72,8 @@ const InputBox = styled.input.attrs({
   text-transform: uppercase;
   cursor: pointer;
   font-size: 10px;
-`;
-
-const Logo = styled.img`
-  width: 130px;
-  height: 30px;
-  margin: 15px;
+  padding-left: 8px;
+  border-radius: 4px;
 `;
 
 const GenderContainer = styled.div`
@@ -73,6 +83,12 @@ const GenderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 12px;
+  color: #8f8f8f;
+
+  input {
+    margin-right: -15px;
+  }
 `;
 
 const IAgreeContainer = styled.div`
@@ -82,6 +98,13 @@ const IAgreeContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 13px;
+  color: #292929;
+
+  .check-box {
+    padding-right: 4px;
+    padding-top: 2px;
+  }
 `;
 
 const SignUpButtonContainer = styled.div`
@@ -96,10 +119,19 @@ const SignUpButtonContainer = styled.div`
 const SignUpButton = styled.div`
   width: 92%;
   height: 100%;
-  background-color: orange;
+  background-color: #f7bc01;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  color: #292929;
+  cursor: pointer;
+  :hover {
+    background-color: #f9d24d;
+  }
 `;
 
 const PasswordResetContainer = styled.div`
@@ -109,6 +141,13 @@ const PasswordResetContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    color: #7a7a7a;
+  }
 `;
 
 const NewUser = () => {
@@ -118,9 +157,9 @@ const NewUser = () => {
         <NewUserBox>
           <TopNewUserBox>
             <Logo src={Logosrc} />
-            <h4>Create a free account</h4>
           </TopNewUserBox>
           <MiddlenewUserBox>
+            <div className="title">Create a free account</div>
             <InputBox placeholder="Country"></InputBox>
             <InputBox placeholder="Time Zone"></InputBox>
             <InputBox placeholder="First Name"></InputBox>
@@ -133,8 +172,8 @@ const NewUser = () => {
             <InputBox placeholder="Confirm Password"></InputBox>
           </MiddlenewUserBox>
           <BottomNewUserBox>
+            <div className="title">Gender</div>
             <GenderContainer>
-              <h4>Gender</h4>
               <input type="radio" />
               <label for="html">Male</label>
               <br></br>
@@ -146,16 +185,18 @@ const NewUser = () => {
               <br></br>
             </GenderContainer>
             <IAgreeContainer>
-              <span>
+              <span className="check-box">
                 <input type="checkbox" />
               </span>
-              <label class="checkmark">I Agree to all terms and polocies</label>
+              <label class="checkmark">
+                I agree to all terms and policies.
+              </label>
             </IAgreeContainer>
             <SignUpButtonContainer>
-              <SignUpButton>Sign up</SignUpButton>
+              <SignUpButton>SIGN UP</SignUpButton>
             </SignUpButtonContainer>
             <PasswordResetContainer>
-              <h5>Password Reset</h5>
+              <button>PASSWORD RESET</button>
             </PasswordResetContainer>
           </BottomNewUserBox>
         </NewUserBox>
