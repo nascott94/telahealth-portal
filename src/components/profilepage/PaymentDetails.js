@@ -162,6 +162,9 @@ const AddButton = styled.button`
   align-items: center;
   margin-bottom: 14px;
   cursor: pointer;
+  :hover {
+    background-color: #6387ea;
+  }
 `;
 
 const ResultsSection = styled.div`

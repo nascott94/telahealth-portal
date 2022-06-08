@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import Navbar from "../components/homepage/Navbar";
-import Sidebar from "../components/homepage/Sidebar";
-import { BsToggles2 } from "react-icons/bs";
-import Footer from "../components/homepage/Footer";
+import React from 'react';
+import styled from 'styled-components';
+import Navbar from '../components/homepage/Navbar';
+import Sidebar from '../components/homepage/Sidebar';
+import { BsToggles2 } from 'react-icons/bs';
+import Footer from '../components/homepage/Footer';
 
 const Container = styled.div`
   height: 100vh;
@@ -173,9 +173,9 @@ const RightMainContentBoxAppointmentsBox = styled.div`
   align-items: center;
 `;
 
-const Button = styled.div`
+const Button = styled.button`
   width: 26%;
-  height: 10%;
+  height: 40%;
   padding: 17px;
   background-color: #f7bc01;
   border-radius: 5px;
@@ -187,7 +187,7 @@ const Button = styled.div`
   color: black;
   font-size: 15px;
   :hover {
-    background-color: #eaedf1;
+    background-color: #f9d24d;
   }
 `;
 
@@ -204,6 +204,9 @@ const ToggleButton = styled.button`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  :hover {
+    background-color: #f9d24d;
+  }
 
   .icon {
     height: 70%;

@@ -356,6 +356,9 @@ const MFAPasswordButton = styled.button`
   font-size: 13px;
   color: white;
   cursor: pointer;
+  :hover {
+    background-color: #6387ea;
+  }
 `;
 
 const MFAContainerRight = styled.div`
@@ -700,6 +703,10 @@ const UpdateButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  :hover {
+    background-color: #6387ea;
+  }
 `;
 
 const AccountSettings = () => {

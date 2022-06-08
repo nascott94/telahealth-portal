@@ -68,8 +68,8 @@ const RightMainTopRight = styled.div`
   padding-right: 50px;
 
   button {
-    width: 25%;
-    height: 50%;
+    width: 23%;
+    height: 45%;
     padding: 17px;
     background-color: #f7bc01;
     border-radius: 5px;
@@ -80,7 +80,7 @@ const RightMainTopRight = styled.div`
     color: black;
     cursor: pointer;
     :hover {
-      background-color: #eaedf1;
+      background-color: #f9d24d;
     }
   }
 `;
