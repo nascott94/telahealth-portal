@@ -1,16 +1,16 @@
-import React from "react";
-import styled from "styled-components";
-import Navbar from "../components/homepage/Navbar";
-import Sidebar from "../components/homepage/Sidebar";
-import { useState } from "react";
-import NotificationSettings from "../components/profilepage/NotificationSettings";
-import AccountSettings from "../components/profilepage/AccountSettings";
-import MyMedicalInformation from "../components/profilepage/MyMedicalInformation";
-import Insurance from "../components/profilepage/Insurance";
-import AddressContactInfo from "../components/profilepage/AddressContactInfo";
-import PaymentDetails from "../components/profilepage/PaymentDetails";
-import greybackground from "../media/greybackground.jpg";
-import Footer from "../components/homepage/Footer";
+import React from 'react';
+import styled from 'styled-components';
+import Navbar from '../components/homepage/Navbar';
+import Sidebar from '../components/homepage/Sidebar';
+import { useState } from 'react';
+import NotificationSettings from '../components/profilepage/NotificationSettings';
+import AccountSettings from '../components/profilepage/AccountSettings';
+import MyMedicalInformation from '../components/profilepage/MyMedicalInformation';
+import Insurance from '../components/profilepage/Insurance';
+import AddressContactInfo from '../components/profilepage/AddressContactInfo';
+import PaymentDetails from '../components/profilepage/PaymentDetails';
+import greybackground from '../media/greybackground.jpg';
+import Footer from '../components/homepage/Footer';
 
 const Container = styled.div`
   height: 100%;
@@ -47,7 +47,9 @@ const RightMain = styled.div`
 const RightMainTop = styled.div`
   height: 20vh;
   width: 100%;
-  background-image: url(${greybackground});
+  /* background-image: url(${greybackground}); */
+  background-color: #d1d1d1;
+  border-bottom: 1px solid #b8b8b8;
   display: flex;
   align-items: center;
   justify-content: flex-start;
