@@ -232,7 +232,7 @@ const Dashboard = () => {
         <BottomContainerTop>
           <BottomTopLeft>
             <h1>Hello Natalie</h1>
-            <div>Welcome to your dashboard</div>
+            <div>Welcome to your Dashboard</div>
           </BottomTopLeft>
           <BottomTopRight>
             <select name="folder" className="folder">
