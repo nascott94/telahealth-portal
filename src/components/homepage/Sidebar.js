@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import './sidebar.scss';
 import { Link } from 'react-router-dom';
-import ZappiLogo from '../../media/zappi-logo.png';
+// import ZappiLogo from '../../media/zappi-logo.png';
+import Logo from '../../media/health logo.png';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import InsertChartIcon from '@mui/icons-material/InsertChart';
 import SettingsSystemDaydreamOutlinedIcon from '@mui/icons-material/SettingsSystemDaydreamOutlined';
@@ -27,7 +28,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="top">
         <Link to="/" style={{ textDecoration: 'none' }}>
-          <LogoImg src={ZappiLogo} />
+          <LogoImg src={Logo} />
         </Link>
       </div>
       <hr />

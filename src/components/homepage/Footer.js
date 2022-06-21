@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import HelpCenterIcon from "@mui/icons-material/HelpCenter";
-import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-import CopyrightIcon from "@mui/icons-material/Copyright";
-import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import React from 'react';
+import styled from 'styled-components';
+import HelpCenterIcon from '@mui/icons-material/HelpCenter';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import CopyrightIcon from '@mui/icons-material/Copyright';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 const FooterContainer = styled.div`
   height: 50px;
@@ -120,7 +120,7 @@ const Footer = () => {
         <FooterRight>
           <FooterRLeft>
             <CopyrightIcon />
-            <h5>2022 Zappy Health</h5>
+            <h5>2022 Health</h5>
           </FooterRLeft>
           <FooterRRight>
             <FooterRRightContainer>

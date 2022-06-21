@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Logosrc from '../media/zappi-logo.png';
+// import Logosrc from '../media/zappi-logo.png';
+import HealthLogo from '../media/health logo.png';
 
 const NewUserContainer = styled.div`
   height: 100vh;
@@ -156,7 +157,7 @@ const NewUser = () => {
       <NewUserContainer>
         <NewUserBox>
           <TopNewUserBox>
-            <Logo src={Logosrc} />
+            <Logo src={HealthLogo} />
           </TopNewUserBox>
           <MiddlenewUserBox>
             <div className="title">Create a free account</div>
