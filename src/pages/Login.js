@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import Logosrc from '../media/zappi-logo.png';
+// import Logosrc from '../media/zappi-logo.png';
+import HealthLogo from '../media/health logo.png';
 
 const LoginContainer = styled.div`
   height: 100vh;
@@ -125,7 +126,7 @@ const Login = () => {
         <LoginContainer>
           <LoginBox>
             <TopLoginBox>
-              <Logo src={Logosrc} />
+              <Logo src={HealthLogo} />
             </TopLoginBox>
             <MiddleLoginBox>
               <InputBox placeholder="Email Address"></InputBox>
